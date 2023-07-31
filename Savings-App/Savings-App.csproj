@@ -39,4 +39,8 @@
     <Folder Include="Profiles\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SavingsApp.Core\SavingsApp.Core.csproj" />
+  </ItemGroup>
+
 </Project>
