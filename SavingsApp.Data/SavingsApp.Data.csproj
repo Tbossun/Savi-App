@@ -24,8 +24,8 @@
 
   <ItemGroup>
     <Folder Include="Context\" />
-    <Folder Include="Entities\Domains\" />
-    <Folder Include="Entities\DTOs\" />
+    <Folder Include="Entities\DTOs\Response\" />
+    <Folder Include="Entities\DTOs\Request\" />
     <Folder Include="Entities\Enums\" />
     <Folder Include="Entities\Models\" />
     <Folder Include="Repositories\IRepositories\" />

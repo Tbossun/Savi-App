@@ -1,0 +1,75 @@
+2023-07-31 12:10:14.473 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-07-31 12:10:14.597 +01:00 [DBG] Hosting starting
+2023-07-31 12:10:14.929 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 60B4004B0E7F50E239AF827782FF73E25B47E3DE)
+2023-07-31 12:10:15.029 +01:00 [INF] Now listening on: https://localhost:7049
+2023-07-31 12:10:15.029 +01:00 [INF] Now listening on: http://localhost:5159
+2023-07-31 12:10:15.029 +01:00 [DBG] Loaded hosting startup assembly Savings-App
+2023-07-31 12:10:15.029 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-07-31 12:10:15.029 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-07-31 12:10:15.029 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-31 12:10:15.030 +01:00 [INF] Hosting environment: Development
+2023-07-31 12:10:15.030 +01:00 [INF] Content root path: C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\
+2023-07-31 12:10:15.030 +01:00 [DBG] Hosting started
+2023-07-31 12:10:15.527 +01:00 [DBG] Connection id "0HMSHMQRR95VS" accepted.
+2023-07-31 12:10:15.527 +01:00 [DBG] Connection id "0HMSHMQRR95VR" accepted.
+2023-07-31 12:10:15.530 +01:00 [DBG] Connection id "0HMSHMQRR95VR" started.
+2023-07-31 12:10:15.530 +01:00 [DBG] Connection id "0HMSHMQRR95VS" started.
+2023-07-31 12:10:18.648 +01:00 [DBG] Connection id "0HMSHMQRR95VT" accepted.
+2023-07-31 12:10:18.659 +01:00 [DBG] Connection id "0HMSHMQRR95VT" started.
+2023-07-31 12:10:19.355 +01:00 [DBG] Connection 0HMSHMQRR95VT established using the following protocol: "Tls13"
+2023-07-31 12:10:19.653 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/index.html - -
+2023-07-31 12:10:20.112 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-07-31 12:10:20.203 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-07-31 12:10:20.204 +01:00 [DBG] Request did not match any endpoints
+2023-07-31 12:10:20.496 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-07-31 12:10:21.203 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-07-31 12:10:21.277 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/index.html - - - 200 - text/html;charset=utf-8 1601.8936ms
+2023-07-31 12:10:21.507 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/_framework/aspnetcore-browser-refresh.js - -
+2023-07-31 12:10:21.559 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/_vs/browserLink - -
+2023-07-31 12:10:21.581 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/_framework/aspnetcore-browser-refresh.js - - - 200 12354 application/javascript;+charset=utf-8 74.5036ms
+2023-07-31 12:10:22.232 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 673.5495ms
+2023-07-31 12:10:24.329 +01:00 [DBG] Connection id "0HMSHMQRR95VT" received FIN.
+2023-07-31 12:10:24.340 +01:00 [DBG] Connection id "0HMSHMQRR95VT" is closed. The last processed stream ID was 5.
+2023-07-31 12:10:24.341 +01:00 [DBG] Connection id "0HMSHMQRR95VT" sending FIN because: "The client closed the connection."
+2023-07-31 12:10:24.358 +01:00 [DBG] Connection id "0HMSHMQRR95VT" stopped.
+2023-07-31 12:10:25.708 +01:00 [DBG] Authentication of the HTTPS connection timed out.
+2023-07-31 12:10:25.708 +01:00 [DBG] Authentication of the HTTPS connection timed out.
+2023-07-31 12:10:25.708 +01:00 [DBG] Connection id "0HMSHMQRR95VS" stopped.
+2023-07-31 12:10:25.708 +01:00 [DBG] Connection id "0HMSHMQRR95VR" stopped.
+2023-07-31 12:10:25.709 +01:00 [DBG] Connection id "0HMSHMQRR95VR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-07-31 12:10:25.709 +01:00 [DBG] Connection id "0HMSHMQRR95VS" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-07-31 12:10:40.417 +01:00 [DBG] Connection id "0HMSHMQRR95VU" accepted.
+2023-07-31 12:10:40.418 +01:00 [DBG] Connection id "0HMSHMQRR95VU" started.
+2023-07-31 12:10:40.428 +01:00 [DBG] Connection 0HMSHMQRR95VU established using the following protocol: "Tls13"
+2023-07-31 12:10:40.430 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - -
+2023-07-31 12:10:40.430 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-07-31 12:10:40.430 +01:00 [DBG] Request did not match any endpoints
+2023-07-31 12:10:40.686 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 255.6430ms
+2023-07-31 12:10:45.187 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/WeatherForecast - -
+2023-07-31 12:10:45.200 +01:00 [DBG] 1 candidate(s) found for the request path '/WeatherForecast'
+2023-07-31 12:10:45.207 +01:00 [DBG] Endpoint 'Savings_App.Controllers.WeatherForecastController.Get (Savings-App)' with route pattern 'WeatherForecast' is valid for the request path '/WeatherForecast'
+2023-07-31 12:10:45.207 +01:00 [DBG] Request matched endpoint 'Savings_App.Controllers.WeatherForecastController.Get (Savings-App)'
+2023-07-31 12:10:45.210 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-07-31 12:10:45.217 +01:00 [INF] Executing endpoint 'Savings_App.Controllers.WeatherForecastController.Get (Savings-App)'
+2023-07-31 12:10:45.241 +01:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[Savings_App.WeatherForecast] Get() on controller Savings_App.Controllers.WeatherForecastController (Savings-App).
+2023-07-31 12:10:45.243 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-07-31 12:10:45.243 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-07-31 12:10:45.243 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-07-31 12:10:45.244 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-07-31 12:10:45.244 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-07-31 12:10:45.246 +01:00 [DBG] Executing controller factory for controller Savings_App.Controllers.WeatherForecastController (Savings-App)
+2023-07-31 12:10:45.247 +01:00 [DBG] Executed controller factory for controller Savings_App.Controllers.WeatherForecastController (Savings-App)
+2023-07-31 12:10:45.254 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-07-31 12:10:45.259 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2023-07-31 12:10:45.259 +01:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2023-07-31 12:10:45.259 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-07-31 12:10:45.259 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-07-31 12:10:45.260 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-07-31 12:10:45.261 +01:00 [INF] Executing ObjectResult, writing value of type 'Savings_App.WeatherForecast[]'.
+2023-07-31 12:10:45.287 +01:00 [INF] Executed action Savings_App.Controllers.WeatherForecastController.Get (Savings-App) in 33.1727ms
+2023-07-31 12:10:45.288 +01:00 [INF] Executed endpoint 'Savings_App.Controllers.WeatherForecastController.Get (Savings-App)'
+2023-07-31 12:10:45.288 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/WeatherForecast - - - 200 - application/json;+charset=utf-8 100.6133ms
+2023-07-31 12:10:48.174 +01:00 [DBG] Connection id "0HMSHMQRR95VU" received FIN.
+2023-07-31 12:10:48.182 +01:00 [DBG] Connection id "0HMSHMQRR95VU" is closed. The last processed stream ID was 3.
+2023-07-31 12:10:48.183 +01:00 [DBG] Connection id "0HMSHMQRR95VU" sending FIN because: "The client closed the connection."
+2023-07-31 12:10:48.192 +01:00 [DBG] Connection id "0HMSHMQRR95VU" stopped.

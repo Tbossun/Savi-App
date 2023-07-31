@@ -133,3 +133,14 @@ C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\obj\Debug\net6.0\refint\Sa
 C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\obj\Debug\net6.0\Savings-App.pdb
 C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\obj\Debug\net6.0\Savings-App.genruntimeconfig.cache
 C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\obj\Debug\net6.0\ref\Savings-App.dll
+C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\bin\Debug\net6.0\Serilog.AspNetCore.dll
+C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\bin\Debug\net6.0\Serilog.Extensions.Hosting.dll
+C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\bin\Debug\net6.0\Serilog.Extensions.Logging.dll
+C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\bin\Debug\net6.0\Serilog.Formatting.Compact.dll
+C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\bin\Debug\net6.0\Serilog.Settings.Configuration.dll
+C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\bin\Debug\net6.0\Serilog.Sinks.Console.dll
+C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
+C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\bin\Debug\net6.0\SavingsApp.Core.dll
+C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\bin\Debug\net6.0\SavingsApp.Data.dll
+C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\bin\Debug\net6.0\SavingsApp.Core.pdb
+C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\bin\Debug\net6.0\SavingsApp.Data.pdb
