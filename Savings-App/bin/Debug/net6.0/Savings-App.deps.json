@@ -1173,7 +1173,8 @@
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.20",
           "Microsoft.EntityFrameworkCore": "6.0.20",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.20",
-          "Microsoft.EntityFrameworkCore.Sqlite": "6.0.20"
+          "Microsoft.EntityFrameworkCore.Sqlite": "6.0.20",
+          "MimeKit": "4.1.0"
         },
         "runtime": {
           "SavingsApp.Data.dll": {}

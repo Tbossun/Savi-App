@@ -1,6 +1,11 @@
 using Savings_App.Extensions;
+using SavingsApp.Core.Services;
+using SavingsApp.Core.Services.Implementations;
+using SavingsApp.Core.Services.Interfaces;
 using Serilog;
 using Serilog.Extensions.Logging;
+using SavingsApp.Core.Services.Implementations;
+using MySchool.Core.Interface;
 
 public class Program
 {
@@ -15,7 +20,14 @@ public class Program
         Log.Logger = new LoggerConfiguration().MinimumLevel.Debug().WriteTo.File("log/SaviLogs.txt", rollingInterval: RollingInterval.Day).CreateLogger();
         builder.Host.UseSerilog();
 
+        //Cloudinary Service
+        builder.Services.AddCloudinaryExtension(builder.Configuration);
+        builder.Services.AddScoped<IDocumentUploadService, DocumentUploadService>();
 
+        //Register Email
+        var emailConfig = builder.Configuration.GetSection("EmailConfiguration").Get<EmailConfiguration>();
+        builder.Services.AddSingleton(emailConfig);
+        builder.Services.AddScoped<IEmailService, EmailService>();
 
         builder.Services.AddControllers();
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
