@@ -9,10 +9,6 @@ namespace SavingsApp.Data.UnitOfWork
 
         private SaviContext _saviDbContext;
 
-        public IIdentityTypeRepository IdentityTypeRepository { get; private set; }
-
-        public IOccupationRepository OccupationRepository { get; private set; }
-
         public IKycRepository KycRepository { get; private set; }
 
 
@@ -20,8 +16,6 @@ namespace SavingsApp.Data.UnitOfWork
         public UnitOfWork(SaviContext saviDbContext)
         {
             _saviDbContext = saviDbContext;
-            OccupationRepository = new OccupationRepository(_saviDbContext);
-            IdentityTypeRepository = new IdentityTypeRepository(_saviDbContext);
             KycRepository = new KycRepository(_saviDbContext);
         }
 

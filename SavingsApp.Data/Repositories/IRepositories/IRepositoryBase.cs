@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SavingsApp.Data.Entities.Enums;
+using SavingsApp.Data.Entities.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
@@ -14,5 +16,6 @@ namespace SavingsApp.Data.Repositories.IRepositories
         void Add(T entity);
         void Remove(T entity);
         void RemoveRange(IEnumerable<T> entities);
+
     }
 }

@@ -8,6 +8,7 @@ using SavingsApp.Data.Repositories.IRepositories;
 using SavingsApp.Core.Services.Interfaces;
 using SavingsApp.Data.Entities.DTOs.Response;
 using SavingsApp.Data.Entities.DTOs.Request;
+using SavingsApp.Data.Entities.Enums;
 
 namespace Savings_App.Controllers
 {
@@ -113,6 +114,36 @@ namespace Savings_App.Controllers
             }
             return StatusCode(StatusCodes.Status400BadRequest,
                 new APIResponse { StatusCode = StatusCodes.Status400BadRequest.ToString(), IsSuccess = false, Message = "User KYC is already completed." });
+        }
+
+
+
+        [HttpGet("identitytypes")]
+        public IActionResult GetIdentityTypes()
+        {
+            var identityTypes = _unitOfWork.KycRepository.GetIdentityTypes();
+            return Ok(identityTypes);
+        }
+
+        [HttpGet("occupations")]
+        public IActionResult GetOccupations()
+        {
+            var occupations = _unitOfWork.KycRepository.GetOccupations();
+            return Ok(occupations);
+        }
+
+        [HttpGet("users/byoccupation/{occupation}")]
+        public IActionResult GetUsersByOccupation(Occupations occupation)
+        {
+            var users = _unitOfWork.KycRepository.GetUsersByOccupation(occupation);
+            return Ok(users);
+        }
+
+        [HttpGet("users/byidentitytype/{identityType}")]
+        public IActionResult GetUsersByIdentityType(IdentificationType identityType)
+        {
+            var users = _unitOfWork.KycRepository.GetUsersByIdentityType(identityType);
+            return Ok(users);
         }
 
 
