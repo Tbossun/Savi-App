@@ -14,6 +14,8 @@ using Microsoft.AspNetCore.Identity;
 using SavingsApp.Data.Context;
 using SavingsApp.Data.Entities.Models;
 using Microsoft.EntityFrameworkCore;
+using SavingsApp.Data.Repositories.IRepositories;
+using SavingsApp.Data.UnitOfWork;
 
 public class Program
 {
@@ -34,6 +36,9 @@ public class Program
         //Register Cloudinary Service
         builder.Services.AddCloudinaryExtension(builder.Configuration);
         builder.Services.AddScoped<IDocumentUploadService, DocumentUploadService>();
+
+        //Register unitOfWork
+        builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
         //Register Email  Service
         var emailConfig = builder.Configuration.GetSection("EmailConfiguration").Get<EmailConfiguration>();
@@ -123,6 +128,8 @@ public class Program
         }
 
         app.UseHttpsRedirection();
+
+        app.UseAuthentication();
 
         app.UseAuthorization();
 
