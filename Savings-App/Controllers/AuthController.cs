@@ -7,6 +7,7 @@ using MySchool.Core.Interface;
 using SavingsApp.Data.Entities.DTOs.Request;
 using SavingsApp.Data.Entities.DTOs.Response;
 using SavingsApp.Data.Entities.Models;
+using SavingsApp.Data.Repositories.IRepositories;
 using System.ComponentModel.DataAnnotations;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -24,8 +25,11 @@ namespace Savings_App.Controllers
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly IMapper _mapper;
         private readonly IEmailService _emailService;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public AuthController(UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager, IConfiguration configuration, IMapper mapper, IEmailService emailService, SignInManager<ApplicationUser> signInManager)
+        public AuthController(UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager,
+            IConfiguration configuration, IMapper mapper, IEmailService emailService,
+            SignInManager<ApplicationUser> signInManager, IUnitOfWork unitOfWork)
         {
             _userManager = userManager;
             _roleManager = roleManager;
@@ -33,6 +37,7 @@ namespace Savings_App.Controllers
             _mapper = mapper;
             _emailService = emailService;
             _signInManager = signInManager;
+            _unitOfWork = unitOfWork;
         }
 
 
@@ -64,6 +69,18 @@ namespace Savings_App.Controllers
 
             if (result.Succeeded)
             {
+                Wallet userWallet = new Wallet();
+                var ID = userWallet.SetWalletId(regRequest.PhoneNumber);
+                userWallet.applicationUser = user;
+                userWallet.userId = user.Email;
+                userWallet.Balance = 0.00;
+                userWallet.CreatedAt = DateTime.UtcNow;
+                userWallet.IsDeleted = false;
+                userWallet.WalletId = ID;
+
+                // Save the Wallet to the database
+                _unitOfWork.WalletRepository.Add(userWallet);
+                _unitOfWork.Save();
 
                 // Enable or disable two-factor authentication based on the parameter
                 if (enableTwoFactorAuthentication)

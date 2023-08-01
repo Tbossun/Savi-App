@@ -7,6 +7,7 @@ namespace SavingsApp.Data.Repositories.IRepositories
     public interface IUnitOfWork
     {
         IKycRepository KycRepository { get; }
+        IWalletRepository WalletRepository { get; }
 
         void Save();
     }

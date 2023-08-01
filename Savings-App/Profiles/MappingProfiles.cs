@@ -8,7 +8,6 @@ namespace Savings_App.Profiles
     {
         public MappingProfiles()
         {
-
             CreateMap<ApplicationUser, SignUpDto>().ReverseMap();
             CreateMap<KYC, AddKycDto>().ReverseMap();
         }

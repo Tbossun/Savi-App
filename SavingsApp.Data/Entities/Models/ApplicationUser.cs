@@ -17,5 +17,6 @@ namespace SavingsApp.Data.Entities.Models
         public virtual KYC Kyc { get; set; }
 
 
+
     }
 }

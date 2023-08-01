@@ -12,7 +12,9 @@ namespace SavingsApp.Data.Context
         {
         }
 
-            public DbSet<KYC> kYCs { get; set; }
+        public DbSet<KYC> kYCs { get; set; }
+        public DbSet<Wallet> Wallets { get; set; }
+        public DbSet<WalletFunding> WalletFundings { get; set; }
       
 
     }

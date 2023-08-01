@@ -33,7 +33,7 @@ namespace SavingsApp.Core.Services.Implementations
         private MimeMessage CreateEmailMessage(Message message)
         {
             var emailMessage = new MimeMessage();
-            emailMessage.From.Add(new MailboxAddress("email", _emailConfiguration.From));
+            emailMessage.From.Add(new MailboxAddress("Savi", _emailConfiguration.From));
             emailMessage.To.AddRange(message.To);
             emailMessage.Subject = message.Subject;
 
