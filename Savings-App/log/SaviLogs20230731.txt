@@ -73,3 +73,59 @@
 2023-07-31 12:10:48.182 +01:00 [DBG] Connection id "0HMSHMQRR95VU" is closed. The last processed stream ID was 3.
 2023-07-31 12:10:48.183 +01:00 [DBG] Connection id "0HMSHMQRR95VU" sending FIN because: "The client closed the connection."
 2023-07-31 12:10:48.192 +01:00 [DBG] Connection id "0HMSHMQRR95VU" stopped.
+2023-07-31 12:33:08.787 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-07-31 12:33:08.855 +01:00 [DBG] Hosting starting
+2023-07-31 12:33:08.952 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 60B4004B0E7F50E239AF827782FF73E25B47E3DE)
+2023-07-31 12:33:08.981 +01:00 [INF] Now listening on: https://localhost:7049
+2023-07-31 12:33:08.981 +01:00 [INF] Now listening on: http://localhost:5159
+2023-07-31 12:33:08.981 +01:00 [DBG] Loaded hosting startup assembly Savings-App
+2023-07-31 12:33:08.981 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-07-31 12:33:08.981 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-07-31 12:33:08.981 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-31 12:33:08.982 +01:00 [INF] Hosting environment: Development
+2023-07-31 12:33:08.982 +01:00 [INF] Content root path: C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\
+2023-07-31 12:33:08.982 +01:00 [DBG] Hosting started
+2023-07-31 12:33:09.023 +01:00 [DBG] Connection id "0HMSHN7L60JGG" accepted.
+2023-07-31 12:33:09.023 +01:00 [DBG] Connection id "0HMSHN7L60JGG" started.
+2023-07-31 12:33:09.038 +01:00 [DBG] Connection id "0HMSHN7L60JGH" accepted.
+2023-07-31 12:33:09.038 +01:00 [DBG] Connection id "0HMSHN7L60JGH" started.
+2023-07-31 12:33:09.041 +01:00 [DBG] Connection id "0HMSHN7L60JGH" received FIN.
+2023-07-31 12:33:09.041 +01:00 [DBG] Connection id "0HMSHN7L60JGG" received FIN.
+2023-07-31 12:33:09.053 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-07-31 12:33:09.053 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-07-31 12:33:09.111 +01:00 [DBG] Connection id "0HMSHN7L60JGH" stopped.
+2023-07-31 12:33:09.111 +01:00 [DBG] Connection id "0HMSHN7L60JGG" stopped.
+2023-07-31 12:33:09.111 +01:00 [DBG] Connection id "0HMSHN7L60JGG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-07-31 12:33:09.112 +01:00 [DBG] Connection id "0HMSHN7L60JGH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-07-31 12:33:09.996 +01:00 [DBG] Connection id "0HMSHN7L60JGI" accepted.
+2023-07-31 12:33:10.066 +01:00 [DBG] Connection id "0HMSHN7L60JGI" started.
+2023-07-31 12:33:10.369 +01:00 [DBG] Connection 0HMSHN7L60JGI established using the following protocol: "Tls13"
+2023-07-31 12:33:10.526 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/index.html - -
+2023-07-31 12:33:10.585 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-07-31 12:33:10.719 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-07-31 12:33:10.720 +01:00 [DBG] Request did not match any endpoints
+2023-07-31 12:33:10.960 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-07-31 12:33:11.192 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-07-31 12:33:11.196 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/index.html - - - 200 - text/html;charset=utf-8 678.1242ms
+2023-07-31 12:33:11.239 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/_framework/aspnetcore-browser-refresh.js - -
+2023-07-31 12:33:11.240 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/_vs/browserLink - -
+2023-07-31 12:33:11.244 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/_framework/aspnetcore-browser-refresh.js - - - 200 12354 application/javascript;+charset=utf-8 4.8497ms
+2023-07-31 12:33:11.325 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 85.6404ms
+2023-07-31 12:33:11.808 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - -
+2023-07-31 12:33:11.809 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-07-31 12:33:11.809 +01:00 [DBG] Request did not match any endpoints
+2023-07-31 12:33:12.017 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 208.6288ms
+2023-07-31 12:33:14.579 +01:00 [DBG] Connection id "0HMSHN7L60JGI" received FIN.
+2023-07-31 12:33:14.588 +01:00 [DBG] Connection id "0HMSHN7L60JGI" is closed. The last processed stream ID was 7.
+2023-07-31 12:33:14.588 +01:00 [DBG] Connection id "0HMSHN7L60JGI" sending FIN because: "The client closed the connection."
+2023-07-31 12:33:14.602 +01:00 [DBG] Connection id "0HMSHN7L60JGI" stopped.

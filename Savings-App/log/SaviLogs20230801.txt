@@ -1,0 +1,1168 @@
+2023-08-01 10:21:52.163 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-01 10:21:52.272 +01:00 [DBG] Hosting starting
+2023-08-01 10:21:52.564 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 60B4004B0E7F50E239AF827782FF73E25B47E3DE)
+2023-08-01 10:21:52.649 +01:00 [INF] Now listening on: https://localhost:7049
+2023-08-01 10:21:52.650 +01:00 [INF] Now listening on: http://localhost:5159
+2023-08-01 10:21:52.650 +01:00 [DBG] Loaded hosting startup assembly Savings-App
+2023-08-01 10:21:52.650 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-08-01 10:21:52.650 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-08-01 10:21:52.650 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-01 10:21:52.650 +01:00 [INF] Hosting environment: Development
+2023-08-01 10:21:52.650 +01:00 [INF] Content root path: C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\
+2023-08-01 10:21:52.650 +01:00 [DBG] Hosting started
+2023-08-01 10:21:52.826 +01:00 [DBG] Connection id "0HMSIE2V3AVCE" accepted.
+2023-08-01 10:21:52.826 +01:00 [DBG] Connection id "0HMSIE2V3AVCD" accepted.
+2023-08-01 10:21:52.828 +01:00 [DBG] Connection id "0HMSIE2V3AVCD" started.
+2023-08-01 10:21:52.828 +01:00 [DBG] Connection id "0HMSIE2V3AVCE" started.
+2023-08-01 10:21:55.657 +01:00 [DBG] Connection id "0HMSIE2V3AVCF" accepted.
+2023-08-01 10:21:55.659 +01:00 [DBG] Connection id "0HMSIE2V3AVCF" started.
+2023-08-01 10:21:55.957 +01:00 [DBG] Connection 0HMSIE2V3AVCF established using the following protocol: "Tls13"
+2023-08-01 10:21:56.101 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/index.html - -
+2023-08-01 10:21:56.196 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-01 10:21:56.231 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-08-01 10:21:56.232 +01:00 [DBG] Request did not match any endpoints
+2023-08-01 10:21:56.415 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-08-01 10:21:56.899 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-08-01 10:21:56.912 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/index.html - - - 200 - text/html;charset=utf-8 810.8160ms
+2023-08-01 10:21:56.912 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/_framework/aspnetcore-browser-refresh.js - -
+2023-08-01 10:21:56.912 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/_vs/browserLink - -
+2023-08-01 10:21:56.963 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/_framework/aspnetcore-browser-refresh.js - - - 200 12354 application/javascript;+charset=utf-8 51.0276ms
+2023-08-01 10:21:57.198 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 285.9356ms
+2023-08-01 10:21:57.338 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - -
+2023-08-01 10:21:57.338 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-08-01 10:21:57.338 +01:00 [DBG] Request did not match any endpoints
+2023-08-01 10:21:57.562 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 223.9080ms
+2023-08-01 10:21:59.787 +01:00 [DBG] Connection id "0HMSIE2V3AVCF" received FIN.
+2023-08-01 10:21:59.796 +01:00 [DBG] Connection id "0HMSIE2V3AVCF" is closed. The last processed stream ID was 7.
+2023-08-01 10:21:59.797 +01:00 [DBG] Connection id "0HMSIE2V3AVCF" sending FIN because: "The client closed the connection."
+2023-08-01 10:21:59.805 +01:00 [DBG] Connection id "0HMSIE2V3AVCF" stopped.
+2023-08-01 10:22:02.862 +01:00 [DBG] Authentication of the HTTPS connection timed out.
+2023-08-01 10:22:02.862 +01:00 [DBG] Authentication of the HTTPS connection timed out.
+2023-08-01 10:22:02.862 +01:00 [DBG] Connection id "0HMSIE2V3AVCE" stopped.
+2023-08-01 10:22:02.862 +01:00 [DBG] Connection id "0HMSIE2V3AVCD" stopped.
+2023-08-01 10:22:02.862 +01:00 [DBG] Connection id "0HMSIE2V3AVCE" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-01 10:22:02.862 +01:00 [DBG] Connection id "0HMSIE2V3AVCD" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-01 11:17:37.314 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-01 11:17:37.389 +01:00 [DBG] Hosting starting
+2023-08-01 11:17:37.429 +01:00 [INF] User profile is available. Using 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-01 11:17:37.433 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-2233cea8-8ad9-4f56-bb58-30e16e00e4d0.xml'.
+2023-08-01 11:17:37.469 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-96cf26c6-6150-4a38-a968-bbbe32717644.xml'.
+2023-08-01 11:17:37.470 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-ba4a300a-6c51-469e-b2e4-a9cd1daa9c85.xml'.
+2023-08-01 11:17:37.481 +01:00 [DBG] Found key {2233cea8-8ad9-4f56-bb58-30e16e00e4d0}.
+2023-08-01 11:17:37.489 +01:00 [DBG] Found key {96cf26c6-6150-4a38-a968-bbbe32717644}.
+2023-08-01 11:17:37.490 +01:00 [DBG] Found key {ba4a300a-6c51-469e-b2e4-a9cd1daa9c85}.
+2023-08-01 11:17:37.496 +01:00 [DBG] Considering key {96cf26c6-6150-4a38-a968-bbbe32717644} with expiration date 2023-10-26 20:18:55Z as default key.
+2023-08-01 11:17:37.497 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-08-01 11:17:37.499 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2023-08-01 11:17:37.500 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-08-01 11:17:37.503 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-08-01 11:17:37.504 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-08-01 11:17:37.508 +01:00 [DBG] Using key {96cf26c6-6150-4a38-a968-bbbe32717644} as the default key.
+2023-08-01 11:17:37.508 +01:00 [DBG] Key ring with default key {96cf26c6-6150-4a38-a968-bbbe32717644} was loaded during application startup.
+2023-08-01 11:17:37.653 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 60B4004B0E7F50E239AF827782FF73E25B47E3DE)
+2023-08-01 11:17:37.687 +01:00 [INF] Now listening on: https://localhost:7049
+2023-08-01 11:17:37.687 +01:00 [INF] Now listening on: http://localhost:5159
+2023-08-01 11:17:37.687 +01:00 [DBG] Loaded hosting startup assembly Savings-App
+2023-08-01 11:17:37.687 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-08-01 11:17:37.687 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-08-01 11:17:37.687 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-01 11:17:37.687 +01:00 [INF] Hosting environment: Development
+2023-08-01 11:17:37.687 +01:00 [INF] Content root path: C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\
+2023-08-01 11:17:37.688 +01:00 [DBG] Hosting started
+2023-08-01 11:17:37.853 +01:00 [DBG] Connection id "0HMSIF2401467" received FIN.
+2023-08-01 11:17:37.867 +01:00 [DBG] Connection id "0HMSIF2401467" accepted.
+2023-08-01 11:17:37.870 +01:00 [DBG] Connection id "0HMSIF2401467" started.
+2023-08-01 11:17:37.887 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-01 11:17:37.964 +01:00 [DBG] Connection id "0HMSIF2401467" stopped.
+2023-08-01 11:17:37.970 +01:00 [DBG] Connection id "0HMSIF2401467" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-01 11:17:39.185 +01:00 [DBG] Connection id "0HMSIF2401468" accepted.
+2023-08-01 11:17:39.185 +01:00 [DBG] Connection id "0HMSIF2401468" started.
+2023-08-01 11:17:39.747 +01:00 [DBG] Connection 0HMSIF2401468 established using the following protocol: "Tls13"
+2023-08-01 11:17:39.850 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger - -
+2023-08-01 11:17:39.905 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-01 11:17:39.937 +01:00 [DBG] No candidates found for the request path '/swagger'
+2023-08-01 11:17:39.938 +01:00 [DBG] Request did not match any endpoints
+2023-08-01 11:17:40.018 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger - - - 301 0 - 183.4965ms
+2023-08-01 11:17:40.049 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/index.html - -
+2023-08-01 11:17:40.053 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-08-01 11:17:40.053 +01:00 [DBG] Request did not match any endpoints
+2023-08-01 11:17:40.154 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-08-01 11:17:40.489 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/swagger-ui.css - -
+2023-08-01 11:17:40.489 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/swagger-ui-bundle.js - -
+2023-08-01 11:17:40.496 +01:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-bundle.js'
+2023-08-01 11:17:40.498 +01:00 [DBG] Request did not match any endpoints
+2023-08-01 11:17:40.489 +01:00 [DBG] No candidates found for the request path '/swagger/swagger-ui.css'
+2023-08-01 11:17:40.501 +01:00 [DBG] Request did not match any endpoints
+2023-08-01 11:17:40.501 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/_framework/aspnetcore-browser-refresh.js - -
+2023-08-01 11:17:40.518 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-08-01 11:17:40.522 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/_vs/browserLink - -
+2023-08-01 11:17:40.522 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/index.html - - - 200 - text/html;charset=utf-8 473.1762ms
+2023-08-01 11:17:40.552 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/_framework/aspnetcore-browser-refresh.js - - - 200 12354 application/javascript;+charset=utf-8 51.0919ms
+2023-08-01 11:17:40.562 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/swagger-ui-standalone-preset.js - -
+2023-08-01 11:17:40.588 +01:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js'
+2023-08-01 11:17:40.602 +01:00 [DBG] Request did not match any endpoints
+2023-08-01 11:17:40.777 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-08-01 11:17:40.783 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-08-01 11:17:40.812 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/swagger-ui.css - - - 200 144929 text/css 312.5010ms
+2023-08-01 11:17:40.837 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/swagger-ui-standalone-preset.js - - - 200 312163 application/javascript 276.4461ms
+2023-08-01 11:17:41.005 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-08-01 11:17:41.005 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/swagger-ui-bundle.js - - - 200 1061536 application/javascript 515.8287ms
+2023-08-01 11:17:41.156 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 633.9462ms
+2023-08-01 11:17:41.468 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - -
+2023-08-01 11:17:41.468 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-08-01 11:17:41.468 +01:00 [DBG] Request did not match any endpoints
+2023-08-01 11:17:41.880 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 411.5616ms
+2023-08-01 11:17:43.157 +01:00 [DBG] Connection id "0HMSIF2401468" received FIN.
+2023-08-01 11:17:43.168 +01:00 [DBG] Connection id "0HMSIF2401468" is closed. The last processed stream ID was 15.
+2023-08-01 11:17:43.169 +01:00 [DBG] Connection id "0HMSIF2401468" sending FIN because: "The client closed the connection."
+2023-08-01 11:17:43.177 +01:00 [DBG] Connection id "0HMSIF2401468" stopped.
+2023-08-01 11:18:28.644 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-08-01 11:18:29.125 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<string>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2023-08-01 11:18:29.126 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<string>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2023-08-01 11:18:29.367 +01:00 [INF] Entity Framework Core 6.0.20 initialized 'SaviContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.20' with options: None
+2023-08-01 11:18:29.386 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<string>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2023-08-01 11:18:29.386 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<string>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2023-08-01 11:18:29.468 +01:00 [DBG] DetectChanges starting for 'SaviContext'.
+2023-08-01 11:18:29.470 +01:00 [DBG] DetectChanges completed for 'SaviContext'.
+2023-08-01 11:18:29.544 +01:00 [DBG] 'SaviContext' disposed.
+2023-08-01 11:18:50.498 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-08-01 11:18:51.109 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<string>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2023-08-01 11:18:51.110 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<string>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2023-08-01 11:18:51.364 +01:00 [INF] Entity Framework Core 6.0.20 initialized 'SaviContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.20' with options: None
+2023-08-01 11:18:51.411 +01:00 [DBG] Migrating using database 'main' on server 'Savi.db'.
+2023-08-01 11:18:51.419 +01:00 [DBG] Opening connection to database 'main' on server 'Savi.db'.
+2023-08-01 11:18:51.434 +01:00 [DBG] An error occurred using the connection to database 'main' on server 'Savi.db'.
+2023-08-01 11:18:51.436 +01:00 [DBG] Opening connection to database 'main' on server 'Savi.db'.
+2023-08-01 11:18:51.436 +01:00 [DBG] An error occurred using the connection to database 'main' on server 'Savi.db'.
+2023-08-01 11:18:51.437 +01:00 [DBG] Opening connection to database 'main' on server 'Savi.db'.
+2023-08-01 11:18:51.443 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-01 11:18:51.449 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-08-01 11:18:51.455 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (4ms).
+2023-08-01 11:18:51.461 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2023-08-01 11:18:51.485 +01:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2023-08-01 11:18:51.486 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-01 11:18:51.489 +01:00 [DBG] Closed connection to database 'main' on server 'Savi.db'.
+2023-08-01 11:18:51.545 +01:00 [DBG] DetectChanges starting for 'SaviContext'.
+2023-08-01 11:18:51.547 +01:00 [DBG] DetectChanges completed for 'SaviContext'.
+2023-08-01 11:18:51.574 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-08-01 11:18:51.574 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-08-01 11:18:51.574 +01:00 [DBG] Opening connection to database 'main' on server 'Savi.db'.
+2023-08-01 11:18:51.574 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-01 11:18:51.574 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "__EFMigrationsHistory" (
+    "MigrationId" TEXT NOT NULL CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY,
+    "ProductVersion" TEXT NOT NULL
+);
+2023-08-01 11:18:51.586 +01:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "__EFMigrationsHistory" (
+    "MigrationId" TEXT NOT NULL CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY,
+    "ProductVersion" TEXT NOT NULL
+);
+2023-08-01 11:18:51.586 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-01 11:18:51.586 +01:00 [DBG] Closed connection to database 'main' on server 'Savi.db'.
+2023-08-01 11:18:51.587 +01:00 [DBG] Opening connection to database 'main' on server 'Savi.db'.
+2023-08-01 11:18:51.587 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-01 11:18:51.593 +01:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2023-08-01 11:18:51.594 +01:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2023-08-01 11:18:51.594 +01:00 [DBG] Opening connection to database 'main' on server 'Savi.db'.
+2023-08-01 11:18:51.594 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-01 11:18:51.594 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-08-01 11:18:51.596 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-08-01 11:18:51.596 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-01 11:18:51.596 +01:00 [DBG] Closed connection to database 'main' on server 'Savi.db'.
+2023-08-01 11:18:51.596 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-08-01 11:18:51.597 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-08-01 11:18:51.597 +01:00 [DBG] Opening connection to database 'main' on server 'Savi.db'.
+2023-08-01 11:18:51.597 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-01 11:18:51.597 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-08-01 11:18:51.597 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-08-01 11:18:51.598 +01:00 [DBG] A data reader was disposed.
+2023-08-01 11:18:51.598 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-01 11:18:51.598 +01:00 [DBG] Closed connection to database 'main' on server 'Savi.db'.
+2023-08-01 11:18:51.606 +01:00 [INF] Applying migration '20230801101829_initial'.
+2023-08-01 11:18:51.645 +01:00 [DBG] Opening connection to database 'main' on server 'Savi.db'.
+2023-08-01 11:18:51.645 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-01 11:18:51.646 +01:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2023-08-01 11:18:51.648 +01:00 [DBG] Began transaction with isolation level 'Serializable'.
+2023-08-01 11:18:51.649 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-08-01 11:18:51.649 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-08-01 11:18:51.649 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetRoles" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_AspNetRoles" PRIMARY KEY,
+    "Name" TEXT NULL,
+    "NormalizedName" TEXT NULL,
+    "ConcurrencyStamp" TEXT NULL
+);
+2023-08-01 11:18:51.649 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetRoles" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_AspNetRoles" PRIMARY KEY,
+    "Name" TEXT NULL,
+    "NormalizedName" TEXT NULL,
+    "ConcurrencyStamp" TEXT NULL
+);
+2023-08-01 11:18:51.649 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-08-01 11:18:51.649 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-08-01 11:18:51.649 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetUsers" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_AspNetUsers" PRIMARY KEY,
+    "FirstName" TEXT NOT NULL,
+    "LastName" TEXT NOT NULL,
+    "ImageUrl" TEXT NULL,
+    "IsKycComplete" INTEGER NOT NULL,
+    "UserName" TEXT NULL,
+    "NormalizedUserName" TEXT NULL,
+    "Email" TEXT NULL,
+    "NormalizedEmail" TEXT NULL,
+    "EmailConfirmed" INTEGER NOT NULL,
+    "PasswordHash" TEXT NULL,
+    "SecurityStamp" TEXT NULL,
+    "ConcurrencyStamp" TEXT NULL,
+    "PhoneNumber" TEXT NULL,
+    "PhoneNumberConfirmed" INTEGER NOT NULL,
+    "TwoFactorEnabled" INTEGER NOT NULL,
+    "LockoutEnd" TEXT NULL,
+    "LockoutEnabled" INTEGER NOT NULL,
+    "AccessFailedCount" INTEGER NOT NULL
+);
+2023-08-01 11:18:51.649 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetUsers" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_AspNetUsers" PRIMARY KEY,
+    "FirstName" TEXT NOT NULL,
+    "LastName" TEXT NOT NULL,
+    "ImageUrl" TEXT NULL,
+    "IsKycComplete" INTEGER NOT NULL,
+    "UserName" TEXT NULL,
+    "NormalizedUserName" TEXT NULL,
+    "Email" TEXT NULL,
+    "NormalizedEmail" TEXT NULL,
+    "EmailConfirmed" INTEGER NOT NULL,
+    "PasswordHash" TEXT NULL,
+    "SecurityStamp" TEXT NULL,
+    "ConcurrencyStamp" TEXT NULL,
+    "PhoneNumber" TEXT NULL,
+    "PhoneNumberConfirmed" INTEGER NOT NULL,
+    "TwoFactorEnabled" INTEGER NOT NULL,
+    "LockoutEnd" TEXT NULL,
+    "LockoutEnabled" INTEGER NOT NULL,
+    "AccessFailedCount" INTEGER NOT NULL
+);
+2023-08-01 11:18:51.649 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-08-01 11:18:51.649 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-08-01 11:18:51.649 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetRoleClaims" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_AspNetRoleClaims" PRIMARY KEY AUTOINCREMENT,
+    "RoleId" TEXT NOT NULL,
+    "ClaimType" TEXT NULL,
+    "ClaimValue" TEXT NULL,
+    CONSTRAINT "FK_AspNetRoleClaims_AspNetRoles_RoleId" FOREIGN KEY ("RoleId") REFERENCES "AspNetRoles" ("Id") ON DELETE CASCADE
+);
+2023-08-01 11:18:51.650 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetRoleClaims" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_AspNetRoleClaims" PRIMARY KEY AUTOINCREMENT,
+    "RoleId" TEXT NOT NULL,
+    "ClaimType" TEXT NULL,
+    "ClaimValue" TEXT NULL,
+    CONSTRAINT "FK_AspNetRoleClaims_AspNetRoles_RoleId" FOREIGN KEY ("RoleId") REFERENCES "AspNetRoles" ("Id") ON DELETE CASCADE
+);
+2023-08-01 11:18:51.650 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-08-01 11:18:51.650 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-08-01 11:18:51.650 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetUserClaims" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_AspNetUserClaims" PRIMARY KEY AUTOINCREMENT,
+    "UserId" TEXT NOT NULL,
+    "ClaimType" TEXT NULL,
+    "ClaimValue" TEXT NULL,
+    CONSTRAINT "FK_AspNetUserClaims_AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE
+);
+2023-08-01 11:18:51.650 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetUserClaims" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_AspNetUserClaims" PRIMARY KEY AUTOINCREMENT,
+    "UserId" TEXT NOT NULL,
+    "ClaimType" TEXT NULL,
+    "ClaimValue" TEXT NULL,
+    CONSTRAINT "FK_AspNetUserClaims_AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE
+);
+2023-08-01 11:18:51.650 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-08-01 11:18:51.650 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-08-01 11:18:51.650 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetUserLogins" (
+    "LoginProvider" TEXT NOT NULL,
+    "ProviderKey" TEXT NOT NULL,
+    "ProviderDisplayName" TEXT NULL,
+    "UserId" TEXT NOT NULL,
+    CONSTRAINT "PK_AspNetUserLogins" PRIMARY KEY ("LoginProvider", "ProviderKey"),
+    CONSTRAINT "FK_AspNetUserLogins_AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE
+);
+2023-08-01 11:18:51.650 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetUserLogins" (
+    "LoginProvider" TEXT NOT NULL,
+    "ProviderKey" TEXT NOT NULL,
+    "ProviderDisplayName" TEXT NULL,
+    "UserId" TEXT NOT NULL,
+    CONSTRAINT "PK_AspNetUserLogins" PRIMARY KEY ("LoginProvider", "ProviderKey"),
+    CONSTRAINT "FK_AspNetUserLogins_AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE
+);
+2023-08-01 11:18:51.650 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-08-01 11:18:51.650 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-08-01 11:18:51.650 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetUserRoles" (
+    "UserId" TEXT NOT NULL,
+    "RoleId" TEXT NOT NULL,
+    CONSTRAINT "PK_AspNetUserRoles" PRIMARY KEY ("UserId", "RoleId"),
+    CONSTRAINT "FK_AspNetUserRoles_AspNetRoles_RoleId" FOREIGN KEY ("RoleId") REFERENCES "AspNetRoles" ("Id") ON DELETE CASCADE,
+    CONSTRAINT "FK_AspNetUserRoles_AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE
+);
+2023-08-01 11:18:51.650 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetUserRoles" (
+    "UserId" TEXT NOT NULL,
+    "RoleId" TEXT NOT NULL,
+    CONSTRAINT "PK_AspNetUserRoles" PRIMARY KEY ("UserId", "RoleId"),
+    CONSTRAINT "FK_AspNetUserRoles_AspNetRoles_RoleId" FOREIGN KEY ("RoleId") REFERENCES "AspNetRoles" ("Id") ON DELETE CASCADE,
+    CONSTRAINT "FK_AspNetUserRoles_AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE
+);
+2023-08-01 11:18:51.650 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-08-01 11:18:51.650 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-08-01 11:18:51.650 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetUserTokens" (
+    "UserId" TEXT NOT NULL,
+    "LoginProvider" TEXT NOT NULL,
+    "Name" TEXT NOT NULL,
+    "Value" TEXT NULL,
+    CONSTRAINT "PK_AspNetUserTokens" PRIMARY KEY ("UserId", "LoginProvider", "Name"),
+    CONSTRAINT "FK_AspNetUserTokens_AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE
+);
+2023-08-01 11:18:51.650 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetUserTokens" (
+    "UserId" TEXT NOT NULL,
+    "LoginProvider" TEXT NOT NULL,
+    "Name" TEXT NOT NULL,
+    "Value" TEXT NULL,
+    CONSTRAINT "PK_AspNetUserTokens" PRIMARY KEY ("UserId", "LoginProvider", "Name"),
+    CONSTRAINT "FK_AspNetUserTokens_AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE
+);
+2023-08-01 11:18:51.650 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-08-01 11:18:51.650 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-08-01 11:18:51.650 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "kYCs" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_kYCs" PRIMARY KEY AUTOINCREMENT,
+    "UserId" TEXT NOT NULL,
+    "DateOfBirth" TEXT NOT NULL,
+    "Gender" INTEGER NOT NULL,
+    "Occupation" INTEGER NOT NULL,
+    "Address" TEXT NOT NULL,
+    "BVN" TEXT NOT NULL,
+    "IdentityType" INTEGER NOT NULL,
+    "DocumentImageUrl" TEXT NULL,
+    "ProofOfAddress" TEXT NULL,
+    CONSTRAINT "FK_kYCs_AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE
+);
+2023-08-01 11:18:51.651 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "kYCs" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_kYCs" PRIMARY KEY AUTOINCREMENT,
+    "UserId" TEXT NOT NULL,
+    "DateOfBirth" TEXT NOT NULL,
+    "Gender" INTEGER NOT NULL,
+    "Occupation" INTEGER NOT NULL,
+    "Address" TEXT NOT NULL,
+    "BVN" TEXT NOT NULL,
+    "IdentityType" INTEGER NOT NULL,
+    "DocumentImageUrl" TEXT NULL,
+    "ProofOfAddress" TEXT NULL,
+    CONSTRAINT "FK_kYCs_AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE
+);
+2023-08-01 11:18:51.651 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-08-01 11:18:51.651 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-08-01 11:18:51.651 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_AspNetRoleClaims_RoleId" ON "AspNetRoleClaims" ("RoleId");
+2023-08-01 11:18:51.651 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_AspNetRoleClaims_RoleId" ON "AspNetRoleClaims" ("RoleId");
+2023-08-01 11:18:51.651 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-08-01 11:18:51.651 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-08-01 11:18:51.651 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "RoleNameIndex" ON "AspNetRoles" ("NormalizedName");
+2023-08-01 11:18:51.651 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "RoleNameIndex" ON "AspNetRoles" ("NormalizedName");
+2023-08-01 11:18:51.651 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-08-01 11:18:51.651 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-08-01 11:18:51.651 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_AspNetUserClaims_UserId" ON "AspNetUserClaims" ("UserId");
+2023-08-01 11:18:51.651 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_AspNetUserClaims_UserId" ON "AspNetUserClaims" ("UserId");
+2023-08-01 11:18:51.651 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-08-01 11:18:51.651 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-08-01 11:18:51.651 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_AspNetUserLogins_UserId" ON "AspNetUserLogins" ("UserId");
+2023-08-01 11:18:51.651 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_AspNetUserLogins_UserId" ON "AspNetUserLogins" ("UserId");
+2023-08-01 11:18:51.651 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-08-01 11:18:51.651 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-08-01 11:18:51.651 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_AspNetUserRoles_RoleId" ON "AspNetUserRoles" ("RoleId");
+2023-08-01 11:18:51.651 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_AspNetUserRoles_RoleId" ON "AspNetUserRoles" ("RoleId");
+2023-08-01 11:18:51.651 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-08-01 11:18:51.651 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-08-01 11:18:51.651 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "EmailIndex" ON "AspNetUsers" ("NormalizedEmail");
+2023-08-01 11:18:51.651 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "EmailIndex" ON "AspNetUsers" ("NormalizedEmail");
+2023-08-01 11:18:51.651 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-08-01 11:18:51.651 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-08-01 11:18:51.652 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "UserNameIndex" ON "AspNetUsers" ("NormalizedUserName");
+2023-08-01 11:18:51.652 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "UserNameIndex" ON "AspNetUsers" ("NormalizedUserName");
+2023-08-01 11:18:51.652 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-08-01 11:18:51.652 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-08-01 11:18:51.652 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "IX_kYCs_UserId" ON "kYCs" ("UserId");
+2023-08-01 11:18:51.652 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "IX_kYCs_UserId" ON "kYCs" ("UserId");
+2023-08-01 11:18:51.652 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-08-01 11:18:51.652 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-08-01 11:18:51.652 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20230801101829_initial', '6.0.20');
+2023-08-01 11:18:51.652 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20230801101829_initial', '6.0.20');
+2023-08-01 11:18:51.653 +01:00 [DBG] Committing transaction.
+2023-08-01 11:18:51.661 +01:00 [DBG] Committed transaction.
+2023-08-01 11:18:51.662 +01:00 [DBG] Disposing transaction.
+2023-08-01 11:18:51.662 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-01 11:18:51.663 +01:00 [DBG] Closed connection to database 'main' on server 'Savi.db'.
+2023-08-01 11:18:51.664 +01:00 [DBG] 'SaviContext' disposed.
+2023-08-01 11:18:59.486 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-01 11:18:59.552 +01:00 [DBG] Hosting starting
+2023-08-01 11:18:59.583 +01:00 [INF] User profile is available. Using 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-01 11:18:59.589 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-2233cea8-8ad9-4f56-bb58-30e16e00e4d0.xml'.
+2023-08-01 11:18:59.597 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-96cf26c6-6150-4a38-a968-bbbe32717644.xml'.
+2023-08-01 11:18:59.598 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-ba4a300a-6c51-469e-b2e4-a9cd1daa9c85.xml'.
+2023-08-01 11:18:59.604 +01:00 [DBG] Found key {2233cea8-8ad9-4f56-bb58-30e16e00e4d0}.
+2023-08-01 11:18:59.609 +01:00 [DBG] Found key {96cf26c6-6150-4a38-a968-bbbe32717644}.
+2023-08-01 11:18:59.609 +01:00 [DBG] Found key {ba4a300a-6c51-469e-b2e4-a9cd1daa9c85}.
+2023-08-01 11:18:59.618 +01:00 [DBG] Considering key {96cf26c6-6150-4a38-a968-bbbe32717644} with expiration date 2023-10-26 20:18:55Z as default key.
+2023-08-01 11:18:59.620 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-08-01 11:18:59.622 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2023-08-01 11:18:59.623 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-08-01 11:18:59.626 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-08-01 11:18:59.628 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-08-01 11:18:59.631 +01:00 [DBG] Using key {96cf26c6-6150-4a38-a968-bbbe32717644} as the default key.
+2023-08-01 11:18:59.632 +01:00 [DBG] Key ring with default key {96cf26c6-6150-4a38-a968-bbbe32717644} was loaded during application startup.
+2023-08-01 11:18:59.803 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 60B4004B0E7F50E239AF827782FF73E25B47E3DE)
+2023-08-01 11:18:59.872 +01:00 [INF] Now listening on: https://localhost:7049
+2023-08-01 11:18:59.872 +01:00 [INF] Now listening on: http://localhost:5159
+2023-08-01 11:18:59.872 +01:00 [DBG] Loaded hosting startup assembly Savings-App
+2023-08-01 11:18:59.872 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-08-01 11:18:59.872 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-08-01 11:18:59.873 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-01 11:18:59.873 +01:00 [INF] Hosting environment: Development
+2023-08-01 11:18:59.873 +01:00 [INF] Content root path: C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\
+2023-08-01 11:18:59.873 +01:00 [DBG] Hosting started
+2023-08-01 11:19:00.338 +01:00 [DBG] Connection id "0HMSIF2SILL51" received FIN.
+2023-08-01 11:19:00.344 +01:00 [DBG] Connection id "0HMSIF2SILL52" received FIN.
+2023-08-01 11:19:00.352 +01:00 [DBG] Connection id "0HMSIF2SILL52" accepted.
+2023-08-01 11:19:00.352 +01:00 [DBG] Connection id "0HMSIF2SILL51" accepted.
+2023-08-01 11:19:00.353 +01:00 [DBG] Connection id "0HMSIF2SILL52" started.
+2023-08-01 11:19:00.353 +01:00 [DBG] Connection id "0HMSIF2SILL51" started.
+2023-08-01 11:19:00.374 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-01 11:19:00.373 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-01 11:19:00.418 +01:00 [DBG] Connection id "0HMSIF2SILL51" stopped.
+2023-08-01 11:19:00.418 +01:00 [DBG] Connection id "0HMSIF2SILL52" stopped.
+2023-08-01 11:19:00.421 +01:00 [DBG] Connection id "0HMSIF2SILL51" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-01 11:19:00.421 +01:00 [DBG] Connection id "0HMSIF2SILL52" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-01 11:19:00.945 +01:00 [DBG] Connection id "0HMSIF2SILL53" accepted.
+2023-08-01 11:19:00.948 +01:00 [DBG] Connection id "0HMSIF2SILL53" started.
+2023-08-01 11:19:01.347 +01:00 [DBG] Connection 0HMSIF2SILL53 established using the following protocol: "Tls13"
+2023-08-01 11:19:01.655 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/index.html - -
+2023-08-01 11:19:01.741 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-01 11:19:01.815 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-08-01 11:19:01.815 +01:00 [DBG] Request did not match any endpoints
+2023-08-01 11:19:02.017 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-08-01 11:19:02.470 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/_framework/aspnetcore-browser-refresh.js - -
+2023-08-01 11:19:02.515 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-08-01 11:19:02.551 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/_vs/browserLink - -
+2023-08-01 11:19:02.591 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/index.html - - - 200 - text/html;charset=utf-8 903.8693ms
+2023-08-01 11:19:02.601 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/_framework/aspnetcore-browser-refresh.js - - - 200 12354 application/javascript;+charset=utf-8 81.9606ms
+2023-08-01 11:19:03.072 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 521.2022ms
+2023-08-01 11:19:03.204 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - -
+2023-08-01 11:19:03.205 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-08-01 11:19:03.205 +01:00 [DBG] Request did not match any endpoints
+2023-08-01 11:19:03.501 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 297.4386ms
+2023-08-01 11:19:05.703 +01:00 [DBG] Connection id "0HMSIF2SILL53" received FIN.
+2023-08-01 11:19:05.718 +01:00 [DBG] Connection id "0HMSIF2SILL53" is closed. The last processed stream ID was 7.
+2023-08-01 11:19:05.719 +01:00 [DBG] Connection id "0HMSIF2SILL53" sending FIN because: "The client closed the connection."
+2023-08-01 11:19:05.728 +01:00 [DBG] Connection id "0HMSIF2SILL53" stopped.
+2023-08-01 11:20:09.844 +01:00 [DBG] Connection id "0HMSIF2SILL54" accepted.
+2023-08-01 11:20:09.859 +01:00 [DBG] Connection id "0HMSIF2SILL54" started.
+2023-08-01 11:20:09.898 +01:00 [DBG] Connection 0HMSIF2SILL54 established using the following protocol: "Tls13"
+2023-08-01 11:20:09.907 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7049/api/Auth/Register?enableTwoFactorAuthentication=false application/json 140
+2023-08-01 11:20:09.938 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/Register'
+2023-08-01 11:20:09.947 +01:00 [DBG] Endpoint 'Savings_App.Controllers.AuthController.Register (Savings-App)' with route pattern 'api/Auth/Register' is valid for the request path '/api/Auth/Register'
+2023-08-01 11:20:09.948 +01:00 [DBG] Request matched endpoint 'Savings_App.Controllers.AuthController.Register (Savings-App)'
+2023-08-01 11:20:09.952 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-08-01 11:20:09.958 +01:00 [INF] Executing endpoint 'Savings_App.Controllers.AuthController.Register (Savings-App)'
+2023-08-01 11:20:10.036 +01:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(SavingsApp.Data.Entities.DTOs.Request.SignUpDto, Boolean) on controller Savings_App.Controllers.AuthController (Savings-App).
+2023-08-01 11:20:10.039 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-08-01 11:20:10.039 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-08-01 11:20:10.040 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-08-01 11:20:10.041 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-08-01 11:20:10.041 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-08-01 11:20:10.042 +01:00 [DBG] Executing controller factory for controller Savings_App.Controllers.AuthController (Savings-App)
+2023-08-01 11:20:10.419 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-08-01 11:20:10.990 +01:00 [DBG] Executed controller factory for controller Savings_App.Controllers.AuthController (Savings-App)
+2023-08-01 11:20:11.008 +01:00 [DBG] Attempting to bind parameter 'regRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.SignUpDto' ...
+2023-08-01 11:20:11.013 +01:00 [DBG] Attempting to bind parameter 'regRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.SignUpDto' using the name '' in request data ...
+2023-08-01 11:20:11.015 +01:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-08-01 11:20:11.026 +01:00 [DBG] Connection id "0HMSIF2SILL54", Request id "0HMSIF2SILL54:00000001": started reading request body.
+2023-08-01 11:20:11.027 +01:00 [DBG] Connection id "0HMSIF2SILL54", Request id "0HMSIF2SILL54:00000001": done reading request body.
+2023-08-01 11:20:11.041 +01:00 [DBG] JSON input formatter succeeded, deserializing to type 'SavingsApp.Data.Entities.DTOs.Request.SignUpDto'
+2023-08-01 11:20:11.042 +01:00 [DBG] Done attempting to bind parameter 'regRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.SignUpDto'.
+2023-08-01 11:20:11.042 +01:00 [DBG] Done attempting to bind parameter 'regRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.SignUpDto'.
+2023-08-01 11:20:11.042 +01:00 [DBG] Attempting to validate the bound parameter 'regRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.SignUpDto' ...
+2023-08-01 11:20:11.058 +01:00 [DBG] Done attempting to validate the bound parameter 'regRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.SignUpDto'.
+2023-08-01 11:20:11.063 +01:00 [DBG] Attempting to bind parameter 'enableTwoFactorAuthentication' of type 'System.Boolean' ...
+2023-08-01 11:20:11.064 +01:00 [DBG] Attempting to bind parameter 'enableTwoFactorAuthentication' of type 'System.Boolean' using the name 'enableTwoFactorAuthentication' in request data ...
+2023-08-01 11:20:11.065 +01:00 [DBG] Done attempting to bind parameter 'enableTwoFactorAuthentication' of type 'System.Boolean'.
+2023-08-01 11:20:11.065 +01:00 [DBG] Done attempting to bind parameter 'enableTwoFactorAuthentication' of type 'System.Boolean'.
+2023-08-01 11:20:11.065 +01:00 [DBG] Attempting to validate the bound parameter 'enableTwoFactorAuthentication' of type 'System.Boolean' ...
+2023-08-01 11:20:11.066 +01:00 [DBG] Done attempting to validate the bound parameter 'enableTwoFactorAuthentication' of type 'System.Boolean'.
+2023-08-01 11:20:12.844 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<string>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2023-08-01 11:20:12.845 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<string>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2023-08-01 11:20:13.658 +01:00 [INF] Entity Framework Core 6.0.20 initialized 'SaviContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.20' with options: None
+2023-08-01 11:20:13.872 +01:00 [DBG] Compiling query expression: 
+'DbSet<ApplicationUser>()
+    .SingleOrDefault(u => u.NormalizedEmail == __normalizedEmail_0)'
+2023-08-01 11:20:14.752 +01:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<ApplicationUser>(
+    asyncEnumerable: new SingleQueryingEnumerable<ApplicationUser>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: ApplicationUser.Id (string) Required PK AfterSave:Throw, 0], [Property: ApplicationUser.AccessFailedCount (int) Required, 1], [Property: ApplicationUser.ConcurrencyStamp (string) Concurrency, 2], [Property: ApplicationUser.Email (string) MaxLength(256), 3], [Property: ApplicationUser.EmailConfirmed (bool) Required, 4], [Property: ApplicationUser.FirstName (string) Required, 5], [Property: ApplicationUser.ImageUrl (string), 6], [Property: ApplicationUser.IsKycComplete (bool) Required, 7], [Property: ApplicationUser.LastName (string) Required, 8], [Property: ApplicationUser.LockoutEnabled (bool) Required, 9], [Property: ApplicationUser.LockoutEnd (DateTimeOffset?), 10], [Property: ApplicationUser.NormalizedEmail (string) Index MaxLength(256), 11], [Property: ApplicationUser.NormalizedUserName (string) Index MaxLength(256), 12], [Property: ApplicationUser.PasswordHash (string), 13], [Property: ApplicationUser.PhoneNumber (string), 14], [Property: ApplicationUser.PhoneNumberConfirmed (bool) Required, 15], [Property: ApplicationUser.SecurityStamp (string), 16], [Property: ApplicationUser.TwoFactorEnabled (bool) Required, 17], [Property: ApplicationUser.UserName (string) MaxLength(256), 18] }
+            SELECT TOP(2) a.Id, a.AccessFailedCount, a.ConcurrencyStamp, a.Email, a.EmailConfirmed, a.FirstName, a.ImageUrl, a.IsKycComplete, a.LastName, a.LockoutEnabled, a.LockoutEnd, a.NormalizedEmail, a.NormalizedUserName, a.PasswordHash, a.PhoneNumber, a.PhoneNumberConfirmed, a.SecurityStamp, a.TwoFactorEnabled, a.UserName
+            FROM AspNetUsers AS a
+            WHERE a.NormalizedEmail == @__normalizedEmail_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, ApplicationUser>, 
+        SavingsApp.Data.Context.SaviContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2023-08-01 11:20:14.958 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-08-01 11:20:15.086 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (139ms).
+2023-08-01 11:20:15.122 +01:00 [DBG] Opening connection to database 'main' on server 'Savi.db'.
+2023-08-01 11:20:15.171 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-01 11:20:15.211 +01:00 [DBG] Executing DbCommand [Parameters=[@__normalizedEmail_0='?' (Size = 18)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FirstName", "a"."ImageUrl", "a"."IsKycComplete", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-08-01 11:20:15.283 +01:00 [INF] Executed DbCommand (86ms) [Parameters=[@__normalizedEmail_0='?' (Size = 18)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FirstName", "a"."ImageUrl", "a"."IsKycComplete", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-08-01 11:20:15.309 +01:00 [DBG] A data reader was disposed.
+2023-08-01 11:20:15.329 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-01 11:20:15.344 +01:00 [DBG] Closed connection to database 'main' on server 'Savi.db'.
+2023-08-01 11:20:15.417 +01:00 [DBG] Compiling query expression: 
+'DbSet<ApplicationUser>()
+    .FirstOrDefault(u => u.NormalizedUserName == __normalizedUserName_0)'
+2023-08-01 11:20:15.427 +01:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<ApplicationUser>(
+    asyncEnumerable: new SingleQueryingEnumerable<ApplicationUser>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: ApplicationUser.Id (string) Required PK AfterSave:Throw, 0], [Property: ApplicationUser.AccessFailedCount (int) Required, 1], [Property: ApplicationUser.ConcurrencyStamp (string) Concurrency, 2], [Property: ApplicationUser.Email (string) MaxLength(256), 3], [Property: ApplicationUser.EmailConfirmed (bool) Required, 4], [Property: ApplicationUser.FirstName (string) Required, 5], [Property: ApplicationUser.ImageUrl (string), 6], [Property: ApplicationUser.IsKycComplete (bool) Required, 7], [Property: ApplicationUser.LastName (string) Required, 8], [Property: ApplicationUser.LockoutEnabled (bool) Required, 9], [Property: ApplicationUser.LockoutEnd (DateTimeOffset?), 10], [Property: ApplicationUser.NormalizedEmail (string) Index MaxLength(256), 11], [Property: ApplicationUser.NormalizedUserName (string) Index MaxLength(256), 12], [Property: ApplicationUser.PasswordHash (string), 13], [Property: ApplicationUser.PhoneNumber (string), 14], [Property: ApplicationUser.PhoneNumberConfirmed (bool) Required, 15], [Property: ApplicationUser.SecurityStamp (string), 16], [Property: ApplicationUser.TwoFactorEnabled (bool) Required, 17], [Property: ApplicationUser.UserName (string) MaxLength(256), 18] }
+            SELECT TOP(1) a.Id, a.AccessFailedCount, a.ConcurrencyStamp, a.Email, a.EmailConfirmed, a.FirstName, a.ImageUrl, a.IsKycComplete, a.LastName, a.LockoutEnabled, a.LockoutEnd, a.NormalizedEmail, a.NormalizedUserName, a.PasswordHash, a.PhoneNumber, a.PhoneNumberConfirmed, a.SecurityStamp, a.TwoFactorEnabled, a.UserName
+            FROM AspNetUsers AS a
+            WHERE a.NormalizedUserName == @__normalizedUserName_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, ApplicationUser>, 
+        SavingsApp.Data.Context.SaviContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2023-08-01 11:20:15.428 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-08-01 11:20:15.428 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-08-01 11:20:15.428 +01:00 [DBG] Opening connection to database 'main' on server 'Savi.db'.
+2023-08-01 11:20:15.428 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-01 11:20:15.428 +01:00 [DBG] Executing DbCommand [Parameters=[@__normalizedUserName_0='?' (Size = 18)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FirstName", "a"."ImageUrl", "a"."IsKycComplete", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-08-01 11:20:15.429 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedUserName_0='?' (Size = 18)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FirstName", "a"."ImageUrl", "a"."IsKycComplete", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-08-01 11:20:15.429 +01:00 [DBG] A data reader was disposed.
+2023-08-01 11:20:15.429 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-01 11:20:15.429 +01:00 [DBG] Closed connection to database 'main' on server 'Savi.db'.
+2023-08-01 11:20:15.764 +01:00 [DBG] Context 'SaviContext' started tracking 'ApplicationUser' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-08-01 11:20:15.791 +01:00 [DBG] SaveChanges starting for 'SaviContext'.
+2023-08-01 11:20:15.800 +01:00 [DBG] DetectChanges starting for 'SaviContext'.
+2023-08-01 11:20:15.859 +01:00 [DBG] DetectChanges completed for 'SaviContext'.
+2023-08-01 11:20:15.930 +01:00 [DBG] Opening connection to database 'main' on server 'Savi.db'.
+2023-08-01 11:20:15.930 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-01 11:20:15.938 +01:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2023-08-01 11:20:15.950 +01:00 [DBG] Began transaction with isolation level 'Serializable'.
+2023-08-01 11:20:16.099 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-08-01 11:20:16.099 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-08-01 11:20:16.101 +01:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 36), @p1='?' (DbType = Int32), @p2='?' (Size = 36), @p3='?' (Size = 18), @p4='?' (DbType = Boolean), @p5='?' (Size = 5), @p6='?', @p7='?' (DbType = Boolean), @p8='?' (Size = 5), @p9='?' (DbType = Boolean), @p10='?' (DbType = DateTimeOffset), @p11='?' (Size = 18), @p12='?' (Size = 18), @p13='?' (Size = 84), @p14='?' (Size = 11), @p15='?' (DbType = Boolean), @p16='?' (Size = 32), @p17='?' (DbType = Boolean), @p18='?' (Size = 18)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUsers" ("Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FirstName", "ImageUrl", "IsKycComplete", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18);
+2023-08-01 11:20:16.105 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 36), @p1='?' (DbType = Int32), @p2='?' (Size = 36), @p3='?' (Size = 18), @p4='?' (DbType = Boolean), @p5='?' (Size = 5), @p6='?', @p7='?' (DbType = Boolean), @p8='?' (Size = 5), @p9='?' (DbType = Boolean), @p10='?' (DbType = DateTimeOffset), @p11='?' (Size = 18), @p12='?' (Size = 18), @p13='?' (Size = 84), @p14='?' (Size = 11), @p15='?' (DbType = Boolean), @p16='?' (Size = 32), @p17='?' (DbType = Boolean), @p18='?' (Size = 18)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUsers" ("Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FirstName", "ImageUrl", "IsKycComplete", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18);
+2023-08-01 11:20:16.118 +01:00 [DBG] A data reader was disposed.
+2023-08-01 11:20:16.139 +01:00 [DBG] Committing transaction.
+2023-08-01 11:20:16.157 +01:00 [DBG] Committed transaction.
+2023-08-01 11:20:16.172 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-01 11:20:16.172 +01:00 [DBG] Closed connection to database 'main' on server 'Savi.db'.
+2023-08-01 11:20:16.187 +01:00 [DBG] Disposing transaction.
+2023-08-01 11:20:16.229 +01:00 [DBG] An entity of type 'ApplicationUser' tracked by 'SaviContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-08-01 11:20:16.236 +01:00 [DBG] SaveChanges completed for 'SaviContext' with 1 entities written to the database.
+2023-08-01 11:20:16.304 +01:00 [DBG] Found the endpoints ["Savings_App.Controllers.AuthController.ConfirmEmail (Savings-App)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-08-01 11:20:16.328 +01:00 [DBG] Successfully processed template api/Auth/ConfirmEmail for Savings_App.Controllers.AuthController.ConfirmEmail (Savings-App) resulting in /api/Auth/ConfirmEmail and ?token=CfDJ8MYmz5ZQYThKqWi7vjJxdkQ0R70CoKKsQ%2F%2FPSjoJEDacnPzy8dVIGnfiEXuBtLu88ffV2j5Y8RLmAvQhGC85HrPLnuYeXLk8Xod%2BGH9r%2Fl1M6fNbomVWXn1%2B2Kqg91k7a0ofUrmtKsaYDNoyPuMC8bj%2FV2bp4j2gnYCeTtc7uzSaemcZTQmHQwFnd%2BRg%2FTOd7Oq8jnO38ZX2QgAcRCLi%2Ba2z5bnFBCZLoGdxYhKhNrmc%2BLryDTjLjvUGZljx9S9NEA%3D%3D&email=alabisdq@gmail.com
+2023-08-01 11:20:16.330 +01:00 [DBG] Link generation succeeded for endpoints ["Savings_App.Controllers.AuthController.ConfirmEmail (Savings-App)"] with result /api/Auth/ConfirmEmail?token=CfDJ8MYmz5ZQYThKqWi7vjJxdkQ0R70CoKKsQ%2F%2FPSjoJEDacnPzy8dVIGnfiEXuBtLu88ffV2j5Y8RLmAvQhGC85HrPLnuYeXLk8Xod%2BGH9r%2Fl1M6fNbomVWXn1%2B2Kqg91k7a0ofUrmtKsaYDNoyPuMC8bj%2FV2bp4j2gnYCeTtc7uzSaemcZTQmHQwFnd%2BRg%2FTOd7Oq8jnO38ZX2QgAcRCLi%2Ba2z5bnFBCZLoGdxYhKhNrmc%2BLryDTjLjvUGZljx9S9NEA%3D%3D&email=alabisdq@gmail.com
+2023-08-01 11:20:42.729 +01:00 [INF] Executed action Savings_App.Controllers.AuthController.Register (Savings-App) in 32673.8752ms
+2023-08-01 11:20:42.733 +01:00 [INF] Executed endpoint 'Savings_App.Controllers.AuthController.Register (Savings-App)'
+2023-08-01 11:20:42.736 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+MailKit.Security.SslHandshakeException: An error occurred while attempting to establish an SSL or TLS connection.
+
+This usually means that the SSL certificate presented by the server is not trusted by the system for one or more of
+the following reasons:
+
+1. The server is using a self-signed certificate which cannot be verified.
+2. The local system is missing a Root or Intermediate certificate needed to verify the server's certificate.
+3. A Certificate Authority CRL server for one or more of the certificates in the chain is temporarily unavailable.
+4. The certificate presented by the server is expired or invalid.
+5. The set of SSL/TLS protocols supported by the client and server do not match.
+6. You are trying to connect to a port which does not support SSL/TLS.
+
+See https://github.com/jstedfast/MailKit/blob/master/FAQ.md#ssl-handshake-exception for possible solutions.
+
+ ---> System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.AuthenticateAsClient(SslClientAuthenticationOptions sslClientAuthenticationOptions)
+   at MailKit.Net.Smtp.SmtpClient.Connect(String host, Int32 port, SecureSocketOptions options, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at MailKit.Net.Smtp.SmtpClient.Connect(String host, Int32 port, SecureSocketOptions options, CancellationToken cancellationToken)
+   at MailKit.MailService.Connect(String host, Int32 port, Boolean useSsl, CancellationToken cancellationToken)
+   at SavingsApp.Core.Services.Implementations.EmailService.Send(MimeMessage mailMessage) in C:\Users\alabi\Desktop\OnBoard\SavingsApp\SavingsApp.Core\Services\Implementations\EmailService.cs:line 53
+   at SavingsApp.Core.Services.Implementations.EmailService.SendEmail(Message message) in C:\Users\alabi\Desktop\OnBoard\SavingsApp\SavingsApp.Core\Services\Implementations\EmailService.cs:line 22
+   at Savings_App.Controllers.AuthController.Register(SignUpDto regRequest, Boolean enableTwoFactorAuthentication) in C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Controllers\AuthController.cs:line 78
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-08-01 11:20:42.793 +01:00 [ERR] Something went wrong
+MailKit.Security.SslHandshakeException: An error occurred while attempting to establish an SSL or TLS connection.
+
+This usually means that the SSL certificate presented by the server is not trusted by the system for one or more of
+the following reasons:
+
+1. The server is using a self-signed certificate which cannot be verified.
+2. The local system is missing a Root or Intermediate certificate needed to verify the server's certificate.
+3. A Certificate Authority CRL server for one or more of the certificates in the chain is temporarily unavailable.
+4. The certificate presented by the server is expired or invalid.
+5. The set of SSL/TLS protocols supported by the client and server do not match.
+6. You are trying to connect to a port which does not support SSL/TLS.
+
+See https://github.com/jstedfast/MailKit/blob/master/FAQ.md#ssl-handshake-exception for possible solutions.
+
+ ---> System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.AuthenticateAsClient(SslClientAuthenticationOptions sslClientAuthenticationOptions)
+   at MailKit.Net.Smtp.SmtpClient.Connect(String host, Int32 port, SecureSocketOptions options, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at MailKit.Net.Smtp.SmtpClient.Connect(String host, Int32 port, SecureSocketOptions options, CancellationToken cancellationToken)
+   at MailKit.MailService.Connect(String host, Int32 port, Boolean useSsl, CancellationToken cancellationToken)
+   at SavingsApp.Core.Services.Implementations.EmailService.Send(MimeMessage mailMessage) in C:\Users\alabi\Desktop\OnBoard\SavingsApp\SavingsApp.Core\Services\Implementations\EmailService.cs:line 53
+   at SavingsApp.Core.Services.Implementations.EmailService.SendEmail(Message message) in C:\Users\alabi\Desktop\OnBoard\SavingsApp\SavingsApp.Core\Services\Implementations\EmailService.cs:line 22
+   at Savings_App.Controllers.AuthController.Register(SignUpDto regRequest, Boolean enableTwoFactorAuthentication) in C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Controllers\AuthController.cs:line 78
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-08-01 11:20:42.816 +01:00 [DBG] 'SaviContext' disposed.
+2023-08-01 11:20:42.826 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7049/api/Auth/Register?enableTwoFactorAuthentication=false application/json 140 - 500 - application/json 32919.3332ms
+2023-08-01 11:20:53.490 +01:00 [DBG] Connection id "0HMSIF2SILL55" accepted.
+2023-08-01 11:20:53.490 +01:00 [DBG] Connection id "0HMSIF2SILL55" started.
+2023-08-01 11:20:53.502 +01:00 [DBG] Connection 0HMSIF2SILL55 established using the following protocol: "Tls13"
+2023-08-01 11:20:53.503 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7049/api/Auth/Register?enableTwoFactorAuthentication=false application/json 140
+2023-08-01 11:20:53.508 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/Register'
+2023-08-01 11:20:53.508 +01:00 [DBG] Endpoint 'Savings_App.Controllers.AuthController.Register (Savings-App)' with route pattern 'api/Auth/Register' is valid for the request path '/api/Auth/Register'
+2023-08-01 11:20:53.508 +01:00 [DBG] Request matched endpoint 'Savings_App.Controllers.AuthController.Register (Savings-App)'
+2023-08-01 11:20:53.508 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-08-01 11:20:53.508 +01:00 [INF] Executing endpoint 'Savings_App.Controllers.AuthController.Register (Savings-App)'
+2023-08-01 11:20:53.509 +01:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(SavingsApp.Data.Entities.DTOs.Request.SignUpDto, Boolean) on controller Savings_App.Controllers.AuthController (Savings-App).
+2023-08-01 11:20:53.509 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-08-01 11:20:53.509 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-08-01 11:20:53.509 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-08-01 11:20:53.509 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-08-01 11:20:53.509 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-08-01 11:20:53.509 +01:00 [DBG] Executing controller factory for controller Savings_App.Controllers.AuthController (Savings-App)
+2023-08-01 11:20:53.515 +01:00 [DBG] Executed controller factory for controller Savings_App.Controllers.AuthController (Savings-App)
+2023-08-01 11:20:53.523 +01:00 [DBG] Attempting to bind parameter 'regRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.SignUpDto' ...
+2023-08-01 11:20:53.523 +01:00 [DBG] Attempting to bind parameter 'regRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.SignUpDto' using the name '' in request data ...
+2023-08-01 11:20:53.524 +01:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-08-01 11:20:53.524 +01:00 [DBG] Connection id "0HMSIF2SILL55", Request id "0HMSIF2SILL55:00000001": started reading request body.
+2023-08-01 11:20:53.524 +01:00 [DBG] Connection id "0HMSIF2SILL55", Request id "0HMSIF2SILL55:00000001": done reading request body.
+2023-08-01 11:20:53.524 +01:00 [DBG] JSON input formatter succeeded, deserializing to type 'SavingsApp.Data.Entities.DTOs.Request.SignUpDto'
+2023-08-01 11:20:53.525 +01:00 [DBG] Done attempting to bind parameter 'regRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.SignUpDto'.
+2023-08-01 11:20:53.526 +01:00 [DBG] Done attempting to bind parameter 'regRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.SignUpDto'.
+2023-08-01 11:20:53.538 +01:00 [DBG] Attempting to validate the bound parameter 'regRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.SignUpDto' ...
+2023-08-01 11:20:53.548 +01:00 [DBG] Done attempting to validate the bound parameter 'regRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.SignUpDto'.
+2023-08-01 11:20:53.548 +01:00 [DBG] Attempting to bind parameter 'enableTwoFactorAuthentication' of type 'System.Boolean' ...
+2023-08-01 11:20:53.548 +01:00 [DBG] Attempting to bind parameter 'enableTwoFactorAuthentication' of type 'System.Boolean' using the name 'enableTwoFactorAuthentication' in request data ...
+2023-08-01 11:20:53.548 +01:00 [DBG] Done attempting to bind parameter 'enableTwoFactorAuthentication' of type 'System.Boolean'.
+2023-08-01 11:20:53.549 +01:00 [DBG] Done attempting to bind parameter 'enableTwoFactorAuthentication' of type 'System.Boolean'.
+2023-08-01 11:20:53.549 +01:00 [DBG] Attempting to validate the bound parameter 'enableTwoFactorAuthentication' of type 'System.Boolean' ...
+2023-08-01 11:20:53.549 +01:00 [DBG] Done attempting to validate the bound parameter 'enableTwoFactorAuthentication' of type 'System.Boolean'.
+2023-08-01 11:20:53.649 +01:00 [INF] Entity Framework Core 6.0.20 initialized 'SaviContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.20' with options: None
+2023-08-01 11:20:53.657 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-08-01 11:20:53.657 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-08-01 11:20:53.657 +01:00 [DBG] Opening connection to database 'main' on server 'Savi.db'.
+2023-08-01 11:20:53.657 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-01 11:20:53.657 +01:00 [DBG] Executing DbCommand [Parameters=[@__normalizedEmail_0='?' (Size = 18)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FirstName", "a"."ImageUrl", "a"."IsKycComplete", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-08-01 11:20:53.658 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 18)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FirstName", "a"."ImageUrl", "a"."IsKycComplete", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-08-01 11:20:53.671 +01:00 [DBG] Context 'SaviContext' started tracking 'ApplicationUser' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-08-01 11:20:53.673 +01:00 [DBG] A data reader was disposed.
+2023-08-01 11:20:53.673 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-01 11:20:53.673 +01:00 [DBG] Closed connection to database 'main' on server 'Savi.db'.
+2023-08-01 11:20:53.676 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-08-01 11:20:53.680 +01:00 [DBG] No information found on request to perform content negotiation.
+2023-08-01 11:20:53.680 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-08-01 11:20:53.680 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-08-01 11:20:53.681 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-08-01 11:20:53.682 +01:00 [INF] Executing ObjectResult, writing value of type 'SavingsApp.Data.Entities.DTOs.Response.APIResponse'.
+2023-08-01 11:20:53.703 +01:00 [INF] Executed action Savings_App.Controllers.AuthController.Register (Savings-App) in 193.787ms
+2023-08-01 11:20:53.703 +01:00 [INF] Executed endpoint 'Savings_App.Controllers.AuthController.Register (Savings-App)'
+2023-08-01 11:20:53.703 +01:00 [DBG] 'SaviContext' disposed.
+2023-08-01 11:20:53.704 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7049/api/Auth/Register?enableTwoFactorAuthentication=false application/json 140 - 403 - application/json;+charset=utf-8 200.6368ms
+2023-08-01 11:21:00.338 +01:00 [DBG] Connection id "0HMSIF2SILL55" received FIN.
+2023-08-01 11:21:00.338 +01:00 [DBG] Connection id "0HMSIF2SILL55" is closed. The last processed stream ID was 1.
+2023-08-01 11:21:00.338 +01:00 [DBG] Connection id "0HMSIF2SILL55" sending FIN because: "The client closed the connection."
+2023-08-01 11:21:00.339 +01:00 [DBG] Connection id "0HMSIF2SILL55" stopped.
+2023-08-01 11:21:00.394 +01:00 [DBG] Connection id "0HMSIF2SILL54" received FIN.
+2023-08-01 11:21:00.395 +01:00 [DBG] Connection id "0HMSIF2SILL54" is closed. The last processed stream ID was 1.
+2023-08-01 11:21:00.395 +01:00 [DBG] Connection id "0HMSIF2SILL54" sending FIN because: "The client closed the connection."
+2023-08-01 11:21:00.395 +01:00 [DBG] Connection id "0HMSIF2SILL54" stopped.
+2023-08-01 11:21:24.485 +01:00 [DBG] Connection id "0HMSIF2SILL56" accepted.
+2023-08-01 11:21:24.516 +01:00 [DBG] Connection id "0HMSIF2SILL56" started.
+2023-08-01 11:21:24.563 +01:00 [DBG] Connection 0HMSIF2SILL56 established using the following protocol: "Tls13"
+2023-08-01 11:21:24.565 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/index.html - -
+2023-08-01 11:21:24.577 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-08-01 11:21:24.577 +01:00 [DBG] Request did not match any endpoints
+2023-08-01 11:21:24.578 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-08-01 11:21:24.600 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-08-01 11:21:24.601 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/index.html - - - 200 - text/html;charset=utf-8 36.1978ms
+2023-08-01 11:21:24.628 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/swagger-ui.css - -
+2023-08-01 11:21:24.628 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/swagger-ui-standalone-preset.js - -
+2023-08-01 11:21:24.628 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/swagger-ui-bundle.js - -
+2023-08-01 11:21:24.629 +01:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js'
+2023-08-01 11:21:24.629 +01:00 [DBG] Request did not match any endpoints
+2023-08-01 11:21:24.629 +01:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-bundle.js'
+2023-08-01 11:21:24.629 +01:00 [DBG] No candidates found for the request path '/swagger/swagger-ui.css'
+2023-08-01 11:21:24.629 +01:00 [DBG] Request did not match any endpoints
+2023-08-01 11:21:24.629 +01:00 [DBG] Request did not match any endpoints
+2023-08-01 11:21:24.630 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/_framework/aspnetcore-browser-refresh.js - -
+2023-08-01 11:21:24.631 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/_framework/aspnetcore-browser-refresh.js - - - 200 12354 application/javascript;+charset=utf-8 0.8957ms
+2023-08-01 11:21:24.638 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/_vs/browserLink - -
+2023-08-01 11:21:24.700 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 61.7581ms
+2023-08-01 11:21:24.702 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-08-01 11:21:24.702 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-08-01 11:21:24.702 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/swagger-ui.css - - - 200 144929 text/css 74.7091ms
+2023-08-01 11:21:24.702 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/swagger-ui-standalone-preset.js - - - 200 312163 application/javascript 74.0995ms
+2023-08-01 11:21:24.715 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-08-01 11:21:24.716 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/swagger-ui-bundle.js - - - 200 1061536 application/javascript 87.6940ms
+2023-08-01 11:21:25.000 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - -
+2023-08-01 11:21:25.000 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-08-01 11:21:25.000 +01:00 [DBG] Request did not match any endpoints
+2023-08-01 11:21:25.004 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 3.7380ms
+2023-08-01 11:21:25.049 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/favicon-32x32.png - -
+2023-08-01 11:21:25.050 +01:00 [DBG] No candidates found for the request path '/swagger/favicon-32x32.png'
+2023-08-01 11:21:25.050 +01:00 [DBG] Request did not match any endpoints
+2023-08-01 11:21:25.050 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-08-01 11:21:25.050 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/favicon-32x32.png - - - 200 628 image/png 1.2445ms
+2023-08-01 11:21:27.747 +01:00 [DBG] Connection id "0HMSIF2SILL56" received FIN.
+2023-08-01 11:21:27.747 +01:00 [DBG] Connection id "0HMSIF2SILL56" is closed. The last processed stream ID was 15.
+2023-08-01 11:21:27.747 +01:00 [DBG] Connection id "0HMSIF2SILL56" sending FIN because: "The client closed the connection."
+2023-08-01 11:21:27.750 +01:00 [DBG] Connection id "0HMSIF2SILL56" stopped.
+2023-08-01 15:22:15.020 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-01 15:22:15.117 +01:00 [DBG] Hosting starting
+2023-08-01 15:22:15.147 +01:00 [INF] User profile is available. Using 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-01 15:22:15.153 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-2233cea8-8ad9-4f56-bb58-30e16e00e4d0.xml'.
+2023-08-01 15:22:15.164 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-96cf26c6-6150-4a38-a968-bbbe32717644.xml'.
+2023-08-01 15:22:15.165 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-ba4a300a-6c51-469e-b2e4-a9cd1daa9c85.xml'.
+2023-08-01 15:22:15.174 +01:00 [DBG] Found key {2233cea8-8ad9-4f56-bb58-30e16e00e4d0}.
+2023-08-01 15:22:15.180 +01:00 [DBG] Found key {96cf26c6-6150-4a38-a968-bbbe32717644}.
+2023-08-01 15:22:15.180 +01:00 [DBG] Found key {ba4a300a-6c51-469e-b2e4-a9cd1daa9c85}.
+2023-08-01 15:22:15.190 +01:00 [DBG] Considering key {96cf26c6-6150-4a38-a968-bbbe32717644} with expiration date 2023-10-26 20:18:55Z as default key.
+2023-08-01 15:22:15.193 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-08-01 15:22:15.199 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2023-08-01 15:22:15.202 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-08-01 15:22:15.209 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-08-01 15:22:15.213 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-08-01 15:22:15.217 +01:00 [DBG] Using key {96cf26c6-6150-4a38-a968-bbbe32717644} as the default key.
+2023-08-01 15:22:15.217 +01:00 [DBG] Key ring with default key {96cf26c6-6150-4a38-a968-bbbe32717644} was loaded during application startup.
+2023-08-01 15:22:15.414 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 60B4004B0E7F50E239AF827782FF73E25B47E3DE)
+2023-08-01 15:22:15.445 +01:00 [INF] Now listening on: https://localhost:7049
+2023-08-01 15:22:15.445 +01:00 [INF] Now listening on: http://localhost:5159
+2023-08-01 15:22:15.445 +01:00 [DBG] Loaded hosting startup assembly Savings-App
+2023-08-01 15:22:15.445 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-08-01 15:22:15.445 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-08-01 15:22:15.452 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-01 15:22:15.452 +01:00 [INF] Hosting environment: Development
+2023-08-01 15:22:15.452 +01:00 [INF] Content root path: C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\
+2023-08-01 15:22:15.452 +01:00 [DBG] Hosting started
+2023-08-01 15:22:15.469 +01:00 [DBG] Connection id "0HMSIJAQ8M51F" received FIN.
+2023-08-01 15:22:15.479 +01:00 [DBG] Connection id "0HMSIJAQ8M51F" accepted.
+2023-08-01 15:22:15.481 +01:00 [DBG] Connection id "0HMSIJAQ8M51F" started.
+2023-08-01 15:22:15.517 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-01 15:22:15.819 +01:00 [DBG] Connection id "0HMSIJAQ8M51F" stopped.
+2023-08-01 15:22:16.184 +01:00 [DBG] Connection id "0HMSIJAQ8M51F" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-01 15:22:16.774 +01:00 [DBG] Connection id "0HMSIJAQ8M51G" accepted.
+2023-08-01 15:22:16.774 +01:00 [DBG] Connection id "0HMSIJAQ8M51G" started.
+2023-08-01 15:22:16.877 +01:00 [DBG] Connection 0HMSIJAQ8M51G established using the following protocol: "Tls13"
+2023-08-01 15:22:17.014 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/index.html - -
+2023-08-01 15:22:17.077 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-01 15:22:17.123 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-08-01 15:22:17.124 +01:00 [DBG] Request did not match any endpoints
+2023-08-01 15:22:17.322 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-08-01 15:22:17.543 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/_framework/aspnetcore-browser-refresh.js - -
+2023-08-01 15:22:17.554 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-08-01 15:22:17.562 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/_framework/aspnetcore-browser-refresh.js - - - 200 12354 application/javascript;+charset=utf-8 16.8588ms
+2023-08-01 15:22:17.628 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/index.html - - - 200 - text/html;charset=utf-8 622.2972ms
+2023-08-01 15:22:17.633 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/_vs/browserLink - -
+2023-08-01 15:22:17.673 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 40.2306ms
+2023-08-01 15:22:18.171 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - -
+2023-08-01 15:22:18.173 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-08-01 15:22:18.173 +01:00 [DBG] Request did not match any endpoints
+2023-08-01 15:22:18.487 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 315.9855ms
+2023-08-01 15:22:26.926 +01:00 [DBG] Connection id "0HMSIJAQ8M51G" received FIN.
+2023-08-01 15:22:26.949 +01:00 [DBG] Connection id "0HMSIJAQ8M51G" is closed. The last processed stream ID was 7.
+2023-08-01 15:22:26.950 +01:00 [DBG] Connection id "0HMSIJAQ8M51G" sending FIN because: "The client closed the connection."
+2023-08-01 15:22:27.014 +01:00 [DBG] Connection id "0HMSIJAQ8M51G" stopped.
+2023-08-01 15:22:50.998 +01:00 [DBG] Connection id "0HMSIJAQ8M51H" accepted.
+2023-08-01 15:22:51.013 +01:00 [DBG] Connection id "0HMSIJAQ8M51H" started.
+2023-08-01 15:22:51.084 +01:00 [DBG] Connection 0HMSIJAQ8M51H established using the following protocol: "Tls13"
+2023-08-01 15:22:51.098 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7049/api/Auth/Register?enableTwoFactorAuthentication=false application/json 134
+2023-08-01 15:22:51.117 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/Register'
+2023-08-01 15:22:51.128 +01:00 [DBG] Endpoint 'Savings_App.Controllers.AuthController.Register (Savings-App)' with route pattern 'api/Auth/Register' is valid for the request path '/api/Auth/Register'
+2023-08-01 15:22:51.129 +01:00 [DBG] Request matched endpoint 'Savings_App.Controllers.AuthController.Register (Savings-App)'
+2023-08-01 15:22:51.133 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-08-01 15:22:51.141 +01:00 [INF] Executing endpoint 'Savings_App.Controllers.AuthController.Register (Savings-App)'
+2023-08-01 15:22:51.234 +01:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(SavingsApp.Data.Entities.DTOs.Request.SignUpDto, Boolean) on controller Savings_App.Controllers.AuthController (Savings-App).
+2023-08-01 15:22:51.236 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-08-01 15:22:51.236 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-08-01 15:22:51.236 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-08-01 15:22:51.236 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-08-01 15:22:51.236 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-08-01 15:22:51.237 +01:00 [DBG] Executing controller factory for controller Savings_App.Controllers.AuthController (Savings-App)
+2023-08-01 15:22:51.812 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-08-01 15:22:52.585 +01:00 [DBG] Executed controller factory for controller Savings_App.Controllers.AuthController (Savings-App)
+2023-08-01 15:22:52.605 +01:00 [DBG] Attempting to bind parameter 'regRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.SignUpDto' ...
+2023-08-01 15:22:52.610 +01:00 [DBG] Attempting to bind parameter 'regRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.SignUpDto' using the name '' in request data ...
+2023-08-01 15:22:52.611 +01:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-08-01 15:22:52.624 +01:00 [DBG] Connection id "0HMSIJAQ8M51H", Request id "0HMSIJAQ8M51H:00000001": started reading request body.
+2023-08-01 15:22:52.624 +01:00 [DBG] Connection id "0HMSIJAQ8M51H", Request id "0HMSIJAQ8M51H:00000001": done reading request body.
+2023-08-01 15:22:52.637 +01:00 [DBG] JSON input formatter succeeded, deserializing to type 'SavingsApp.Data.Entities.DTOs.Request.SignUpDto'
+2023-08-01 15:22:52.638 +01:00 [DBG] Done attempting to bind parameter 'regRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.SignUpDto'.
+2023-08-01 15:22:52.638 +01:00 [DBG] Done attempting to bind parameter 'regRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.SignUpDto'.
+2023-08-01 15:22:52.638 +01:00 [DBG] Attempting to validate the bound parameter 'regRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.SignUpDto' ...
+2023-08-01 15:22:52.659 +01:00 [DBG] Done attempting to validate the bound parameter 'regRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.SignUpDto'.
+2023-08-01 15:22:52.665 +01:00 [DBG] Attempting to bind parameter 'enableTwoFactorAuthentication' of type 'System.Boolean' ...
+2023-08-01 15:22:52.666 +01:00 [DBG] Attempting to bind parameter 'enableTwoFactorAuthentication' of type 'System.Boolean' using the name 'enableTwoFactorAuthentication' in request data ...
+2023-08-01 15:22:52.667 +01:00 [DBG] Done attempting to bind parameter 'enableTwoFactorAuthentication' of type 'System.Boolean'.
+2023-08-01 15:22:52.667 +01:00 [DBG] Done attempting to bind parameter 'enableTwoFactorAuthentication' of type 'System.Boolean'.
+2023-08-01 15:22:52.667 +01:00 [DBG] Attempting to validate the bound parameter 'enableTwoFactorAuthentication' of type 'System.Boolean' ...
+2023-08-01 15:22:52.668 +01:00 [DBG] Done attempting to validate the bound parameter 'enableTwoFactorAuthentication' of type 'System.Boolean'.
+2023-08-01 15:22:54.572 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<string>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2023-08-01 15:22:54.572 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<string>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2023-08-01 15:22:55.497 +01:00 [INF] Entity Framework Core 6.0.20 initialized 'SaviContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.20' with options: None
+2023-08-01 15:22:55.755 +01:00 [DBG] Compiling query expression: 
+'DbSet<ApplicationUser>()
+    .SingleOrDefault(u => u.NormalizedEmail == __normalizedEmail_0)'
+2023-08-01 15:22:56.754 +01:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<ApplicationUser>(
+    asyncEnumerable: new SingleQueryingEnumerable<ApplicationUser>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: ApplicationUser.Id (string) Required PK AfterSave:Throw, 0], [Property: ApplicationUser.AccessFailedCount (int) Required, 1], [Property: ApplicationUser.ConcurrencyStamp (string) Concurrency, 2], [Property: ApplicationUser.Email (string) MaxLength(256), 3], [Property: ApplicationUser.EmailConfirmed (bool) Required, 4], [Property: ApplicationUser.FirstName (string) Required, 5], [Property: ApplicationUser.ImageUrl (string), 6], [Property: ApplicationUser.IsKycComplete (bool) Required, 7], [Property: ApplicationUser.LastName (string) Required, 8], [Property: ApplicationUser.LockoutEnabled (bool) Required, 9], [Property: ApplicationUser.LockoutEnd (DateTimeOffset?), 10], [Property: ApplicationUser.NormalizedEmail (string) Index MaxLength(256), 11], [Property: ApplicationUser.NormalizedUserName (string) Index MaxLength(256), 12], [Property: ApplicationUser.PasswordHash (string), 13], [Property: ApplicationUser.PhoneNumber (string), 14], [Property: ApplicationUser.PhoneNumberConfirmed (bool) Required, 15], [Property: ApplicationUser.SecurityStamp (string), 16], [Property: ApplicationUser.TwoFactorEnabled (bool) Required, 17], [Property: ApplicationUser.UserName (string) MaxLength(256), 18] }
+            SELECT TOP(2) a.Id, a.AccessFailedCount, a.ConcurrencyStamp, a.Email, a.EmailConfirmed, a.FirstName, a.ImageUrl, a.IsKycComplete, a.LastName, a.LockoutEnabled, a.LockoutEnd, a.NormalizedEmail, a.NormalizedUserName, a.PasswordHash, a.PhoneNumber, a.PhoneNumberConfirmed, a.SecurityStamp, a.TwoFactorEnabled, a.UserName
+            FROM AspNetUsers AS a
+            WHERE a.NormalizedEmail == @__normalizedEmail_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, ApplicationUser>, 
+        SavingsApp.Data.Context.SaviContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2023-08-01 15:22:56.946 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-08-01 15:22:57.135 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (194ms).
+2023-08-01 15:22:57.176 +01:00 [DBG] Opening connection to database 'main' on server 'Savi.db'.
+2023-08-01 15:22:57.236 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-01 15:22:57.282 +01:00 [DBG] Executing DbCommand [Parameters=[@__normalizedEmail_0='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FirstName", "a"."ImageUrl", "a"."IsKycComplete", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-08-01 15:22:57.368 +01:00 [INF] Executed DbCommand (107ms) [Parameters=[@__normalizedEmail_0='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FirstName", "a"."ImageUrl", "a"."IsKycComplete", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-08-01 15:22:57.390 +01:00 [DBG] A data reader was disposed.
+2023-08-01 15:22:57.414 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-01 15:22:57.427 +01:00 [DBG] Closed connection to database 'main' on server 'Savi.db'.
+2023-08-01 15:22:57.489 +01:00 [DBG] Compiling query expression: 
+'DbSet<ApplicationUser>()
+    .FirstOrDefault(u => u.NormalizedUserName == __normalizedUserName_0)'
+2023-08-01 15:22:57.502 +01:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<ApplicationUser>(
+    asyncEnumerable: new SingleQueryingEnumerable<ApplicationUser>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: ApplicationUser.Id (string) Required PK AfterSave:Throw, 0], [Property: ApplicationUser.AccessFailedCount (int) Required, 1], [Property: ApplicationUser.ConcurrencyStamp (string) Concurrency, 2], [Property: ApplicationUser.Email (string) MaxLength(256), 3], [Property: ApplicationUser.EmailConfirmed (bool) Required, 4], [Property: ApplicationUser.FirstName (string) Required, 5], [Property: ApplicationUser.ImageUrl (string), 6], [Property: ApplicationUser.IsKycComplete (bool) Required, 7], [Property: ApplicationUser.LastName (string) Required, 8], [Property: ApplicationUser.LockoutEnabled (bool) Required, 9], [Property: ApplicationUser.LockoutEnd (DateTimeOffset?), 10], [Property: ApplicationUser.NormalizedEmail (string) Index MaxLength(256), 11], [Property: ApplicationUser.NormalizedUserName (string) Index MaxLength(256), 12], [Property: ApplicationUser.PasswordHash (string), 13], [Property: ApplicationUser.PhoneNumber (string), 14], [Property: ApplicationUser.PhoneNumberConfirmed (bool) Required, 15], [Property: ApplicationUser.SecurityStamp (string), 16], [Property: ApplicationUser.TwoFactorEnabled (bool) Required, 17], [Property: ApplicationUser.UserName (string) MaxLength(256), 18] }
+            SELECT TOP(1) a.Id, a.AccessFailedCount, a.ConcurrencyStamp, a.Email, a.EmailConfirmed, a.FirstName, a.ImageUrl, a.IsKycComplete, a.LastName, a.LockoutEnabled, a.LockoutEnd, a.NormalizedEmail, a.NormalizedUserName, a.PasswordHash, a.PhoneNumber, a.PhoneNumberConfirmed, a.SecurityStamp, a.TwoFactorEnabled, a.UserName
+            FROM AspNetUsers AS a
+            WHERE a.NormalizedUserName == @__normalizedUserName_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, ApplicationUser>, 
+        SavingsApp.Data.Context.SaviContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2023-08-01 15:22:57.503 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-08-01 15:22:57.503 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-08-01 15:22:57.503 +01:00 [DBG] Opening connection to database 'main' on server 'Savi.db'.
+2023-08-01 15:22:57.503 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-01 15:22:57.503 +01:00 [DBG] Executing DbCommand [Parameters=[@__normalizedUserName_0='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FirstName", "a"."ImageUrl", "a"."IsKycComplete", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-08-01 15:22:57.504 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FirstName", "a"."ImageUrl", "a"."IsKycComplete", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-08-01 15:22:57.504 +01:00 [DBG] A data reader was disposed.
+2023-08-01 15:22:57.504 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-01 15:22:57.504 +01:00 [DBG] Closed connection to database 'main' on server 'Savi.db'.
+2023-08-01 15:22:57.849 +01:00 [DBG] Context 'SaviContext' started tracking 'ApplicationUser' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-08-01 15:22:57.870 +01:00 [DBG] SaveChanges starting for 'SaviContext'.
+2023-08-01 15:22:57.878 +01:00 [DBG] DetectChanges starting for 'SaviContext'.
+2023-08-01 15:22:57.932 +01:00 [DBG] DetectChanges completed for 'SaviContext'.
+2023-08-01 15:22:58.001 +01:00 [DBG] Opening connection to database 'main' on server 'Savi.db'.
+2023-08-01 15:22:58.001 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-01 15:22:58.006 +01:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2023-08-01 15:22:58.019 +01:00 [DBG] Began transaction with isolation level 'Serializable'.
+2023-08-01 15:22:58.160 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-08-01 15:22:58.161 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-08-01 15:22:58.163 +01:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 36), @p1='?' (DbType = Int32), @p2='?' (Size = 36), @p3='?' (Size = 16), @p4='?' (DbType = Boolean), @p5='?' (Size = 5), @p6='?', @p7='?' (DbType = Boolean), @p8='?' (Size = 5), @p9='?' (DbType = Boolean), @p10='?' (DbType = DateTimeOffset), @p11='?' (Size = 16), @p12='?' (Size = 16), @p13='?' (Size = 84), @p14='?' (Size = 7), @p15='?' (DbType = Boolean), @p16='?' (Size = 32), @p17='?' (DbType = Boolean), @p18='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUsers" ("Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FirstName", "ImageUrl", "IsKycComplete", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18);
+2023-08-01 15:22:58.171 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (Size = 36), @p1='?' (DbType = Int32), @p2='?' (Size = 36), @p3='?' (Size = 16), @p4='?' (DbType = Boolean), @p5='?' (Size = 5), @p6='?', @p7='?' (DbType = Boolean), @p8='?' (Size = 5), @p9='?' (DbType = Boolean), @p10='?' (DbType = DateTimeOffset), @p11='?' (Size = 16), @p12='?' (Size = 16), @p13='?' (Size = 84), @p14='?' (Size = 7), @p15='?' (DbType = Boolean), @p16='?' (Size = 32), @p17='?' (DbType = Boolean), @p18='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUsers" ("Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FirstName", "ImageUrl", "IsKycComplete", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18);
+2023-08-01 15:22:58.185 +01:00 [DBG] A data reader was disposed.
+2023-08-01 15:22:58.209 +01:00 [DBG] Committing transaction.
+2023-08-01 15:22:58.223 +01:00 [DBG] Committed transaction.
+2023-08-01 15:22:58.236 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-01 15:22:58.237 +01:00 [DBG] Closed connection to database 'main' on server 'Savi.db'.
+2023-08-01 15:22:58.248 +01:00 [DBG] Disposing transaction.
+2023-08-01 15:22:58.280 +01:00 [DBG] An entity of type 'ApplicationUser' tracked by 'SaviContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-08-01 15:22:58.286 +01:00 [DBG] SaveChanges completed for 'SaviContext' with 1 entities written to the database.
+2023-08-01 15:22:58.354 +01:00 [DBG] Found the endpoints ["Savings_App.Controllers.AuthController.ConfirmEmail (Savings-App)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-08-01 15:22:58.383 +01:00 [DBG] Successfully processed template api/Auth/ConfirmEmail for Savings_App.Controllers.AuthController.ConfirmEmail (Savings-App) resulting in /api/Auth/ConfirmEmail and ?token=CfDJ8MYmz5ZQYThKqWi7vjJxdkTetDx3AlrRFa5mDdKVRfDUZ0iDSTfX84W%2FiHDGAhYeGRxQtd5EbeMv0Z6d5%2BE1cPyrEX%2BOM6cDQmbXXBFhJncuODFcko7oslVIXeZ8XY8IpxiAZ4IEkJ7bguAKrvIFITqPInyZNK3cNzcsc9CN8u75g5LL5KLRpsNkOxjf9zJAMeZc1Zk1g0QME4GHsR87xgAcBYmEv9yBxuZdI9q%2BHTHu49Ips46CCfAMSyWl3plUSA%3D%3D&email=user@example.com
+2023-08-01 15:22:58.386 +01:00 [DBG] Link generation succeeded for endpoints ["Savings_App.Controllers.AuthController.ConfirmEmail (Savings-App)"] with result /api/Auth/ConfirmEmail?token=CfDJ8MYmz5ZQYThKqWi7vjJxdkTetDx3AlrRFa5mDdKVRfDUZ0iDSTfX84W%2FiHDGAhYeGRxQtd5EbeMv0Z6d5%2BE1cPyrEX%2BOM6cDQmbXXBFhJncuODFcko7oslVIXeZ8XY8IpxiAZ4IEkJ7bguAKrvIFITqPInyZNK3cNzcsc9CN8u75g5LL5KLRpsNkOxjf9zJAMeZc1Zk1g0QME4GHsR87xgAcBYmEv9yBxuZdI9q%2BHTHu49Ips46CCfAMSyWl3plUSA%3D%3D&email=user@example.com
+2023-08-01 15:23:02.328 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-08-01 15:23:02.332 +01:00 [DBG] No information found on request to perform content negotiation.
+2023-08-01 15:23:02.332 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-08-01 15:23:02.332 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-08-01 15:23:02.334 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-08-01 15:23:02.334 +01:00 [INF] Executing ObjectResult, writing value of type 'SavingsApp.Data.Entities.DTOs.Response.APIResponse'.
+2023-08-01 15:23:02.365 +01:00 [INF] Executed action Savings_App.Controllers.AuthController.Register (Savings-App) in 11116.7607ms
+2023-08-01 15:23:02.368 +01:00 [INF] Executed endpoint 'Savings_App.Controllers.AuthController.Register (Savings-App)'
+2023-08-01 15:23:02.382 +01:00 [DBG] 'SaviContext' disposed.
+2023-08-01 15:23:02.392 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7049/api/Auth/Register?enableTwoFactorAuthentication=false application/json 134 - 200 - application/json;+charset=utf-8 11293.4980ms
+2023-08-01 15:23:14.869 +01:00 [DBG] Connection id "0HMSIJAQ8M51H" received FIN.
+2023-08-01 15:23:15.022 +01:00 [DBG] Connection id "0HMSIJAQ8M51H" is closed. The last processed stream ID was 1.
+2023-08-01 15:23:15.022 +01:00 [DBG] Connection id "0HMSIJAQ8M51H" sending FIN because: "The client closed the connection."
+2023-08-01 15:23:15.054 +01:00 [DBG] Connection id "0HMSIJAQ8M51H" stopped.
+2023-08-01 15:25:46.958 +01:00 [DBG] Connection id "0HMSIJAQ8M51I" accepted.
+2023-08-01 15:25:46.959 +01:00 [DBG] Connection id "0HMSIJAQ8M51I" started.
+2023-08-01 15:25:46.985 +01:00 [DBG] Connection 0HMSIJAQ8M51I established using the following protocol: "Tls13"
+2023-08-01 15:25:46.988 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7049/api/Auth/Register?enableTwoFactorAuthentication=false application/json 140
+2023-08-01 15:25:47.013 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/Register'
+2023-08-01 15:25:47.013 +01:00 [DBG] Endpoint 'Savings_App.Controllers.AuthController.Register (Savings-App)' with route pattern 'api/Auth/Register' is valid for the request path '/api/Auth/Register'
+2023-08-01 15:25:47.014 +01:00 [DBG] Request matched endpoint 'Savings_App.Controllers.AuthController.Register (Savings-App)'
+2023-08-01 15:25:47.014 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-08-01 15:25:47.019 +01:00 [INF] Executing endpoint 'Savings_App.Controllers.AuthController.Register (Savings-App)'
+2023-08-01 15:25:47.021 +01:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(SavingsApp.Data.Entities.DTOs.Request.SignUpDto, Boolean) on controller Savings_App.Controllers.AuthController (Savings-App).
+2023-08-01 15:25:47.021 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-08-01 15:25:47.021 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-08-01 15:25:47.021 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-08-01 15:25:47.021 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-08-01 15:25:47.021 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-08-01 15:25:47.022 +01:00 [DBG] Executing controller factory for controller Savings_App.Controllers.AuthController (Savings-App)
+2023-08-01 15:25:47.027 +01:00 [DBG] Executed controller factory for controller Savings_App.Controllers.AuthController (Savings-App)
+2023-08-01 15:25:47.045 +01:00 [DBG] Attempting to bind parameter 'regRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.SignUpDto' ...
+2023-08-01 15:25:47.045 +01:00 [DBG] Attempting to bind parameter 'regRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.SignUpDto' using the name '' in request data ...
+2023-08-01 15:25:47.045 +01:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-08-01 15:25:47.046 +01:00 [DBG] Connection id "0HMSIJAQ8M51I", Request id "0HMSIJAQ8M51I:00000001": started reading request body.
+2023-08-01 15:25:47.046 +01:00 [DBG] Connection id "0HMSIJAQ8M51I", Request id "0HMSIJAQ8M51I:00000001": done reading request body.
+2023-08-01 15:25:47.046 +01:00 [DBG] JSON input formatter succeeded, deserializing to type 'SavingsApp.Data.Entities.DTOs.Request.SignUpDto'
+2023-08-01 15:25:47.046 +01:00 [DBG] Done attempting to bind parameter 'regRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.SignUpDto'.
+2023-08-01 15:25:47.046 +01:00 [DBG] Done attempting to bind parameter 'regRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.SignUpDto'.
+2023-08-01 15:25:47.046 +01:00 [DBG] Attempting to validate the bound parameter 'regRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.SignUpDto' ...
+2023-08-01 15:25:47.046 +01:00 [DBG] Done attempting to validate the bound parameter 'regRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.SignUpDto'.
+2023-08-01 15:25:47.046 +01:00 [DBG] Attempting to bind parameter 'enableTwoFactorAuthentication' of type 'System.Boolean' ...
+2023-08-01 15:25:47.046 +01:00 [DBG] Attempting to bind parameter 'enableTwoFactorAuthentication' of type 'System.Boolean' using the name 'enableTwoFactorAuthentication' in request data ...
+2023-08-01 15:25:47.046 +01:00 [DBG] Done attempting to bind parameter 'enableTwoFactorAuthentication' of type 'System.Boolean'.
+2023-08-01 15:25:47.046 +01:00 [DBG] Done attempting to bind parameter 'enableTwoFactorAuthentication' of type 'System.Boolean'.
+2023-08-01 15:25:47.046 +01:00 [DBG] Attempting to validate the bound parameter 'enableTwoFactorAuthentication' of type 'System.Boolean' ...
+2023-08-01 15:25:47.046 +01:00 [DBG] Done attempting to validate the bound parameter 'enableTwoFactorAuthentication' of type 'System.Boolean'.
+2023-08-01 15:25:47.153 +01:00 [INF] Entity Framework Core 6.0.20 initialized 'SaviContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.20' with options: None
+2023-08-01 15:25:47.162 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-08-01 15:25:47.162 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-08-01 15:25:47.162 +01:00 [DBG] Opening connection to database 'main' on server 'Savi.db'.
+2023-08-01 15:25:47.162 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-01 15:25:47.162 +01:00 [DBG] Executing DbCommand [Parameters=[@__normalizedEmail_0='?' (Size = 18)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FirstName", "a"."ImageUrl", "a"."IsKycComplete", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-08-01 15:25:47.163 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 18)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FirstName", "a"."ImageUrl", "a"."IsKycComplete", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-08-01 15:25:47.163 +01:00 [DBG] A data reader was disposed.
+2023-08-01 15:25:47.163 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-01 15:25:47.163 +01:00 [DBG] Closed connection to database 'main' on server 'Savi.db'.
+2023-08-01 15:25:47.168 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-08-01 15:25:47.168 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-08-01 15:25:47.168 +01:00 [DBG] Opening connection to database 'main' on server 'Savi.db'.
+2023-08-01 15:25:47.168 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-01 15:25:47.168 +01:00 [DBG] Executing DbCommand [Parameters=[@__normalizedUserName_0='?' (Size = 18)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FirstName", "a"."ImageUrl", "a"."IsKycComplete", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-08-01 15:25:47.168 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedUserName_0='?' (Size = 18)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FirstName", "a"."ImageUrl", "a"."IsKycComplete", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-08-01 15:25:47.169 +01:00 [DBG] A data reader was disposed.
+2023-08-01 15:25:47.169 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-01 15:25:47.169 +01:00 [DBG] Closed connection to database 'main' on server 'Savi.db'.
+2023-08-01 15:25:47.169 +01:00 [DBG] Context 'SaviContext' started tracking 'ApplicationUser' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-08-01 15:25:47.170 +01:00 [DBG] SaveChanges starting for 'SaviContext'.
+2023-08-01 15:25:47.170 +01:00 [DBG] DetectChanges starting for 'SaviContext'.
+2023-08-01 15:25:47.170 +01:00 [DBG] DetectChanges completed for 'SaviContext'.
+2023-08-01 15:25:47.170 +01:00 [DBG] Opening connection to database 'main' on server 'Savi.db'.
+2023-08-01 15:25:47.170 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-01 15:25:47.170 +01:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2023-08-01 15:25:47.170 +01:00 [DBG] Began transaction with isolation level 'Serializable'.
+2023-08-01 15:25:47.170 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-08-01 15:25:47.171 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-08-01 15:25:47.171 +01:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 36), @p1='?' (DbType = Int32), @p2='?' (Size = 36), @p3='?' (Size = 18), @p4='?' (DbType = Boolean), @p5='?' (Size = 5), @p6='?', @p7='?' (DbType = Boolean), @p8='?' (Size = 5), @p9='?' (DbType = Boolean), @p10='?' (DbType = DateTimeOffset), @p11='?' (Size = 18), @p12='?' (Size = 18), @p13='?' (Size = 84), @p14='?' (Size = 11), @p15='?' (DbType = Boolean), @p16='?' (Size = 32), @p17='?' (DbType = Boolean), @p18='?' (Size = 18)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUsers" ("Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FirstName", "ImageUrl", "IsKycComplete", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18);
+2023-08-01 15:25:47.171 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 36), @p1='?' (DbType = Int32), @p2='?' (Size = 36), @p3='?' (Size = 18), @p4='?' (DbType = Boolean), @p5='?' (Size = 5), @p6='?', @p7='?' (DbType = Boolean), @p8='?' (Size = 5), @p9='?' (DbType = Boolean), @p10='?' (DbType = DateTimeOffset), @p11='?' (Size = 18), @p12='?' (Size = 18), @p13='?' (Size = 84), @p14='?' (Size = 11), @p15='?' (DbType = Boolean), @p16='?' (Size = 32), @p17='?' (DbType = Boolean), @p18='?' (Size = 18)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUsers" ("Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FirstName", "ImageUrl", "IsKycComplete", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18);
+2023-08-01 15:25:47.171 +01:00 [DBG] A data reader was disposed.
+2023-08-01 15:25:47.171 +01:00 [DBG] Committing transaction.
+2023-08-01 15:25:47.177 +01:00 [DBG] Committed transaction.
+2023-08-01 15:25:47.179 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-01 15:25:47.179 +01:00 [DBG] Closed connection to database 'main' on server 'Savi.db'.
+2023-08-01 15:25:47.179 +01:00 [DBG] Disposing transaction.
+2023-08-01 15:25:47.180 +01:00 [DBG] An entity of type 'ApplicationUser' tracked by 'SaviContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-08-01 15:25:47.185 +01:00 [DBG] SaveChanges completed for 'SaviContext' with 1 entities written to the database.
+2023-08-01 15:25:47.185 +01:00 [DBG] Found the endpoints ["Savings_App.Controllers.AuthController.ConfirmEmail (Savings-App)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-08-01 15:25:47.185 +01:00 [DBG] Successfully processed template api/Auth/ConfirmEmail for Savings_App.Controllers.AuthController.ConfirmEmail (Savings-App) resulting in /api/Auth/ConfirmEmail and ?token=CfDJ8MYmz5ZQYThKqWi7vjJxdkTkce8hGKLfCOVFlbk6UU94oLirHv6N1g4kGCZt8iE2mIYs%2Fmi%2FeAd%2FfgAfueFX5RqGzyUFMWbesbp1%2BlnWosSeYVAry4PbMkevGEc8IBcFZT9gWP0%2BGkC16qGZqET%2FdrL4W1udOcAYweUEis3LEfT1tpIVsE4S8O0JoSxOF5fAg3njISy3oX24SpPKjrhJ566ZeAFPaCcc8OMgGN%2B4XMd%2FMjDKcKNeoAMnF9r5SNNv%2Fw%3D%3D&email=alabisdq@gmail.com
+2023-08-01 15:25:47.186 +01:00 [DBG] Link generation succeeded for endpoints ["Savings_App.Controllers.AuthController.ConfirmEmail (Savings-App)"] with result /api/Auth/ConfirmEmail?token=CfDJ8MYmz5ZQYThKqWi7vjJxdkTkce8hGKLfCOVFlbk6UU94oLirHv6N1g4kGCZt8iE2mIYs%2Fmi%2FeAd%2FfgAfueFX5RqGzyUFMWbesbp1%2BlnWosSeYVAry4PbMkevGEc8IBcFZT9gWP0%2BGkC16qGZqET%2FdrL4W1udOcAYweUEis3LEfT1tpIVsE4S8O0JoSxOF5fAg3njISy3oX24SpPKjrhJ566ZeAFPaCcc8OMgGN%2B4XMd%2FMjDKcKNeoAMnF9r5SNNv%2Fw%3D%3D&email=alabisdq@gmail.com
+2023-08-01 15:25:50.375 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-08-01 15:25:50.375 +01:00 [DBG] No information found on request to perform content negotiation.
+2023-08-01 15:25:50.375 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-08-01 15:25:50.375 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-08-01 15:25:50.375 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-08-01 15:25:50.375 +01:00 [INF] Executing ObjectResult, writing value of type 'SavingsApp.Data.Entities.DTOs.Response.APIResponse'.
+2023-08-01 15:25:50.377 +01:00 [INF] Executed action Savings_App.Controllers.AuthController.Register (Savings-App) in 3355.2649ms
+2023-08-01 15:25:50.377 +01:00 [INF] Executed endpoint 'Savings_App.Controllers.AuthController.Register (Savings-App)'
+2023-08-01 15:25:50.377 +01:00 [DBG] 'SaviContext' disposed.
+2023-08-01 15:25:50.377 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7049/api/Auth/Register?enableTwoFactorAuthentication=false application/json 140 - 200 - application/json;+charset=utf-8 3389.5460ms
