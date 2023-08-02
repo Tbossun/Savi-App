@@ -40,10 +40,15 @@ public class Program
         //Register unitOfWork
         builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
+       // builder.Services.AddSingleton<IPaystackService, PaystackService>(provider => new PaystackService("sk_test_c1e3948a98584d332e3cebf256c84d13e915e2fe"));
+
         //Register Email  Service
         var emailConfig = builder.Configuration.GetSection("EmailConfiguration").Get<EmailConfiguration>();
         builder.Services.AddSingleton(emailConfig);
         builder.Services.AddScoped<IEmailService, EmailService>();
+
+        //Register PaystackService
+        builder.Services.AddSingleton<PaystackService>(provider => new PaystackService("sk_test_c1e3948a98584d332e3cebf256c84d13e915e2fe"));
 
         builder.Services.AddControllers();
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

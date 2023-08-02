@@ -60,6 +60,14 @@
             "NETCore.MailKit": {
               "target": "Package",
               "version": "[2.1.0, )"
+            },
+            "Paystack.Net": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Paystack.Net.SDK": {
+              "target": "Package",
+              "version": "[1.3.8.1, )"
             }
           },
           "imports": [

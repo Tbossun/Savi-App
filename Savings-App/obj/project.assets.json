@@ -1806,6 +1806,8 @@
           "CloudinaryDotNet": "1.21.0",
           "MailKit": "4.1.0",
           "NETCore.MailKit": "2.1.0",
+          "Paystack.Net": "1.1.0",
+          "Paystack.Net.SDK": "1.3.8.1",
           "SavingsApp.Data": "1.0.0"
         },
         "compile": {
