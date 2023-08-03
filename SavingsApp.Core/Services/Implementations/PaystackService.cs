@@ -176,7 +176,6 @@ namespace SavingsApp.Core.Services.Implementations
         public async Task<ResponseDto<bool>> TransferToWallet(string senderWalletId, string receiverWalletId, double amount)
         {
             var responseDto = new ResponseDto<bool>();
-            // You can add additional validation here, e.g., to check if senderWalletId and receiverWalletId are valid.
 
             var senderWallet = _unitOfWork.WalletRepository.Get(W => W.WalletId == senderWalletId);
             var receiverWallet = _unitOfWork.WalletRepository.Get(W => W.WalletId == receiverWalletId);
@@ -209,10 +208,13 @@ namespace SavingsApp.Core.Services.Implementations
                 Amount = amount,
                 CumulativeAmount = senderpreviousCumulativeAmount - amount,
                 Description = $"Local Transfer to {receiverWallet}",
-                walletId = senderWalletId
+                walletId = senderWalletId ,
+                ModifiedAt = DateTime.UtcNow,
             };
             _unitOfWork.WalletFundingRepository.Add(senderFunding);
             senderWallet.Balance -= amount;
+            senderWallet.ModifiedAt = DateTime.UtcNow;
+            _unitOfWork.WalletRepository.Update(senderWallet);
 
             // Credit the receiver's wallet
             var receiverFunding = new WalletFunding
@@ -222,10 +224,13 @@ namespace SavingsApp.Core.Services.Implementations
                 Amount = amount,
                 CumulativeAmount = receiverpreviousCumulativeAmount + amount,
                 Description = $"Transfer received from {senderWallet}",
-                walletId = receiverWalletId
+                walletId = receiverWalletId,
+                ModifiedAt = DateTime.UtcNow,
             };
             _unitOfWork.WalletFundingRepository.Add(receiverFunding);
             receiverWallet.Balance += amount;
+            receiverWallet.ModifiedAt = DateTime.UtcNow;
+            _unitOfWork.WalletRepository.Update(receiverWallet);
 
             _unitOfWork.Save();
 
@@ -271,6 +276,7 @@ namespace SavingsApp.Core.Services.Implementations
             };
             _unitOfWork.WalletFundingRepository.Add(walletFunding);
             wallet.Balance += amount;
+            _unitOfWork.WalletRepository.Update(wallet);
 
             _unitOfWork.Save();
 
@@ -281,12 +287,9 @@ namespace SavingsApp.Core.Services.Implementations
             return responseDto;
         }
 
-        // Helper method to generate a unique reference for transactions
+
         private string GenerateUniqueReference()
         {
-            // Implement your logic to generate a unique reference here.
-            // For example, you can use a combination of current timestamp and random string.
-            // Ensure that the generated reference is unique for each transaction.
             return "REF_" + Guid.NewGuid().ToString("N");
         }
 
