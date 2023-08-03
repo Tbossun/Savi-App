@@ -40,16 +40,20 @@ public class Program
         //Register unitOfWork
         builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
-       // builder.Services.AddSingleton<IPaystackService, PaystackService>(provider => new PaystackService("sk_test_c1e3948a98584d332e3cebf256c84d13e915e2fe"));
-
         //Register Email  Service
         var emailConfig = builder.Configuration.GetSection("EmailConfiguration").Get<EmailConfiguration>();
         builder.Services.AddSingleton(emailConfig);
         builder.Services.AddScoped<IEmailService, EmailService>();
 
         //Register PaystackService
-        builder.Services.AddSingleton<PaystackService>(provider => new PaystackService("sk_test_c1e3948a98584d332e3cebf256c84d13e915e2fe"));
-
+        //builder.Services.AddSingleton<PaystackService>(provider => new PaystackService("sk_test_c1e3948a98584d332e3cebf256c84d13e915e2fe"));
+        // Register the PaystackService with the required dependencies.
+        builder.Services.AddScoped<PaystackService>(provider =>
+        {
+            var unitOfWork = provider.GetRequiredService<IUnitOfWork>();
+            var apiKey = "sk_test_c1e3948a98584d332e3cebf256c84d13e915e2fe"; // Replace this with your actual Paystack API key.
+            return new PaystackService(apiKey, unitOfWork);
+        });
         builder.Services.AddControllers();
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
@@ -122,8 +126,8 @@ public class Program
 
         var app = builder.Build();
 
-        var logger = app.Services.GetRequiredService<ILogger<Program>>();
-        app.ConfigureExceptionHandler(logger);
+        /*var logger = app.Services.GetRequiredService<ILogger<Program>>();
+        app.ConfigureExceptionHandler(logger);*/
 
         // Configure the HTTP request pipeline.
         if (app.Environment.IsDevelopment())

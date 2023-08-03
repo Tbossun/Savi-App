@@ -11,7 +11,7 @@ namespace SavingsApp.Data.UnitOfWork
 
         public IKycRepository KycRepository { get; private set; }
         public IWalletRepository WalletRepository { get; private set; }
-
+        public IWalletFundingRepository WalletFundingRepository { get; private set; }
 
 
         public UnitOfWork(SaviContext saviDbContext)
@@ -19,6 +19,7 @@ namespace SavingsApp.Data.UnitOfWork
             _saviDbContext = saviDbContext;
             KycRepository = new KycRepository(_saviDbContext);
             WalletRepository = new WalletRepository(_saviDbContext);
+            WalletFundingRepository = new WalletFundingRepository(_saviDbContext);
 
         }
 

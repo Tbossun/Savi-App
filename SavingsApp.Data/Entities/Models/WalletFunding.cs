@@ -5,7 +5,7 @@ namespace SavingsApp.Data.Entities.Models
     public class WalletFunding : BaseEntity
     {
 
-        public int walletId { get; set; }
+        public string walletId { get; set; }
 
         public ActionType Action { get; set; }
 
@@ -18,8 +18,6 @@ namespace SavingsApp.Data.Entities.Models
         public string Description { get; set; }
 
         public Wallet wallet { get; set; }
-
-
 
     }
 }

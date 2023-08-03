@@ -8,6 +8,7 @@ namespace SavingsApp.Data.Repositories.IRepositories
     {
         IKycRepository KycRepository { get; }
         IWalletRepository WalletRepository { get; }
+        IWalletFundingRepository WalletFundingRepository { get; }
 
         void Save();
     }

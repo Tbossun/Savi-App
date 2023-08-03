@@ -1936,3 +1936,446 @@ System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport
 2023-08-02 10:30:10.921 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
 2023-08-02 10:30:10.921 +01:00 [DBG] Request did not match any endpoints
 2023-08-02 10:30:10.927 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 7.5459ms
+2023-08-02 13:14:53.089 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-08-02 13:14:53.792 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.793 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.794 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.794 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.794 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.795 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.796 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.796 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.797 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.797 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.798 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.798 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.799 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.800 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.800 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.800 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.801 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.801 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.801 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.802 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.802 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.802 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.802 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.803 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.819 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.819 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.819 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.819 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.820 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.820 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.820 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.820 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.820 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.820 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.820 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.821 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.821 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.821 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.821 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.821 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.821 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.822 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.822 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.822 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.822 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:53.975 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<string>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2023-08-02 13:14:53.975 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<string>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2023-08-02 13:14:53.981 +01:00 [DBG] For the relationship between dependent 'WalletFunding.wallet' and principal 'Wallet.WalletFunding', the foreign key properties haven't been configured by convention because the best match {'walletId' : int} are incompatible with the current principal key {'Id' : string}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2023-08-02 13:14:54.085 +01:00 [DBG] The property 'PaymentReference.ApplicationUserId' was created in shadow state because there are no eligible CLR members with a matching name.
+2023-08-02 13:14:54.086 +01:00 [DBG] The property 'Wallet.applicationUserId' was created in shadow state because there are no eligible CLR members with a matching name.
+2023-08-02 13:14:54.086 +01:00 [WRN] The foreign key property 'WalletFunding.walletId1' was created in shadow state because a conflicting property with the simple name 'walletId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+2023-08-02 13:14:54.360 +01:00 [INF] Entity Framework Core 6.0.20 initialized 'SaviContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.20' with options: None
+2023-08-02 13:14:54.377 +01:00 [DBG] 'SaviContext' disposed.
+2023-08-02 17:39:50.263 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-02 17:39:50.320 +01:00 [DBG] Hosting starting
+2023-08-02 17:39:50.354 +01:00 [INF] User profile is available. Using 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-02 17:39:50.358 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-2233cea8-8ad9-4f56-bb58-30e16e00e4d0.xml'.
+2023-08-02 17:39:50.362 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-96cf26c6-6150-4a38-a968-bbbe32717644.xml'.
+2023-08-02 17:39:50.363 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-ba4a300a-6c51-469e-b2e4-a9cd1daa9c85.xml'.
+2023-08-02 17:39:50.368 +01:00 [DBG] Found key {2233cea8-8ad9-4f56-bb58-30e16e00e4d0}.
+2023-08-02 17:39:50.370 +01:00 [DBG] Found key {96cf26c6-6150-4a38-a968-bbbe32717644}.
+2023-08-02 17:39:50.370 +01:00 [DBG] Found key {ba4a300a-6c51-469e-b2e4-a9cd1daa9c85}.
+2023-08-02 17:39:50.377 +01:00 [DBG] Considering key {96cf26c6-6150-4a38-a968-bbbe32717644} with expiration date 2023-10-26 20:18:55Z as default key.
+2023-08-02 17:39:50.379 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-08-02 17:39:50.381 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2023-08-02 17:39:50.382 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-08-02 17:39:50.385 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-08-02 17:39:50.386 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-08-02 17:39:50.388 +01:00 [DBG] Using key {96cf26c6-6150-4a38-a968-bbbe32717644} as the default key.
+2023-08-02 17:39:50.388 +01:00 [DBG] Key ring with default key {96cf26c6-6150-4a38-a968-bbbe32717644} was loaded during application startup.
+2023-08-02 17:39:50.586 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 60B4004B0E7F50E239AF827782FF73E25B47E3DE)
+2023-08-02 17:39:50.617 +01:00 [INF] Now listening on: https://localhost:7049
+2023-08-02 17:39:50.617 +01:00 [INF] Now listening on: http://localhost:5159
+2023-08-02 17:39:50.617 +01:00 [DBG] Loaded hosting startup assembly Savings-App
+2023-08-02 17:39:50.617 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-08-02 17:39:50.617 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-08-02 17:39:50.617 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-02 17:39:50.617 +01:00 [INF] Hosting environment: Development
+2023-08-02 17:39:50.617 +01:00 [INF] Content root path: C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\
+2023-08-02 17:39:50.617 +01:00 [DBG] Hosting started
+2023-08-02 17:39:50.694 +01:00 [DBG] Connection id "0HMSJESBN86TC" received FIN.
+2023-08-02 17:39:50.705 +01:00 [DBG] Connection id "0HMSJESBN86TC" accepted.
+2023-08-02 17:39:50.707 +01:00 [DBG] Connection id "0HMSJESBN86TC" started.
+2023-08-02 17:39:50.728 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-02 17:39:50.773 +01:00 [DBG] Connection id "0HMSJESBN86TC" stopped.
+2023-08-02 17:39:50.775 +01:00 [DBG] Connection id "0HMSJESBN86TC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-02 17:39:51.518 +01:00 [DBG] Connection id "0HMSJESBN86TD" accepted.
+2023-08-02 17:39:51.519 +01:00 [DBG] Connection id "0HMSJESBN86TD" started.
+2023-08-02 17:39:51.810 +01:00 [DBG] Connection 0HMSJESBN86TD established using the following protocol: "Tls13"
+2023-08-02 17:39:51.887 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/index.html - -
+2023-08-02 17:39:51.982 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-02 17:39:52.099 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-08-02 17:39:52.099 +01:00 [DBG] Request did not match any endpoints
+2023-08-02 17:39:52.332 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-08-02 17:39:52.730 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 17:39:52.745 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/_framework/aspnetcore-browser-refresh.js - - - 200 12354 application/javascript;+charset=utf-8 13.3249ms
+2023-08-02 17:39:52.811 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/_vs/browserLink - -
+2023-08-02 17:39:52.814 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-08-02 17:39:52.836 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/index.html - - - 200 - text/html;charset=utf-8 953.8611ms
+2023-08-02 17:39:53.149 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 337.2893ms
+2023-08-02 17:39:53.260 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - -
+2023-08-02 17:39:53.262 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-08-02 17:39:53.262 +01:00 [DBG] Request did not match any endpoints
+2023-08-02 17:39:53.633 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 372.3046ms
+2023-08-02 17:39:57.286 +01:00 [DBG] Connection id "0HMSJESBN86TD" received FIN.
+2023-08-02 17:39:57.297 +01:00 [DBG] Connection id "0HMSJESBN86TD" is closed. The last processed stream ID was 7.
+2023-08-02 17:39:57.298 +01:00 [DBG] Connection id "0HMSJESBN86TD" sending FIN because: "The client closed the connection."
+2023-08-02 17:39:57.305 +01:00 [DBG] Connection id "0HMSJESBN86TD" stopped.
+2023-08-02 17:44:16.158 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-02 17:44:16.294 +01:00 [DBG] Hosting starting
+2023-08-02 17:44:16.338 +01:00 [INF] User profile is available. Using 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-02 17:44:16.343 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-2233cea8-8ad9-4f56-bb58-30e16e00e4d0.xml'.
+2023-08-02 17:44:16.351 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-96cf26c6-6150-4a38-a968-bbbe32717644.xml'.
+2023-08-02 17:44:16.351 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-ba4a300a-6c51-469e-b2e4-a9cd1daa9c85.xml'.
+2023-08-02 17:44:16.358 +01:00 [DBG] Found key {2233cea8-8ad9-4f56-bb58-30e16e00e4d0}.
+2023-08-02 17:44:16.364 +01:00 [DBG] Found key {96cf26c6-6150-4a38-a968-bbbe32717644}.
+2023-08-02 17:44:16.364 +01:00 [DBG] Found key {ba4a300a-6c51-469e-b2e4-a9cd1daa9c85}.
+2023-08-02 17:44:16.384 +01:00 [DBG] Considering key {96cf26c6-6150-4a38-a968-bbbe32717644} with expiration date 2023-10-26 20:18:55Z as default key.
+2023-08-02 17:44:16.387 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-08-02 17:44:16.396 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2023-08-02 17:44:16.399 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-08-02 17:44:16.407 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-08-02 17:44:16.410 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-08-02 17:44:16.416 +01:00 [DBG] Using key {96cf26c6-6150-4a38-a968-bbbe32717644} as the default key.
+2023-08-02 17:44:16.417 +01:00 [DBG] Key ring with default key {96cf26c6-6150-4a38-a968-bbbe32717644} was loaded during application startup.
+2023-08-02 17:44:16.575 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 60B4004B0E7F50E239AF827782FF73E25B47E3DE)
+2023-08-02 17:44:16.664 +01:00 [INF] Now listening on: https://localhost:7049
+2023-08-02 17:44:16.664 +01:00 [INF] Now listening on: http://localhost:5159
+2023-08-02 17:44:16.664 +01:00 [DBG] Loaded hosting startup assembly Savings-App
+2023-08-02 17:44:16.664 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-08-02 17:44:16.664 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-08-02 17:44:16.669 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-02 17:44:16.669 +01:00 [INF] Hosting environment: Development
+2023-08-02 17:44:16.669 +01:00 [INF] Content root path: C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\
+2023-08-02 17:44:16.669 +01:00 [DBG] Hosting started
+2023-08-02 17:44:16.684 +01:00 [DBG] Connection id "0HMSJEUQVU9IG" received FIN.
+2023-08-02 17:44:16.697 +01:00 [DBG] Connection id "0HMSJEUQVU9IG" accepted.
+2023-08-02 17:44:16.698 +01:00 [DBG] Connection id "0HMSJEUQVU9IG" started.
+2023-08-02 17:44:16.717 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-02 17:44:16.766 +01:00 [DBG] Connection id "0HMSJEUQVU9IG" stopped.
+2023-08-02 17:44:16.771 +01:00 [DBG] Connection id "0HMSJEUQVU9IG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-02 17:44:17.271 +01:00 [DBG] Connection id "0HMSJEUQVU9IH" accepted.
+2023-08-02 17:44:17.272 +01:00 [DBG] Connection id "0HMSJEUQVU9IH" started.
+2023-08-02 17:44:17.735 +01:00 [DBG] Connection 0HMSJEUQVU9IH established using the following protocol: "Tls13"
+2023-08-02 17:44:18.105 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/index.html - -
+2023-08-02 17:44:18.180 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-02 17:44:18.233 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-08-02 17:44:18.233 +01:00 [DBG] Request did not match any endpoints
+2023-08-02 17:44:18.458 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-08-02 17:44:18.972 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 17:44:18.980 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-08-02 17:44:18.987 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/_framework/aspnetcore-browser-refresh.js - - - 200 12354 application/javascript;+charset=utf-8 13.4083ms
+2023-08-02 17:44:18.987 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/index.html - - - 200 - text/html;charset=utf-8 889.4363ms
+2023-08-02 17:44:19.074 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/_vs/browserLink - -
+2023-08-02 17:44:19.527 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 453.1424ms
+2023-08-02 17:44:19.649 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - -
+2023-08-02 17:44:19.651 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-08-02 17:44:19.651 +01:00 [DBG] Request did not match any endpoints
+2023-08-02 17:44:20.149 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 499.2968ms
+2023-08-02 17:44:22.062 +01:00 [DBG] Connection id "0HMSJEUQVU9IH" received FIN.
+2023-08-02 17:44:22.081 +01:00 [DBG] Connection id "0HMSJEUQVU9IH" is closed. The last processed stream ID was 7.
+2023-08-02 17:44:22.082 +01:00 [DBG] Connection id "0HMSJEUQVU9IH" sending FIN because: "The client closed the connection."
+2023-08-02 17:44:22.093 +01:00 [DBG] Connection id "0HMSJEUQVU9IH" stopped.
+2023-08-02 21:48:45.308 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-02 21:48:45.405 +01:00 [DBG] Hosting starting
+2023-08-02 21:48:45.437 +01:00 [INF] User profile is available. Using 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-02 21:48:45.439 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-2233cea8-8ad9-4f56-bb58-30e16e00e4d0.xml'.
+2023-08-02 21:48:45.443 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-96cf26c6-6150-4a38-a968-bbbe32717644.xml'.
+2023-08-02 21:48:45.443 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-ba4a300a-6c51-469e-b2e4-a9cd1daa9c85.xml'.
+2023-08-02 21:48:45.448 +01:00 [DBG] Found key {2233cea8-8ad9-4f56-bb58-30e16e00e4d0}.
+2023-08-02 21:48:45.450 +01:00 [DBG] Found key {96cf26c6-6150-4a38-a968-bbbe32717644}.
+2023-08-02 21:48:45.450 +01:00 [DBG] Found key {ba4a300a-6c51-469e-b2e4-a9cd1daa9c85}.
+2023-08-02 21:48:45.457 +01:00 [DBG] Considering key {96cf26c6-6150-4a38-a968-bbbe32717644} with expiration date 2023-10-26 20:18:55Z as default key.
+2023-08-02 21:48:45.459 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-08-02 21:48:45.462 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2023-08-02 21:48:45.463 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-08-02 21:48:45.467 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-08-02 21:48:45.468 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-08-02 21:48:45.470 +01:00 [DBG] Using key {96cf26c6-6150-4a38-a968-bbbe32717644} as the default key.
+2023-08-02 21:48:45.470 +01:00 [DBG] Key ring with default key {96cf26c6-6150-4a38-a968-bbbe32717644} was loaded during application startup.
+2023-08-02 21:48:45.639 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 60B4004B0E7F50E239AF827782FF73E25B47E3DE)
+2023-08-02 21:48:45.714 +01:00 [INF] Now listening on: https://localhost:7049
+2023-08-02 21:48:45.714 +01:00 [INF] Now listening on: http://localhost:5159
+2023-08-02 21:48:45.715 +01:00 [DBG] Loaded hosting startup assembly Savings-App
+2023-08-02 21:48:45.715 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-08-02 21:48:45.715 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-08-02 21:48:45.715 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-02 21:48:45.715 +01:00 [INF] Hosting environment: Development
+2023-08-02 21:48:45.715 +01:00 [INF] Content root path: C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\
+2023-08-02 21:48:45.715 +01:00 [DBG] Hosting started
+2023-08-02 21:48:45.758 +01:00 [DBG] Connection id "0HMSJJ7EN1RN2" accepted.
+2023-08-02 21:48:45.758 +01:00 [DBG] Connection id "0HMSJJ7EN1RN3" accepted.
+2023-08-02 21:48:45.761 +01:00 [DBG] Connection id "0HMSJJ7EN1RN2" started.
+2023-08-02 21:48:45.761 +01:00 [DBG] Connection id "0HMSJJ7EN1RN3" started.
+2023-08-02 21:48:45.776 +01:00 [DBG] Connection id "0HMSJJ7EN1RN3" received FIN.
+2023-08-02 21:48:45.776 +01:00 [DBG] Connection id "0HMSJJ7EN1RN2" received FIN.
+2023-08-02 21:48:45.808 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-02 21:48:45.808 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-02 21:48:45.848 +01:00 [DBG] Connection id "0HMSJJ7EN1RN3" stopped.
+2023-08-02 21:48:45.848 +01:00 [DBG] Connection id "0HMSJJ7EN1RN2" stopped.
+2023-08-02 21:48:45.851 +01:00 [DBG] Connection id "0HMSJJ7EN1RN2" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-02 21:48:45.851 +01:00 [DBG] Connection id "0HMSJJ7EN1RN3" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-02 21:48:46.419 +01:00 [DBG] Connection id "0HMSJJ7EN1RN4" accepted.
+2023-08-02 21:48:46.420 +01:00 [DBG] Connection id "0HMSJJ7EN1RN4" started.
+2023-08-02 21:48:46.751 +01:00 [DBG] Connection 0HMSJJ7EN1RN4 established using the following protocol: "Tls13"
+2023-08-02 21:48:46.863 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/index.html - -
+2023-08-02 21:48:46.929 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-02 21:48:46.980 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-08-02 21:48:46.981 +01:00 [DBG] Request did not match any endpoints
+2023-08-02 21:48:47.328 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-08-02 21:48:47.824 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 21:48:47.872 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/_vs/browserLink - -
+2023-08-02 21:48:47.903 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-08-02 21:48:47.931 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/_framework/aspnetcore-browser-refresh.js - - - 200 12354 application/javascript;+charset=utf-8 95.9157ms
+2023-08-02 21:48:47.932 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/index.html - - - 200 - text/html;charset=utf-8 1078.4195ms
+2023-08-02 21:48:48.270 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 398.5157ms
+2023-08-02 21:48:48.391 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - -
+2023-08-02 21:48:48.393 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-08-02 21:48:48.393 +01:00 [DBG] Request did not match any endpoints
+2023-08-02 21:48:48.858 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 466.7182ms
+2023-08-02 21:48:51.582 +01:00 [DBG] Connection id "0HMSJJ7EN1RN4" received FIN.
+2023-08-02 21:48:51.596 +01:00 [DBG] Connection id "0HMSJJ7EN1RN4" is closed. The last processed stream ID was 7.
+2023-08-02 21:48:51.597 +01:00 [DBG] Connection id "0HMSJJ7EN1RN4" sending FIN because: "The client closed the connection."
+2023-08-02 21:48:51.612 +01:00 [DBG] Connection id "0HMSJJ7EN1RN4" stopped.
+2023-08-02 21:50:51.031 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-02 21:50:51.214 +01:00 [DBG] Hosting starting
+2023-08-02 21:50:51.261 +01:00 [INF] User profile is available. Using 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-02 21:50:51.268 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-2233cea8-8ad9-4f56-bb58-30e16e00e4d0.xml'.
+2023-08-02 21:50:51.278 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-96cf26c6-6150-4a38-a968-bbbe32717644.xml'.
+2023-08-02 21:50:51.278 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-ba4a300a-6c51-469e-b2e4-a9cd1daa9c85.xml'.
+2023-08-02 21:50:51.292 +01:00 [DBG] Found key {2233cea8-8ad9-4f56-bb58-30e16e00e4d0}.
+2023-08-02 21:50:51.299 +01:00 [DBG] Found key {96cf26c6-6150-4a38-a968-bbbe32717644}.
+2023-08-02 21:50:51.299 +01:00 [DBG] Found key {ba4a300a-6c51-469e-b2e4-a9cd1daa9c85}.
+2023-08-02 21:50:51.320 +01:00 [DBG] Considering key {96cf26c6-6150-4a38-a968-bbbe32717644} with expiration date 2023-10-26 20:18:55Z as default key.
+2023-08-02 21:50:51.323 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-08-02 21:50:51.328 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2023-08-02 21:50:51.330 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-08-02 21:50:51.337 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-08-02 21:50:51.340 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-08-02 21:50:51.344 +01:00 [DBG] Using key {96cf26c6-6150-4a38-a968-bbbe32717644} as the default key.
+2023-08-02 21:50:51.345 +01:00 [DBG] Key ring with default key {96cf26c6-6150-4a38-a968-bbbe32717644} was loaded during application startup.
+2023-08-02 21:50:51.516 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 60B4004B0E7F50E239AF827782FF73E25B47E3DE)
+2023-08-02 21:50:51.554 +01:00 [INF] Now listening on: https://localhost:7049
+2023-08-02 21:50:51.554 +01:00 [INF] Now listening on: http://localhost:5159
+2023-08-02 21:50:51.554 +01:00 [DBG] Loaded hosting startup assembly Savings-App
+2023-08-02 21:50:51.554 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-08-02 21:50:51.554 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-08-02 21:50:51.555 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-02 21:50:51.555 +01:00 [INF] Hosting environment: Development
+2023-08-02 21:50:51.555 +01:00 [INF] Content root path: C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\
+2023-08-02 21:50:51.556 +01:00 [DBG] Hosting started
+2023-08-02 21:50:51.858 +01:00 [DBG] Connection id "0HMSJJ8K9LPHJ" accepted.
+2023-08-02 21:50:51.858 +01:00 [DBG] Connection id "0HMSJJ8K9LPHK" accepted.
+2023-08-02 21:50:51.859 +01:00 [DBG] Connection id "0HMSJJ8K9LPHJ" started.
+2023-08-02 21:50:51.859 +01:00 [DBG] Connection id "0HMSJJ8K9LPHK" started.
+2023-08-02 21:50:51.964 +01:00 [DBG] Connection id "0HMSJJ8K9LPHJ" received FIN.
+2023-08-02 21:50:51.964 +01:00 [DBG] Connection id "0HMSJJ8K9LPHK" received FIN.
+2023-08-02 21:50:52.006 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-02 21:50:52.006 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-02 21:50:52.052 +01:00 [DBG] Connection id "0HMSJJ8K9LPHK" stopped.
+2023-08-02 21:50:52.052 +01:00 [DBG] Connection id "0HMSJJ8K9LPHJ" stopped.
+2023-08-02 21:50:52.055 +01:00 [DBG] Connection id "0HMSJJ8K9LPHK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-02 21:50:52.057 +01:00 [DBG] Connection id "0HMSJJ8K9LPHJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-02 21:50:52.499 +01:00 [DBG] Connection id "0HMSJJ8K9LPHL" accepted.
+2023-08-02 21:50:52.499 +01:00 [DBG] Connection id "0HMSJJ8K9LPHL" started.
+2023-08-02 21:50:52.928 +01:00 [DBG] Connection 0HMSJJ8K9LPHL established using the following protocol: "Tls13"
+2023-08-02 21:50:53.144 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/index.html - -
+2023-08-02 21:50:53.338 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-02 21:50:53.430 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-08-02 21:50:53.430 +01:00 [DBG] Request did not match any endpoints
+2023-08-02 21:50:53.712 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-08-02 21:50:54.100 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 21:50:54.131 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/_vs/browserLink - -
+2023-08-02 21:50:54.195 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-08-02 21:50:54.216 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/_framework/aspnetcore-browser-refresh.js - - - 200 12354 application/javascript;+charset=utf-8 114.7989ms
+2023-08-02 21:50:54.216 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/index.html - - - 200 - text/html;charset=utf-8 1080.6898ms
+2023-08-02 21:50:54.557 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 426.7047ms
+2023-08-02 21:50:54.708 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - -
+2023-08-02 21:50:54.710 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-08-02 21:50:54.711 +01:00 [DBG] Request did not match any endpoints
+2023-08-02 21:50:55.108 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 399.5993ms
+2023-08-02 21:50:57.700 +01:00 [DBG] Connection id "0HMSJJ8K9LPHL" received FIN.
+2023-08-02 21:50:57.716 +01:00 [DBG] Connection id "0HMSJJ8K9LPHL" is closed. The last processed stream ID was 7.
+2023-08-02 21:50:57.717 +01:00 [DBG] Connection id "0HMSJJ8K9LPHL" sending FIN because: "The client closed the connection."
+2023-08-02 21:50:57.722 +01:00 [DBG] Connection id "0HMSJJ8K9LPHL" stopped.
+2023-08-02 21:51:37.872 +01:00 [DBG] Connection id "0HMSJJ8K9LPHM" accepted.
+2023-08-02 21:51:37.880 +01:00 [DBG] Connection id "0HMSJJ8K9LPHM" started.
+2023-08-02 21:51:37.907 +01:00 [DBG] Connection 0HMSJJ8K9LPHM established using the following protocol: "Tls13"
+2023-08-02 21:51:37.916 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7049/api/Payment/Make-Payment application/json 84
+2023-08-02 21:51:37.982 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Payment/Make-Payment'
+2023-08-02 21:51:37.989 +01:00 [DBG] Endpoint 'Savings_App.Controllers.PaymentController.CreateTransaction (Savings-App)' with route pattern 'api/Payment/Make-Payment' is valid for the request path '/api/Payment/Make-Payment'
+2023-08-02 21:51:37.994 +01:00 [DBG] Request matched endpoint 'Savings_App.Controllers.PaymentController.CreateTransaction (Savings-App)'
+2023-08-02 21:51:37.999 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-08-02 21:51:38.028 +01:00 [DBG] AuthenticationScheme: Identity.Application was not authenticated.
+2023-08-02 21:51:38.034 +01:00 [INF] Executing endpoint 'Savings_App.Controllers.PaymentController.CreateTransaction (Savings-App)'
+2023-08-02 21:51:38.120 +01:00 [INF] Route matched with {action = "CreateTransaction", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateTransaction(SavingsApp.Data.Entities.DTOs.Request.PaystackTransactionRequest) on controller Savings_App.Controllers.PaymentController (Savings-App).
+2023-08-02 21:51:38.122 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-08-02 21:51:38.122 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-08-02 21:51:38.122 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-08-02 21:51:38.122 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-08-02 21:51:38.122 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-08-02 21:51:38.124 +01:00 [DBG] Executing controller factory for controller Savings_App.Controllers.PaymentController (Savings-App)
+2023-08-02 21:51:38.125 +01:00 [DBG] Executed controller factory for controller Savings_App.Controllers.PaymentController (Savings-App)
+2023-08-02 21:51:38.139 +01:00 [DBG] Attempting to bind parameter 'transactionRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.PaystackTransactionRequest' ...
+2023-08-02 21:51:38.144 +01:00 [DBG] Attempting to bind parameter 'transactionRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.PaystackTransactionRequest' using the name '' in request data ...
+2023-08-02 21:51:38.146 +01:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-08-02 21:51:38.159 +01:00 [DBG] Connection id "0HMSJJ8K9LPHM", Request id "0HMSJJ8K9LPHM:00000001": started reading request body.
+2023-08-02 21:51:38.160 +01:00 [DBG] Connection id "0HMSJJ8K9LPHM", Request id "0HMSJJ8K9LPHM:00000001": done reading request body.
+2023-08-02 21:51:38.178 +01:00 [DBG] JSON input formatter succeeded, deserializing to type 'SavingsApp.Data.Entities.DTOs.Request.PaystackTransactionRequest'
+2023-08-02 21:51:38.178 +01:00 [DBG] Done attempting to bind parameter 'transactionRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.PaystackTransactionRequest'.
+2023-08-02 21:51:38.178 +01:00 [DBG] Done attempting to bind parameter 'transactionRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.PaystackTransactionRequest'.
+2023-08-02 21:51:38.178 +01:00 [DBG] Attempting to validate the bound parameter 'transactionRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.PaystackTransactionRequest' ...
+2023-08-02 21:51:38.198 +01:00 [DBG] Done attempting to validate the bound parameter 'transactionRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.PaystackTransactionRequest'.
+2023-08-02 21:52:33.893 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-02 21:52:34.039 +01:00 [DBG] Hosting starting
+2023-08-02 21:52:34.101 +01:00 [INF] User profile is available. Using 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-02 21:52:34.107 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-2233cea8-8ad9-4f56-bb58-30e16e00e4d0.xml'.
+2023-08-02 21:52:34.118 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-96cf26c6-6150-4a38-a968-bbbe32717644.xml'.
+2023-08-02 21:52:34.118 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-ba4a300a-6c51-469e-b2e4-a9cd1daa9c85.xml'.
+2023-08-02 21:52:34.139 +01:00 [DBG] Found key {2233cea8-8ad9-4f56-bb58-30e16e00e4d0}.
+2023-08-02 21:52:34.148 +01:00 [DBG] Found key {96cf26c6-6150-4a38-a968-bbbe32717644}.
+2023-08-02 21:52:34.149 +01:00 [DBG] Found key {ba4a300a-6c51-469e-b2e4-a9cd1daa9c85}.
+2023-08-02 21:52:34.170 +01:00 [DBG] Considering key {96cf26c6-6150-4a38-a968-bbbe32717644} with expiration date 2023-10-26 20:18:55Z as default key.
+2023-08-02 21:52:34.174 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-08-02 21:52:34.180 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2023-08-02 21:52:34.183 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-08-02 21:52:34.191 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-08-02 21:52:34.195 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-08-02 21:52:34.200 +01:00 [DBG] Using key {96cf26c6-6150-4a38-a968-bbbe32717644} as the default key.
+2023-08-02 21:52:34.201 +01:00 [DBG] Key ring with default key {96cf26c6-6150-4a38-a968-bbbe32717644} was loaded during application startup.
+2023-08-02 21:52:34.468 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 60B4004B0E7F50E239AF827782FF73E25B47E3DE)
+2023-08-02 21:52:34.559 +01:00 [INF] Now listening on: https://localhost:7049
+2023-08-02 21:52:34.559 +01:00 [INF] Now listening on: http://localhost:5159
+2023-08-02 21:52:34.560 +01:00 [DBG] Loaded hosting startup assembly Savings-App
+2023-08-02 21:52:34.560 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-08-02 21:52:34.560 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-08-02 21:52:34.560 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-02 21:52:34.560 +01:00 [INF] Hosting environment: Development
+2023-08-02 21:52:34.560 +01:00 [INF] Content root path: C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\
+2023-08-02 21:52:34.560 +01:00 [DBG] Hosting started
+2023-08-02 21:52:34.828 +01:00 [DBG] Connection id "0HMSJJ9IVGK5Q" accepted.
+2023-08-02 21:52:34.828 +01:00 [DBG] Connection id "0HMSJJ9IVGK5P" accepted.
+2023-08-02 21:52:34.829 +01:00 [DBG] Connection id "0HMSJJ9IVGK5Q" received FIN.
+2023-08-02 21:52:34.829 +01:00 [DBG] Connection id "0HMSJJ9IVGK5P" received FIN.
+2023-08-02 21:52:34.836 +01:00 [DBG] Connection id "0HMSJJ9IVGK5P" started.
+2023-08-02 21:52:34.836 +01:00 [DBG] Connection id "0HMSJJ9IVGK5Q" started.
+2023-08-02 21:52:34.865 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-02 21:52:34.865 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-02 21:52:34.915 +01:00 [DBG] Connection id "0HMSJJ9IVGK5P" stopped.
+2023-08-02 21:52:34.915 +01:00 [DBG] Connection id "0HMSJJ9IVGK5Q" stopped.
+2023-08-02 21:52:34.919 +01:00 [DBG] Connection id "0HMSJJ9IVGK5P" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-02 21:52:34.919 +01:00 [DBG] Connection id "0HMSJJ9IVGK5Q" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-02 21:52:35.760 +01:00 [DBG] Connection id "0HMSJJ9IVGK5R" accepted.
+2023-08-02 21:52:35.814 +01:00 [DBG] Connection id "0HMSJJ9IVGK5R" started.
+2023-08-02 21:52:36.331 +01:00 [DBG] Connection 0HMSJJ9IVGK5R established using the following protocol: "Tls13"
+2023-08-02 21:52:36.565 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/index.html - -
+2023-08-02 21:52:36.632 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-02 21:52:36.692 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-08-02 21:52:36.693 +01:00 [DBG] Request did not match any endpoints
+2023-08-02 21:52:36.925 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-08-02 21:52:37.655 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 21:52:37.658 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-08-02 21:52:37.664 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/_framework/aspnetcore-browser-refresh.js - - - 200 12354 application/javascript;+charset=utf-8 8.4945ms
+2023-08-02 21:52:37.664 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/index.html - - - 200 - text/html;charset=utf-8 1110.7368ms
+2023-08-02 21:52:37.734 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/_vs/browserLink - -
+2023-08-02 21:52:38.479 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 744.4237ms
+2023-08-02 21:52:38.584 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - -
+2023-08-02 21:52:38.591 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-08-02 21:52:38.591 +01:00 [DBG] Request did not match any endpoints
+2023-08-02 21:52:39.252 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 667.3511ms
+2023-08-02 21:52:41.685 +01:00 [DBG] Connection id "0HMSJJ9IVGK5R" received FIN.
+2023-08-02 21:52:41.701 +01:00 [DBG] Connection id "0HMSJJ9IVGK5R" is closed. The last processed stream ID was 7.
+2023-08-02 21:52:41.701 +01:00 [DBG] Connection id "0HMSJJ9IVGK5R" sending FIN because: "The client closed the connection."
+2023-08-02 21:52:41.705 +01:00 [DBG] Connection id "0HMSJJ9IVGK5R" stopped.
+2023-08-02 21:53:18.337 +01:00 [DBG] Connection id "0HMSJJ9IVGK5S" accepted.
+2023-08-02 21:53:18.346 +01:00 [DBG] Connection id "0HMSJJ9IVGK5S" started.
+2023-08-02 21:53:18.379 +01:00 [DBG] Connection 0HMSJJ9IVGK5S established using the following protocol: "Tls13"
+2023-08-02 21:53:18.393 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7049/api/Payment/Fund-Wallet?Reference=56987uhgfertyhgfd application/json 12
+2023-08-02 21:53:18.459 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Payment/Fund-Wallet'
+2023-08-02 21:53:18.469 +01:00 [DBG] Endpoint 'Savings_App.Controllers.PaymentController.FundWallet (Savings-App)' with route pattern 'api/Payment/Fund-Wallet' is valid for the request path '/api/Payment/Fund-Wallet'
+2023-08-02 21:53:18.470 +01:00 [DBG] Request matched endpoint 'Savings_App.Controllers.PaymentController.FundWallet (Savings-App)'
+2023-08-02 21:53:18.472 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-08-02 21:53:18.500 +01:00 [DBG] AuthenticationScheme: Identity.Application was not authenticated.
+2023-08-02 21:53:18.506 +01:00 [INF] Executing endpoint 'Savings_App.Controllers.PaymentController.FundWallet (Savings-App)'
+2023-08-02 21:53:18.578 +01:00 [INF] Route matched with {action = "FundWallet", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FundWallet(System.String, System.String) on controller Savings_App.Controllers.PaymentController (Savings-App).
+2023-08-02 21:53:18.580 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-08-02 21:53:18.580 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-08-02 21:53:18.580 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-08-02 21:53:18.580 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-08-02 21:53:18.581 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-08-02 21:53:18.582 +01:00 [DBG] Executing controller factory for controller Savings_App.Controllers.PaymentController (Savings-App)
+2023-08-02 21:53:18.584 +01:00 [DBG] Executed controller factory for controller Savings_App.Controllers.PaymentController (Savings-App)
+2023-08-02 21:53:18.611 +01:00 [DBG] Attempting to bind parameter 'WalletId' of type 'System.String' ...
+2023-08-02 21:53:18.618 +01:00 [DBG] Attempting to bind parameter 'WalletId' of type 'System.String' using the name '' in request data ...
+2023-08-02 21:53:18.620 +01:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-08-02 21:53:18.631 +01:00 [DBG] Connection id "0HMSJJ9IVGK5S", Request id "0HMSJJ9IVGK5S:00000001": started reading request body.
+2023-08-02 21:53:18.632 +01:00 [DBG] Connection id "0HMSJJ9IVGK5S", Request id "0HMSJJ9IVGK5S:00000001": done reading request body.
+2023-08-02 21:53:18.641 +01:00 [DBG] JSON input formatter succeeded, deserializing to type 'System.String'
+2023-08-02 21:53:18.641 +01:00 [DBG] Done attempting to bind parameter 'WalletId' of type 'System.String'.
+2023-08-02 21:53:18.641 +01:00 [DBG] Done attempting to bind parameter 'WalletId' of type 'System.String'.
+2023-08-02 21:53:18.641 +01:00 [DBG] Attempting to validate the bound parameter 'WalletId' of type 'System.String' ...
+2023-08-02 21:53:18.658 +01:00 [DBG] Done attempting to validate the bound parameter 'WalletId' of type 'System.String'.
+2023-08-02 21:53:18.661 +01:00 [DBG] Attempting to bind parameter 'Reference' of type 'System.String' ...
+2023-08-02 21:53:18.662 +01:00 [DBG] Attempting to bind parameter 'Reference' of type 'System.String' using the name 'Reference' in request data ...
+2023-08-02 21:53:18.665 +01:00 [DBG] Done attempting to bind parameter 'Reference' of type 'System.String'.
+2023-08-02 21:53:18.665 +01:00 [DBG] Done attempting to bind parameter 'Reference' of type 'System.String'.
+2023-08-02 21:53:18.665 +01:00 [DBG] Attempting to validate the bound parameter 'Reference' of type 'System.String' ...
+2023-08-02 21:53:18.666 +01:00 [DBG] Done attempting to validate the bound parameter 'Reference' of type 'System.String'.

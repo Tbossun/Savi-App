@@ -9,7 +9,7 @@ namespace SavingsApp.Data.Entities.DTOs.Request
     public class PaystackTransactionRequest
     {
         public string Reference { get; private set; }
-        public int AmountInKobo { get; set; }
+        public int Amount { get; set; }
         public string Email { get; set; }
         public string CallbackUrl { get; set; }
 
