@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tVeNjBZIkWI3xMplidFUaf7KD6Ot3e0h0FCnBsv+2ZBQTlEO0Zd65rqzXBXgjsol3p186cL2wm2fO5KkhyVD+A==",
+  "dgSpecHash": "mN/Lj454lqQJUyWn7rPt69SrhpLNd39OtvZQaI/4pGR09rO1vlBFDIaE/35zOKKn51jxKbcgvabtXHfs5jtuVA==",
   "success": true,
   "projectFilePath": "C:\\Users\\alabi\\Desktop\\OnBoard\\SavingsApp\\SavingsApp.Data\\SavingsApp.Data.csproj",
   "expectedPackageFiles": [
@@ -47,6 +47,7 @@
     "C:\\Users\\alabi\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\alabi\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\alabi\\.nuget\\packages\\mimekit\\4.1.0\\mimekit.4.1.0.nupkg.sha512",
+    "C:\\Users\\alabi\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\alabi\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.2\\sqlitepclraw.bundle_e_sqlite3.2.1.2.nupkg.sha512",
     "C:\\Users\\alabi\\.nuget\\packages\\sqlitepclraw.core\\2.1.2\\sqlitepclraw.core.2.1.2.nupkg.sha512",
     "C:\\Users\\alabi\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.2\\sqlitepclraw.lib.e_sqlite3.2.1.2.nupkg.sha512",

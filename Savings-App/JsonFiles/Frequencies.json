@@ -1,0 +1,23 @@
+[
+  {
+    "FrequencyId": "48b34c6d-f84e-4749-3454-b01d9ded25b7",
+    "FrequencyName": "Monthly",
+    "CreatedAt": "2020-01-01",
+    "ModifiedAt": "2022-09-01",
+    "IsDeleted": false
+  },
+  {
+    "FrequencyId": "48b34f0d-f84e-4749-3454-b01t9ded25b7",
+    "FrequencyName": "Daily",
+    "CreatedAt": "2000-01-01",
+    "ModifiedAt": "2012-09-01",
+    "IsDeleted": false
+  },
+  {
+    "FrequencyId": "48b34fde-f84e-4749-3454-b01d9ded33b7",
+    "FrequencyName": "Weekly",
+    "CreatedAt": "2022-01-01",
+    "ModifiedAt": "2023-02-01",
+    "IsDeleted": false
+  }
+]

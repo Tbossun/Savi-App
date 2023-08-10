@@ -5,7 +5,6 @@ using SavingsApp.Core.Services.Interfaces;
 using Serilog;
 using Serilog.Extensions.Logging;
 using SavingsApp.Core.Services.Implementations;
-using MySchool.Core.Interface;
 using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
@@ -16,6 +15,7 @@ using SavingsApp.Data.Entities.Models;
 using Microsoft.EntityFrameworkCore;
 using SavingsApp.Data.Repositories.IRepositories;
 using SavingsApp.Data.UnitOfWork;
+using SavingsApp.Data.Seeding;
 
 public class Program
 {
@@ -54,6 +54,7 @@ public class Program
             var apiKey = "sk_test_c1e3948a98584d332e3cebf256c84d13e915e2fe"; // Replace this with your actual Paystack API key.
             return new PaystackService(apiKey, unitOfWork);
         });
+
         builder.Services.AddControllers();
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
@@ -128,6 +129,16 @@ public class Program
 
         /*var logger = app.Services.GetRequiredService<ILogger<Program>>();
         app.ConfigureExceptionHandler(logger);*/
+
+        //configure seeder
+        using (var scope = app.Services.CreateScope())
+        {
+            var dbContext = scope.ServiceProvider.GetRequiredService<SaviContext>();
+            var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
+            var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+            // Seed the data
+            Seeder.SeedDataBase(roleManager, userManager, dbContext);
+        }
 
         // Configure the HTTP request pipeline.
         if (app.Environment.IsDevelopment())

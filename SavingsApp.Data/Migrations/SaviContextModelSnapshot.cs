@@ -17,7 +17,7 @@ namespace SavingsApp.Data.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "6.0.20");
 
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole<string>", b =>
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("TEXT");
@@ -223,6 +223,62 @@ namespace SavingsApp.Data.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
+            modelBuilder.Entity("SavingsApp.Data.Entities.Models.Category", b =>
+                {
+                    b.Property<string>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("CategoryDescription")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("CategoryName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("ModifiedAt")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("categories");
+                });
+
+            modelBuilder.Entity("SavingsApp.Data.Entities.Models.Frequency", b =>
+                {
+                    b.Property<string>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("FrequencyId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("FrequencyName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("ModifiedAt")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("frequencies");
+                });
+
             modelBuilder.Entity("SavingsApp.Data.Entities.Models.KYC", b =>
                 {
                     b.Property<int>("Id")
@@ -265,6 +321,106 @@ namespace SavingsApp.Data.Migrations
                         .IsUnique();
 
                     b.ToTable("kYCs");
+                });
+
+            modelBuilder.Entity("SavingsApp.Data.Entities.Models.PersonalSaving", b =>
+                {
+                    b.Property<string>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("AutoSave")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<decimal>("AutoSaveAmount")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("CategoryId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("CurrentAmount")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("FrequencyId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<decimal>("MaxLimit")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("ModifiedAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("SaveName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("SavingsImageUrl")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("TargetAmount")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("TargetDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CategoryId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("personalSavings");
+                });
+
+            modelBuilder.Entity("SavingsApp.Data.Entities.Models.PersonalSavingsFunding", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("ActionType")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<decimal>("Amount")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("CumulativeAmount")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("ModifiedAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("SavingId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("personalSavingId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("personalSavingId");
+
+                    b.ToTable("personalSavingsFundings");
                 });
 
             modelBuilder.Entity("SavingsApp.Data.Entities.Models.Wallet", b =>
@@ -336,22 +492,20 @@ namespace SavingsApp.Data.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("walletId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("walletId1")
+                    b.Property<string>("walletId")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("walletId1");
+                    b.HasIndex("walletId");
 
                     b.ToTable("WalletFundings");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole<string>", null)
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -378,7 +532,7 @@ namespace SavingsApp.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole<string>", null)
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -411,6 +565,36 @@ namespace SavingsApp.Data.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("SavingsApp.Data.Entities.Models.PersonalSaving", b =>
+                {
+                    b.HasOne("SavingsApp.Data.Entities.Models.Category", "category")
+                        .WithMany("personalSavings")
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("SavingsApp.Data.Entities.Models.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+
+                    b.Navigation("category");
+                });
+
+            modelBuilder.Entity("SavingsApp.Data.Entities.Models.PersonalSavingsFunding", b =>
+                {
+                    b.HasOne("SavingsApp.Data.Entities.Models.PersonalSaving", "personalSaving")
+                        .WithMany("personalSavings")
+                        .HasForeignKey("personalSavingId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("personalSaving");
+                });
+
             modelBuilder.Entity("SavingsApp.Data.Entities.Models.Wallet", b =>
                 {
                     b.HasOne("SavingsApp.Data.Entities.Models.ApplicationUser", "applicationUser")
@@ -426,7 +610,9 @@ namespace SavingsApp.Data.Migrations
                 {
                     b.HasOne("SavingsApp.Data.Entities.Models.Wallet", "wallet")
                         .WithMany("WalletFunding")
-                        .HasForeignKey("walletId1");
+                        .HasForeignKey("walletId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("wallet");
                 });
@@ -435,6 +621,16 @@ namespace SavingsApp.Data.Migrations
                 {
                     b.Navigation("Kyc")
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("SavingsApp.Data.Entities.Models.Category", b =>
+                {
+                    b.Navigation("personalSavings");
+                });
+
+            modelBuilder.Entity("SavingsApp.Data.Entities.Models.PersonalSaving", b =>
+                {
+                    b.Navigation("personalSavings");
                 });
 
             modelBuilder.Entity("SavingsApp.Data.Entities.Models.Wallet", b =>

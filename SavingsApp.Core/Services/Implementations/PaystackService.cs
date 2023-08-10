@@ -118,8 +118,19 @@ namespace SavingsApp.Core.Services.Implementations
         /// <exception cref="Exception">Thrown if the wallet does not exist or if the transaction verification failed.</exception>
         public async Task<ResponseDto<bool>> FundWallet(string paymentReference, string WalletId, string description)
         {
-            var response = await _paystackTransaction.VerifyTransaction(paymentReference);
             var responseDto = new ResponseDto<bool>();
+
+            var existingWalletFunding = _unitOfWork.WalletFundingRepository.Get(wf => wf.Reference == paymentReference);
+            if (existingWalletFunding != null)
+            {
+                // If the payment reference already exists, return an invalid request response
+                responseDto.DisplayMessage = "Invalid request. Payment reference is no longer valid";
+                responseDto.StatusCode = 400;
+                responseDto.Result = false;
+                return responseDto;
+            }
+            var response = await _paystackTransaction.VerifyTransaction(paymentReference);
+
             // Check if the verification is successful
             if (response.status && response.data.status == "success")
             {
@@ -203,11 +214,11 @@ namespace SavingsApp.Core.Services.Implementations
             // Debit the sender's wallet
             var senderFunding = new WalletFunding
             {
-                Reference = GenerateUniqueReference(),
-                Action = ActionType.Credit,
+                Reference = "Deb" + GenerateUniqueReference(),
+                Action = ActionType.Debit,
                 Amount = amount,
                 CumulativeAmount = senderpreviousCumulativeAmount - amount,
-                Description = $"Local Transfer to {receiverWallet}",
+                Description = $"Local Transfer to {receiverWallet.WalletId}",
                 walletId = senderWalletId ,
                 ModifiedAt = DateTime.UtcNow,
             };
@@ -219,11 +230,11 @@ namespace SavingsApp.Core.Services.Implementations
             // Credit the receiver's wallet
             var receiverFunding = new WalletFunding
             {
-                Reference = GenerateUniqueReference(),
+                Reference = "Cre" + GenerateUniqueReference(),
                 Action = ActionType.Credit,
                 Amount = amount,
                 CumulativeAmount = receiverpreviousCumulativeAmount + amount,
-                Description = $"Transfer received from {senderWallet}",
+                Description = $"Transfer received from {senderWallet.WalletId}",
                 walletId = receiverWalletId,
                 ModifiedAt = DateTime.UtcNow,
             };
@@ -243,7 +254,7 @@ namespace SavingsApp.Core.Services.Implementations
 
 
         /// <summary>
-        /// Credit funds to a wallet.
+        /// Debit funds to a wallet.
         /// </summary>
         /// <param name="walletId">The ID of the wallet to credit.</param>
         /// <param name="amount">The amount to credit.</param>
@@ -270,17 +281,17 @@ namespace SavingsApp.Core.Services.Implementations
                 Reference = GenerateUniqueReference(),
                 Action = ActionType.Credit,
                 Amount = amount,
-                CumulativeAmount = previousCumulativeAmount + amount,
+                CumulativeAmount = previousCumulativeAmount - amount,
                 Description = description,
                 walletId = walletId
             };
             _unitOfWork.WalletFundingRepository.Add(walletFunding);
-            wallet.Balance += amount;
+            wallet.Balance -= amount;
             _unitOfWork.WalletRepository.Update(wallet);
 
             _unitOfWork.Save();
 
-            responseDto.DisplayMessage = "Credit fund successful";
+            responseDto.DisplayMessage = "Debit fund successful";
             responseDto.StatusCode = 200;
             responseDto.Result = true;
 

@@ -1,8 +1,8 @@
 ﻿using Microsoft.Extensions.Configuration;
 using MimeKit;
-using MySchool.Core.Interface;
 using MailKit.Net.Smtp;
 using SavingsApp.Data.Entities.Models;
+using SavingsApp.Core.Services.Interfaces;
 
 namespace SavingsApp.Core.Services.Implementations
 {

@@ -1,6 +1,6 @@
 ﻿using SavingsApp.Data.Entities.Models;
 
-namespace MySchool.Core.Interface
+namespace SavingsApp.Core.Services.Interfaces
 {
     public interface IEmailService
     {

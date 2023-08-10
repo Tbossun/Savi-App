@@ -1,0 +1,702 @@
+2023-08-04 03:47:28.060 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-04 03:47:28.116 +01:00 [DBG] Hosting starting
+2023-08-04 03:47:28.142 +01:00 [INF] User profile is available. Using 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-04 03:47:28.144 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-2233cea8-8ad9-4f56-bb58-30e16e00e4d0.xml'.
+2023-08-04 03:47:28.152 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-96cf26c6-6150-4a38-a968-bbbe32717644.xml'.
+2023-08-04 03:47:28.153 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-ba4a300a-6c51-469e-b2e4-a9cd1daa9c85.xml'.
+2023-08-04 03:47:28.159 +01:00 [DBG] Found key {2233cea8-8ad9-4f56-bb58-30e16e00e4d0}.
+2023-08-04 03:47:28.162 +01:00 [DBG] Found key {96cf26c6-6150-4a38-a968-bbbe32717644}.
+2023-08-04 03:47:28.162 +01:00 [DBG] Found key {ba4a300a-6c51-469e-b2e4-a9cd1daa9c85}.
+2023-08-04 03:47:28.168 +01:00 [DBG] Considering key {96cf26c6-6150-4a38-a968-bbbe32717644} with expiration date 2023-10-26 20:18:55Z as default key.
+2023-08-04 03:47:28.169 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-08-04 03:47:28.171 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2023-08-04 03:47:28.173 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-08-04 03:47:28.175 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-08-04 03:47:28.177 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-08-04 03:47:28.179 +01:00 [DBG] Using key {96cf26c6-6150-4a38-a968-bbbe32717644} as the default key.
+2023-08-04 03:47:28.180 +01:00 [DBG] Key ring with default key {96cf26c6-6150-4a38-a968-bbbe32717644} was loaded during application startup.
+2023-08-04 03:47:28.303 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 60B4004B0E7F50E239AF827782FF73E25B47E3DE)
+2023-08-04 03:47:28.339 +01:00 [INF] Now listening on: https://localhost:7049
+2023-08-04 03:47:28.339 +01:00 [INF] Now listening on: http://localhost:5159
+2023-08-04 03:47:28.340 +01:00 [DBG] Loaded hosting startup assembly Savings-App
+2023-08-04 03:47:28.340 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-08-04 03:47:28.340 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-08-04 03:47:28.340 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-04 03:47:28.340 +01:00 [INF] Hosting environment: Development
+2023-08-04 03:47:28.340 +01:00 [INF] Content root path: C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\
+2023-08-04 03:47:28.340 +01:00 [DBG] Hosting started
+2023-08-04 03:47:28.355 +01:00 [DBG] Connection id "0HMSKIKI56HUR" accepted.
+2023-08-04 03:47:28.355 +01:00 [DBG] Connection id "0HMSKIKI56HUS" accepted.
+2023-08-04 03:47:28.356 +01:00 [DBG] Connection id "0HMSKIKI56HUR" started.
+2023-08-04 03:47:28.356 +01:00 [DBG] Connection id "0HMSKIKI56HUS" started.
+2023-08-04 03:47:28.362 +01:00 [DBG] Connection id "0HMSKIKI56HUS" received FIN.
+2023-08-04 03:47:28.362 +01:00 [DBG] Connection id "0HMSKIKI56HUR" received FIN.
+2023-08-04 03:47:28.378 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-04 03:47:28.378 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-04 03:47:28.475 +01:00 [DBG] Connection id "0HMSKIKI56HUR" stopped.
+2023-08-04 03:47:28.475 +01:00 [DBG] Connection id "0HMSKIKI56HUS" stopped.
+2023-08-04 03:47:28.477 +01:00 [DBG] Connection id "0HMSKIKI56HUS" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-04 03:47:28.477 +01:00 [DBG] Connection id "0HMSKIKI56HUR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-04 03:47:29.338 +01:00 [DBG] Connection id "0HMSKIKI56HUT" accepted.
+2023-08-04 03:47:29.344 +01:00 [DBG] Connection id "0HMSKIKI56HUT" started.
+2023-08-04 03:47:29.591 +01:00 [DBG] Connection 0HMSKIKI56HUT established using the following protocol: "Tls13"
+2023-08-04 03:47:29.649 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/index.html - -
+2023-08-04 03:47:29.692 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-04 03:47:29.736 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-08-04 03:47:29.736 +01:00 [DBG] Request did not match any endpoints
+2023-08-04 03:47:29.889 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-08-04 03:47:30.302 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-08-04 03:47:30.307 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/index.html - - - 200 - text/html;charset=utf-8 662.9683ms
+2023-08-04 03:47:30.362 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/_vs/browserLink - -
+2023-08-04 03:47:30.362 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/_framework/aspnetcore-browser-refresh.js - -
+2023-08-04 03:47:30.398 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/_framework/aspnetcore-browser-refresh.js - - - 200 12354 application/javascript;+charset=utf-8 36.0556ms
+2023-08-04 03:47:30.732 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 370.1771ms
+2023-08-04 03:47:30.817 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - -
+2023-08-04 03:47:30.818 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-08-04 03:47:30.818 +01:00 [DBG] Request did not match any endpoints
+2023-08-04 03:47:31.114 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 297.0381ms
+2023-08-04 03:47:32.687 +01:00 [DBG] Connection id "0HMSKIKI56HUT" received FIN.
+2023-08-04 03:47:32.695 +01:00 [DBG] Connection id "0HMSKIKI56HUT" is closed. The last processed stream ID was 7.
+2023-08-04 03:47:32.695 +01:00 [DBG] Connection id "0HMSKIKI56HUT" sending FIN because: "The client closed the connection."
+2023-08-04 03:47:32.709 +01:00 [DBG] Connection id "0HMSKIKI56HUT" stopped.
+2023-08-04 03:48:35.353 +01:00 [DBG] Connection id "0HMSKIKI56HUU" accepted.
+2023-08-04 03:48:35.361 +01:00 [DBG] Connection id "0HMSKIKI56HUU" started.
+2023-08-04 03:48:35.376 +01:00 [DBG] Connection 0HMSKIKI56HUU established using the following protocol: "Tls13"
+2023-08-04 03:48:35.380 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7049/api/Payment/Fund-Wallet?WalletId=8103685498&description=wallet%20refund application/json 42
+2023-08-04 03:48:35.390 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Payment/Fund-Wallet'
+2023-08-04 03:48:35.393 +01:00 [DBG] Endpoint 'Savings_App.Controllers.PaymentController.FundWallet (Savings-App)' with route pattern 'api/Payment/Fund-Wallet' is valid for the request path '/api/Payment/Fund-Wallet'
+2023-08-04 03:48:35.393 +01:00 [DBG] Request matched endpoint 'Savings_App.Controllers.PaymentController.FundWallet (Savings-App)'
+2023-08-04 03:48:35.395 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-08-04 03:48:35.407 +01:00 [DBG] AuthenticationScheme: Identity.Application was not authenticated.
+2023-08-04 03:48:35.410 +01:00 [INF] Executing endpoint 'Savings_App.Controllers.PaymentController.FundWallet (Savings-App)'
+2023-08-04 03:48:35.432 +01:00 [INF] Route matched with {action = "FundWallet", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FundWallet(SavingsApp.Data.Entities.DTOs.Request.PaystackTransactionVerificationRequest, System.String, System.String) on controller Savings_App.Controllers.PaymentController (Savings-App).
+2023-08-04 03:48:35.433 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-08-04 03:48:35.433 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-08-04 03:48:35.433 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-08-04 03:48:35.433 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-08-04 03:48:35.433 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-08-04 03:48:35.433 +01:00 [DBG] Executing controller factory for controller Savings_App.Controllers.PaymentController (Savings-App)
+2023-08-04 03:48:35.556 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-08-04 03:48:36.120 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<string>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2023-08-04 03:48:36.120 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<string>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2023-08-04 03:48:36.203 +01:00 [DBG] The property 'Wallet.applicationUserId' was created in shadow state because there are no eligible CLR members with a matching name.
+2023-08-04 03:48:36.402 +01:00 [INF] Entity Framework Core 6.0.20 initialized 'SaviContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.20' with options: None
+2023-08-04 03:48:36.403 +01:00 [DBG] Executed controller factory for controller Savings_App.Controllers.PaymentController (Savings-App)
+2023-08-04 03:48:36.418 +01:00 [DBG] Attempting to bind parameter 'verificationRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.PaystackTransactionVerificationRequest' ...
+2023-08-04 03:48:36.420 +01:00 [DBG] Attempting to bind parameter 'verificationRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.PaystackTransactionVerificationRequest' using the name '' in request data ...
+2023-08-04 03:48:36.420 +01:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-08-04 03:48:36.423 +01:00 [DBG] Connection id "0HMSKIKI56HUU", Request id "0HMSKIKI56HUU:00000001": started reading request body.
+2023-08-04 03:48:36.423 +01:00 [DBG] Connection id "0HMSKIKI56HUU", Request id "0HMSKIKI56HUU:00000001": done reading request body.
+2023-08-04 03:48:36.428 +01:00 [DBG] JSON input formatter succeeded, deserializing to type 'SavingsApp.Data.Entities.DTOs.Request.PaystackTransactionVerificationRequest'
+2023-08-04 03:48:36.429 +01:00 [DBG] Done attempting to bind parameter 'verificationRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.PaystackTransactionVerificationRequest'.
+2023-08-04 03:48:36.429 +01:00 [DBG] Done attempting to bind parameter 'verificationRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.PaystackTransactionVerificationRequest'.
+2023-08-04 03:48:36.429 +01:00 [DBG] Attempting to validate the bound parameter 'verificationRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.PaystackTransactionVerificationRequest' ...
+2023-08-04 03:48:36.433 +01:00 [DBG] Done attempting to validate the bound parameter 'verificationRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.PaystackTransactionVerificationRequest'.
+2023-08-04 03:48:36.434 +01:00 [DBG] Attempting to bind parameter 'WalletId' of type 'System.String' ...
+2023-08-04 03:48:36.435 +01:00 [DBG] Attempting to bind parameter 'WalletId' of type 'System.String' using the name 'WalletId' in request data ...
+2023-08-04 03:48:36.435 +01:00 [DBG] Done attempting to bind parameter 'WalletId' of type 'System.String'.
+2023-08-04 03:48:36.435 +01:00 [DBG] Done attempting to bind parameter 'WalletId' of type 'System.String'.
+2023-08-04 03:48:36.435 +01:00 [DBG] Attempting to validate the bound parameter 'WalletId' of type 'System.String' ...
+2023-08-04 03:48:36.435 +01:00 [DBG] Done attempting to validate the bound parameter 'WalletId' of type 'System.String'.
+2023-08-04 03:48:36.435 +01:00 [DBG] Attempting to bind parameter 'description' of type 'System.String' ...
+2023-08-04 03:48:36.435 +01:00 [DBG] Attempting to bind parameter 'description' of type 'System.String' using the name 'description' in request data ...
+2023-08-04 03:48:36.435 +01:00 [DBG] Done attempting to bind parameter 'description' of type 'System.String'.
+2023-08-04 03:48:36.435 +01:00 [DBG] Done attempting to bind parameter 'description' of type 'System.String'.
+2023-08-04 03:48:36.435 +01:00 [DBG] Attempting to validate the bound parameter 'description' of type 'System.String' ...
+2023-08-04 03:48:36.435 +01:00 [DBG] Done attempting to validate the bound parameter 'description' of type 'System.String'.
+2023-08-04 03:48:36.663 +01:00 [INF] Executed action Savings_App.Controllers.PaymentController.FundWallet (Savings-App) in 1225.4004ms
+2023-08-04 03:48:36.666 +01:00 [INF] Executed endpoint 'Savings_App.Controllers.PaymentController.FundWallet (Savings-App)'
+2023-08-04 03:48:36.670 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: No such host is known. (api.paystack.co:443)
+ ---> System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Paystack.Net.SDK.Transactions.PaystackTransaction.VerifyTransaction(String reference)
+   at SavingsApp.Core.Services.Implementations.PaystackService.FundWallet(String paymentReference, String WalletId, String description) in C:\Users\alabi\Desktop\OnBoard\SavingsApp\SavingsApp.Core\Services\Implementations\PaystackService.cs:line 121
+   at Savings_App.Controllers.PaymentController.FundWallet(PaystackTransactionVerificationRequest verificationRequest, String WalletId, String description) in C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Controllers\PaymentController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-04 03:48:36.716 +01:00 [DBG] 'SaviContext' disposed.
+2023-08-04 03:48:36.720 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7049/api/Payment/Fund-Wallet?WalletId=8103685498&description=wallet%20refund application/json 42 - 500 - text/plain;+charset=utf-8 1339.2960ms
+2023-08-04 03:49:32.931 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/index.html - -
+2023-08-04 03:49:32.937 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-08-04 03:49:32.937 +01:00 [DBG] Request did not match any endpoints
+2023-08-04 03:49:32.941 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-08-04 03:49:32.947 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-08-04 03:49:32.947 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/index.html - - - 200 - text/html;charset=utf-8 16.2605ms
+2023-08-04 03:49:32.961 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/_framework/aspnetcore-browser-refresh.js - -
+2023-08-04 03:49:32.961 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/_framework/aspnetcore-browser-refresh.js - - - 200 12354 application/javascript;+charset=utf-8 0.3073ms
+2023-08-04 03:49:32.972 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/_vs/browserLink - -
+2023-08-04 03:49:32.981 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 9.0940ms
+2023-08-04 03:49:33.252 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - -
+2023-08-04 03:49:33.257 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-08-04 03:49:33.257 +01:00 [DBG] Request did not match any endpoints
+2023-08-04 03:49:33.262 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 9.8223ms
+2023-08-04 03:50:04.737 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7049/api/Payment/Fund-Wallet?WalletId=8103685498&description=fund%20wallet application/json 42
+2023-08-04 03:50:04.752 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Payment/Fund-Wallet'
+2023-08-04 03:50:04.752 +01:00 [DBG] Endpoint 'Savings_App.Controllers.PaymentController.FundWallet (Savings-App)' with route pattern 'api/Payment/Fund-Wallet' is valid for the request path '/api/Payment/Fund-Wallet'
+2023-08-04 03:50:04.752 +01:00 [DBG] Request matched endpoint 'Savings_App.Controllers.PaymentController.FundWallet (Savings-App)'
+2023-08-04 03:50:04.753 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-08-04 03:50:04.753 +01:00 [DBG] AuthenticationScheme: Identity.Application was not authenticated.
+2023-08-04 03:50:04.753 +01:00 [INF] Executing endpoint 'Savings_App.Controllers.PaymentController.FundWallet (Savings-App)'
+2023-08-04 03:50:04.757 +01:00 [INF] Route matched with {action = "FundWallet", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FundWallet(SavingsApp.Data.Entities.DTOs.Request.PaystackTransactionVerificationRequest, System.String, System.String) on controller Savings_App.Controllers.PaymentController (Savings-App).
+2023-08-04 03:50:04.757 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-08-04 03:50:04.757 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-08-04 03:50:04.757 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-08-04 03:50:04.757 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-08-04 03:50:04.757 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-08-04 03:50:04.757 +01:00 [DBG] Executing controller factory for controller Savings_App.Controllers.PaymentController (Savings-App)
+2023-08-04 03:50:04.794 +01:00 [INF] Entity Framework Core 6.0.20 initialized 'SaviContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.20' with options: None
+2023-08-04 03:50:04.795 +01:00 [DBG] Executed controller factory for controller Savings_App.Controllers.PaymentController (Savings-App)
+2023-08-04 03:50:04.795 +01:00 [DBG] Attempting to bind parameter 'verificationRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.PaystackTransactionVerificationRequest' ...
+2023-08-04 03:50:04.795 +01:00 [DBG] Attempting to bind parameter 'verificationRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.PaystackTransactionVerificationRequest' using the name '' in request data ...
+2023-08-04 03:50:04.795 +01:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-08-04 03:50:04.795 +01:00 [DBG] Connection id "0HMSKIKI56HUU", Request id "0HMSKIKI56HUU:0000000B": started reading request body.
+2023-08-04 03:50:04.795 +01:00 [DBG] Connection id "0HMSKIKI56HUU", Request id "0HMSKIKI56HUU:0000000B": done reading request body.
+2023-08-04 03:50:04.795 +01:00 [DBG] JSON input formatter succeeded, deserializing to type 'SavingsApp.Data.Entities.DTOs.Request.PaystackTransactionVerificationRequest'
+2023-08-04 03:50:04.795 +01:00 [DBG] Done attempting to bind parameter 'verificationRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.PaystackTransactionVerificationRequest'.
+2023-08-04 03:50:04.795 +01:00 [DBG] Done attempting to bind parameter 'verificationRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.PaystackTransactionVerificationRequest'.
+2023-08-04 03:50:04.796 +01:00 [DBG] Attempting to validate the bound parameter 'verificationRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.PaystackTransactionVerificationRequest' ...
+2023-08-04 03:50:04.796 +01:00 [DBG] Done attempting to validate the bound parameter 'verificationRequest' of type 'SavingsApp.Data.Entities.DTOs.Request.PaystackTransactionVerificationRequest'.
+2023-08-04 03:50:04.796 +01:00 [DBG] Attempting to bind parameter 'WalletId' of type 'System.String' ...
+2023-08-04 03:50:04.796 +01:00 [DBG] Attempting to bind parameter 'WalletId' of type 'System.String' using the name 'WalletId' in request data ...
+2023-08-04 03:50:04.796 +01:00 [DBG] Done attempting to bind parameter 'WalletId' of type 'System.String'.
+2023-08-04 03:50:04.796 +01:00 [DBG] Done attempting to bind parameter 'WalletId' of type 'System.String'.
+2023-08-04 03:50:04.796 +01:00 [DBG] Attempting to validate the bound parameter 'WalletId' of type 'System.String' ...
+2023-08-04 03:50:04.796 +01:00 [DBG] Done attempting to validate the bound parameter 'WalletId' of type 'System.String'.
+2023-08-04 03:50:04.796 +01:00 [DBG] Attempting to bind parameter 'description' of type 'System.String' ...
+2023-08-04 03:50:04.796 +01:00 [DBG] Attempting to bind parameter 'description' of type 'System.String' using the name 'description' in request data ...
+2023-08-04 03:50:04.796 +01:00 [DBG] Done attempting to bind parameter 'description' of type 'System.String'.
+2023-08-04 03:50:04.796 +01:00 [DBG] Done attempting to bind parameter 'description' of type 'System.String'.
+2023-08-04 03:50:04.796 +01:00 [DBG] Attempting to validate the bound parameter 'description' of type 'System.String' ...
+2023-08-04 03:50:04.796 +01:00 [DBG] Done attempting to validate the bound parameter 'description' of type 'System.String'.
+2023-08-04 03:50:04.857 +01:00 [DBG] Compiling query expression: 
+'DbSet<WalletFunding>()
+    .AsNoTracking()
+    .Where(wf => wf.Reference == __paymentReference_0)
+    .FirstOrDefault()'
+2023-08-04 03:50:05.149 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<WalletFunding>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: WalletFunding.Id (string) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: WalletFunding.Action (ActionType) Required, 1], [Property: WalletFunding.Amount (double) Required, 2], [Property: WalletFunding.CreatedAt (DateTime) Required, 3], [Property: WalletFunding.CumulativeAmount (double) Required, 4], [Property: WalletFunding.Description (string) Required, 5], [Property: WalletFunding.IsDeleted (bool) Required, 6], [Property: WalletFunding.ModifiedAt (DateTime) Required, 7], [Property: WalletFunding.Reference (string) Required, 8], [Property: WalletFunding.walletId (string) Required FK Index, 9] }
+        SELECT TOP(1) w.Id, w.Action, w.Amount, w.CreatedAt, w.CumulativeAmount, w.Description, w.IsDeleted, w.ModifiedAt, w.Reference, w.walletId
+        FROM WalletFundings AS w
+        WHERE w.Reference == @__paymentReference_0), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, WalletFunding>, 
+    SavingsApp.Data.Context.SaviContext, 
+    False, 
+    False, 
+    True
+)
+    .SingleOrDefault()'
+2023-08-04 03:50:05.185 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-08-04 03:50:05.256 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (71ms).
+2023-08-04 03:50:05.262 +01:00 [DBG] Opening connection to database 'main' on server 'Savi.db'.
+2023-08-04 03:50:05.277 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-04 03:50:05.290 +01:00 [DBG] Executing DbCommand [Parameters=[@__paymentReference_0='?' (Size = 21)], CommandType='"Text"', CommandTimeout='30']
+SELECT "w"."Id", "w"."Action", "w"."Amount", "w"."CreatedAt", "w"."CumulativeAmount", "w"."Description", "w"."IsDeleted", "w"."ModifiedAt", "w"."Reference", "w"."walletId"
+FROM "WalletFundings" AS "w"
+WHERE "w"."Reference" = @__paymentReference_0
+LIMIT 1
+2023-08-04 03:50:05.308 +01:00 [INF] Executed DbCommand (24ms) [Parameters=[@__paymentReference_0='?' (Size = 21)], CommandType='"Text"', CommandTimeout='30']
+SELECT "w"."Id", "w"."Action", "w"."Amount", "w"."CreatedAt", "w"."CumulativeAmount", "w"."Description", "w"."IsDeleted", "w"."ModifiedAt", "w"."Reference", "w"."walletId"
+FROM "WalletFundings" AS "w"
+WHERE "w"."Reference" = @__paymentReference_0
+LIMIT 1
+2023-08-04 03:50:05.319 +01:00 [DBG] A data reader was disposed.
+2023-08-04 03:50:05.322 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-04 03:50:05.326 +01:00 [DBG] Closed connection to database 'main' on server 'Savi.db'.
+2023-08-04 03:50:05.327 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-08-04 03:50:05.328 +01:00 [DBG] No information found on request to perform content negotiation.
+2023-08-04 03:50:05.328 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-08-04 03:50:05.328 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-08-04 03:50:05.328 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-08-04 03:50:05.329 +01:00 [INF] Executing OkObjectResult, writing value of type 'SavingsApp.Data.Entities.DTOs.Response.ResponseDto`1[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-08-04 03:50:05.332 +01:00 [INF] Executed action Savings_App.Controllers.PaymentController.FundWallet (Savings-App) in 574.5168ms
+2023-08-04 03:50:05.332 +01:00 [INF] Executed endpoint 'Savings_App.Controllers.PaymentController.FundWallet (Savings-App)'
+2023-08-04 03:50:05.332 +01:00 [DBG] 'SaviContext' disposed.
+2023-08-04 03:50:05.332 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7049/api/Payment/Fund-Wallet?WalletId=8103685498&description=fund%20wallet application/json 42 - 200 - application/json;+charset=utf-8 594.9299ms
+2023-08-04 04:01:57.072 +01:00 [DBG] Connection id "0HMSKIKI56HUU" received FIN.
+2023-08-04 04:01:57.074 +01:00 [DBG] Connection id "0HMSKIKI56HUU" is closed. The last processed stream ID was 11.
+2023-08-04 04:01:57.079 +01:00 [DBG] Connection id "0HMSKIKI56HUU" sending FIN because: "The client closed the connection."
+2023-08-04 04:01:57.099 +01:00 [DBG] Connection id "0HMSKIKI56HUU" stopped.
+2023-08-04 15:21:21.147 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-04 15:21:21.283 +01:00 [DBG] Hosting starting
+2023-08-04 15:21:21.328 +01:00 [INF] User profile is available. Using 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-04 15:21:21.335 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-2233cea8-8ad9-4f56-bb58-30e16e00e4d0.xml'.
+2023-08-04 15:21:21.358 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-96cf26c6-6150-4a38-a968-bbbe32717644.xml'.
+2023-08-04 15:21:21.359 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-ba4a300a-6c51-469e-b2e4-a9cd1daa9c85.xml'.
+2023-08-04 15:21:21.372 +01:00 [DBG] Found key {2233cea8-8ad9-4f56-bb58-30e16e00e4d0}.
+2023-08-04 15:21:21.382 +01:00 [DBG] Found key {96cf26c6-6150-4a38-a968-bbbe32717644}.
+2023-08-04 15:21:21.382 +01:00 [DBG] Found key {ba4a300a-6c51-469e-b2e4-a9cd1daa9c85}.
+2023-08-04 15:21:21.400 +01:00 [DBG] Considering key {96cf26c6-6150-4a38-a968-bbbe32717644} with expiration date 2023-10-26 20:18:55Z as default key.
+2023-08-04 15:21:21.403 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-08-04 15:21:21.410 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2023-08-04 15:21:21.412 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-08-04 15:21:21.428 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-08-04 15:21:21.430 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-08-04 15:21:21.433 +01:00 [DBG] Using key {96cf26c6-6150-4a38-a968-bbbe32717644} as the default key.
+2023-08-04 15:21:21.434 +01:00 [DBG] Key ring with default key {96cf26c6-6150-4a38-a968-bbbe32717644} was loaded during application startup.
+2023-08-04 15:21:21.716 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 60B4004B0E7F50E239AF827782FF73E25B47E3DE)
+2023-08-04 15:21:21.793 +01:00 [INF] Now listening on: https://localhost:7049
+2023-08-04 15:21:21.793 +01:00 [INF] Now listening on: http://localhost:5159
+2023-08-04 15:21:21.793 +01:00 [DBG] Loaded hosting startup assembly Savings-App
+2023-08-04 15:21:21.793 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-08-04 15:21:21.793 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-08-04 15:21:21.793 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-04 15:21:21.793 +01:00 [INF] Hosting environment: Development
+2023-08-04 15:21:21.793 +01:00 [INF] Content root path: C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\
+2023-08-04 15:21:21.793 +01:00 [DBG] Hosting started
+2023-08-04 15:21:21.842 +01:00 [DBG] Connection id "0HMSKUO9T30A0" received FIN.
+2023-08-04 15:21:21.864 +01:00 [DBG] Connection id "0HMSKUO9T30A0" accepted.
+2023-08-04 15:21:21.865 +01:00 [DBG] Connection id "0HMSKUO9T30A0" started.
+2023-08-04 15:21:21.891 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-04 15:21:22.019 +01:00 [DBG] Connection id "0HMSKUO9T30A0" stopped.
+2023-08-04 15:21:22.026 +01:00 [DBG] Connection id "0HMSKUO9T30A0" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-04 15:21:22.421 +01:00 [DBG] Connection id "0HMSKUO9T30A1" accepted.
+2023-08-04 15:21:22.421 +01:00 [DBG] Connection id "0HMSKUO9T30A1" started.
+2023-08-04 15:21:22.529 +01:00 [DBG] Connection 0HMSKUO9T30A1 established using the following protocol: "Tls13"
+2023-08-04 15:21:22.631 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/index.html - -
+2023-08-04 15:21:22.683 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-04 15:21:22.726 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-08-04 15:21:22.727 +01:00 [DBG] Request did not match any endpoints
+2023-08-04 15:21:22.951 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-08-04 15:21:23.214 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/_framework/aspnetcore-browser-refresh.js - -
+2023-08-04 15:21:23.218 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-08-04 15:21:23.225 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/index.html - - - 200 - text/html;charset=utf-8 610.0717ms
+2023-08-04 15:21:23.226 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/_framework/aspnetcore-browser-refresh.js - - - 200 12354 application/javascript;+charset=utf-8 11.9905ms
+2023-08-04 15:21:23.249 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/_vs/browserLink - -
+2023-08-04 15:21:23.341 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 92.2424ms
+2023-08-04 15:21:25.983 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - -
+2023-08-04 15:21:25.985 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-08-04 15:21:25.985 +01:00 [DBG] Request did not match any endpoints
+2023-08-04 15:21:26.439 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 456.1009ms
+2023-08-04 22:09:34.283 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-04 22:09:34.376 +01:00 [DBG] Hosting starting
+2023-08-04 22:09:34.410 +01:00 [INF] User profile is available. Using 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-04 22:09:34.414 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-2233cea8-8ad9-4f56-bb58-30e16e00e4d0.xml'.
+2023-08-04 22:09:34.439 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-96cf26c6-6150-4a38-a968-bbbe32717644.xml'.
+2023-08-04 22:09:34.439 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-ba4a300a-6c51-469e-b2e4-a9cd1daa9c85.xml'.
+2023-08-04 22:09:34.448 +01:00 [DBG] Found key {2233cea8-8ad9-4f56-bb58-30e16e00e4d0}.
+2023-08-04 22:09:34.457 +01:00 [DBG] Found key {96cf26c6-6150-4a38-a968-bbbe32717644}.
+2023-08-04 22:09:34.457 +01:00 [DBG] Found key {ba4a300a-6c51-469e-b2e4-a9cd1daa9c85}.
+2023-08-04 22:09:34.464 +01:00 [DBG] Considering key {96cf26c6-6150-4a38-a968-bbbe32717644} with expiration date 2023-10-26 20:18:55Z as default key.
+2023-08-04 22:09:34.466 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-08-04 22:09:34.470 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2023-08-04 22:09:34.471 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-08-04 22:09:34.475 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-08-04 22:09:34.476 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-08-04 22:09:34.478 +01:00 [DBG] Using key {96cf26c6-6150-4a38-a968-bbbe32717644} as the default key.
+2023-08-04 22:09:34.479 +01:00 [DBG] Key ring with default key {96cf26c6-6150-4a38-a968-bbbe32717644} was loaded during application startup.
+2023-08-04 22:09:34.817 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 60B4004B0E7F50E239AF827782FF73E25B47E3DE)
+2023-08-04 22:09:34.867 +01:00 [INF] Now listening on: https://localhost:7049
+2023-08-04 22:09:34.867 +01:00 [INF] Now listening on: http://localhost:5159
+2023-08-04 22:09:34.867 +01:00 [DBG] Loaded hosting startup assembly Savings-App
+2023-08-04 22:09:34.867 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-08-04 22:09:34.867 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-08-04 22:09:34.867 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-04 22:09:34.867 +01:00 [INF] Hosting environment: Development
+2023-08-04 22:09:34.867 +01:00 [INF] Content root path: C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\
+2023-08-04 22:09:34.867 +01:00 [DBG] Hosting started
+2023-08-04 22:09:35.112 +01:00 [DBG] Connection id "0HMSL5SDF3MPJ" received FIN.
+2023-08-04 22:09:35.112 +01:00 [DBG] Connection id "0HMSL5SDF3MPK" received FIN.
+2023-08-04 22:09:35.135 +01:00 [DBG] Connection id "0HMSL5SDF3MPJ" accepted.
+2023-08-04 22:09:35.135 +01:00 [DBG] Connection id "0HMSL5SDF3MPK" accepted.
+2023-08-04 22:09:35.137 +01:00 [DBG] Connection id "0HMSL5SDF3MPJ" started.
+2023-08-04 22:09:35.137 +01:00 [DBG] Connection id "0HMSL5SDF3MPK" started.
+2023-08-04 22:09:35.230 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-04 22:09:35.230 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-04 22:09:35.294 +01:00 [DBG] Connection id "0HMSL5SDF3MPJ" stopped.
+2023-08-04 22:09:35.294 +01:00 [DBG] Connection id "0HMSL5SDF3MPK" stopped.
+2023-08-04 22:09:35.301 +01:00 [DBG] Connection id "0HMSL5SDF3MPK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-04 22:09:35.301 +01:00 [DBG] Connection id "0HMSL5SDF3MPJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-04 22:09:36.156 +01:00 [DBG] Connection id "0HMSL5SDF3MPL" accepted.
+2023-08-04 22:09:36.163 +01:00 [DBG] Connection id "0HMSL5SDF3MPL" started.
+2023-08-04 22:09:36.362 +01:00 [DBG] Connection 0HMSL5SDF3MPL established using the following protocol: "Tls13"
+2023-08-04 22:09:36.492 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/index.html - -
+2023-08-04 22:09:36.548 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-04 22:09:36.595 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-08-04 22:09:36.596 +01:00 [DBG] Request did not match any endpoints
+2023-08-04 22:09:36.811 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-08-04 22:09:37.163 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-08-04 22:09:37.172 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/_framework/aspnetcore-browser-refresh.js - -
+2023-08-04 22:09:37.172 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/_vs/browserLink - -
+2023-08-04 22:09:37.190 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/index.html - - - 200 - text/html;charset=utf-8 690.5877ms
+2023-08-04 22:09:37.214 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/_framework/aspnetcore-browser-refresh.js - - - 200 12354 application/javascript;+charset=utf-8 42.2275ms
+2023-08-04 22:09:37.371 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 199.2425ms
+2023-08-04 22:09:37.491 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - -
+2023-08-04 22:09:37.495 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-08-04 22:09:37.495 +01:00 [DBG] Request did not match any endpoints
+2023-08-04 22:09:37.765 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 274.1944ms
+2023-08-04 22:09:39.199 +01:00 [DBG] Connection id "0HMSL5SDF3MPL" received FIN.
+2023-08-04 22:09:39.205 +01:00 [DBG] Connection id "0HMSL5SDF3MPL" is closed. The last processed stream ID was 7.
+2023-08-04 22:09:39.206 +01:00 [DBG] Connection id "0HMSL5SDF3MPL" sending FIN because: "The client closed the connection."
+2023-08-04 22:09:39.218 +01:00 [DBG] Connection id "0HMSL5SDF3MPL" stopped.
+2023-08-04 22:29:10.481 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-04 22:29:10.626 +01:00 [DBG] Hosting starting
+2023-08-04 22:29:10.655 +01:00 [INF] User profile is available. Using 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-04 22:29:10.659 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-2233cea8-8ad9-4f56-bb58-30e16e00e4d0.xml'.
+2023-08-04 22:29:10.683 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-96cf26c6-6150-4a38-a968-bbbe32717644.xml'.
+2023-08-04 22:29:10.683 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-ba4a300a-6c51-469e-b2e4-a9cd1daa9c85.xml'.
+2023-08-04 22:29:10.695 +01:00 [DBG] Found key {2233cea8-8ad9-4f56-bb58-30e16e00e4d0}.
+2023-08-04 22:29:10.704 +01:00 [DBG] Found key {96cf26c6-6150-4a38-a968-bbbe32717644}.
+2023-08-04 22:29:10.704 +01:00 [DBG] Found key {ba4a300a-6c51-469e-b2e4-a9cd1daa9c85}.
+2023-08-04 22:29:10.711 +01:00 [DBG] Considering key {96cf26c6-6150-4a38-a968-bbbe32717644} with expiration date 2023-10-26 20:18:55Z as default key.
+2023-08-04 22:29:10.713 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-08-04 22:29:10.715 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2023-08-04 22:29:10.716 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-08-04 22:29:10.720 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-08-04 22:29:10.721 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-08-04 22:29:10.723 +01:00 [DBG] Using key {96cf26c6-6150-4a38-a968-bbbe32717644} as the default key.
+2023-08-04 22:29:10.724 +01:00 [DBG] Key ring with default key {96cf26c6-6150-4a38-a968-bbbe32717644} was loaded during application startup.
+2023-08-04 22:29:10.948 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 60B4004B0E7F50E239AF827782FF73E25B47E3DE)
+2023-08-04 22:29:11.043 +01:00 [INF] Now listening on: https://localhost:7049
+2023-08-04 22:29:11.043 +01:00 [INF] Now listening on: http://localhost:5159
+2023-08-04 22:29:11.043 +01:00 [DBG] Loaded hosting startup assembly Savings-App
+2023-08-04 22:29:11.043 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-08-04 22:29:11.044 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-08-04 22:29:11.044 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-04 22:29:11.044 +01:00 [INF] Hosting environment: Development
+2023-08-04 22:29:11.044 +01:00 [INF] Content root path: C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\
+2023-08-04 22:29:11.044 +01:00 [DBG] Hosting started
+2023-08-04 22:29:11.191 +01:00 [DBG] Connection id "0HMSL67BV2JVH" received FIN.
+2023-08-04 22:29:11.192 +01:00 [DBG] Connection id "0HMSL67BV2JVI" received FIN.
+2023-08-04 22:29:11.196 +01:00 [DBG] Connection id "0HMSL67BV2JVH" accepted.
+2023-08-04 22:29:11.196 +01:00 [DBG] Connection id "0HMSL67BV2JVI" accepted.
+2023-08-04 22:29:11.197 +01:00 [DBG] Connection id "0HMSL67BV2JVI" started.
+2023-08-04 22:29:11.197 +01:00 [DBG] Connection id "0HMSL67BV2JVH" started.
+2023-08-04 22:29:11.287 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-04 22:29:11.287 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-04 22:29:11.357 +01:00 [DBG] Connection id "0HMSL67BV2JVH" stopped.
+2023-08-04 22:29:11.357 +01:00 [DBG] Connection id "0HMSL67BV2JVI" stopped.
+2023-08-04 22:29:11.359 +01:00 [DBG] Connection id "0HMSL67BV2JVI" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-04 22:29:11.359 +01:00 [DBG] Connection id "0HMSL67BV2JVH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-04 22:29:12.297 +01:00 [DBG] Connection id "0HMSL67BV2JVJ" accepted.
+2023-08-04 22:29:12.297 +01:00 [DBG] Connection id "0HMSL67BV2JVJ" started.
+2023-08-04 22:29:12.515 +01:00 [DBG] Connection 0HMSL67BV2JVJ established using the following protocol: "Tls13"
+2023-08-04 22:29:12.627 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/index.html - -
+2023-08-04 22:29:12.668 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-04 22:29:12.700 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-08-04 22:29:12.701 +01:00 [DBG] Request did not match any endpoints
+2023-08-04 22:29:12.872 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-08-04 22:29:13.054 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/_framework/aspnetcore-browser-refresh.js - -
+2023-08-04 22:29:13.097 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/_vs/browserLink - -
+2023-08-04 22:29:13.098 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-08-04 22:29:13.104 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/_framework/aspnetcore-browser-refresh.js - - - 200 12354 application/javascript;+charset=utf-8 48.6394ms
+2023-08-04 22:29:13.104 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/index.html - - - 200 - text/html;charset=utf-8 480.9721ms
+2023-08-04 22:29:13.228 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 131.6821ms
+2023-08-04 22:29:13.336 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - -
+2023-08-04 22:29:13.337 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-08-04 22:29:13.338 +01:00 [DBG] Request did not match any endpoints
+2023-08-04 22:29:13.547 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 210.4715ms
+2023-08-04 22:29:15.427 +01:00 [DBG] Connection id "0HMSL67BV2JVJ" received FIN.
+2023-08-04 22:29:15.434 +01:00 [DBG] Connection id "0HMSL67BV2JVJ" is closed. The last processed stream ID was 7.
+2023-08-04 22:29:15.434 +01:00 [DBG] Connection id "0HMSL67BV2JVJ" sending FIN because: "The client closed the connection."
+2023-08-04 22:29:15.438 +01:00 [DBG] Connection id "0HMSL67BV2JVJ" stopped.
+2023-08-04 22:44:17.314 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-08-04 22:44:17.762 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<string>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2023-08-04 22:44:17.763 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<string>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2023-08-04 22:44:17.830 +01:00 [DBG] The property 'PersonalSaving.categoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+2023-08-04 22:44:17.830 +01:00 [DBG] The property 'Wallet.applicationUserId' was created in shadow state because there are no eligible CLR members with a matching name.
+2023-08-04 22:44:17.978 +01:00 [INF] Entity Framework Core 6.0.20 initialized 'SaviContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.20' with options: None
+2023-08-04 22:44:17.989 +01:00 [DBG] 'SaviContext' disposed.
+2023-08-04 22:44:27.049 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-08-04 22:44:27.488 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<string>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2023-08-04 22:44:27.488 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<string>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2023-08-04 22:44:27.557 +01:00 [DBG] The property 'PersonalSaving.categoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+2023-08-04 22:44:27.558 +01:00 [DBG] The property 'Wallet.applicationUserId' was created in shadow state because there are no eligible CLR members with a matching name.
+2023-08-04 22:44:27.727 +01:00 [INF] Entity Framework Core 6.0.20 initialized 'SaviContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.20' with options: None
+2023-08-04 22:44:27.755 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<string>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2023-08-04 22:44:27.755 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<string>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2023-08-04 22:44:27.758 +01:00 [DBG] The property 'PersonalSaving.categoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+2023-08-04 22:44:27.758 +01:00 [DBG] The property 'Wallet.applicationUserId' was created in shadow state because there are no eligible CLR members with a matching name.
+2023-08-04 22:44:27.887 +01:00 [DBG] DetectChanges starting for 'SaviContext'.
+2023-08-04 22:44:27.889 +01:00 [DBG] DetectChanges completed for 'SaviContext'.
+2023-08-04 22:44:27.890 +01:00 [DBG] DetectChanges starting for 'SaviContext'.
+2023-08-04 22:44:27.890 +01:00 [DBG] DetectChanges completed for 'SaviContext'.
+2023-08-04 22:44:27.896 +01:00 [DBG] DetectChanges starting for 'SaviContext'.
+2023-08-04 22:44:27.896 +01:00 [DBG] DetectChanges completed for 'SaviContext'.
+2023-08-04 22:44:27.896 +01:00 [DBG] DetectChanges starting for 'SaviContext'.
+2023-08-04 22:44:27.896 +01:00 [DBG] DetectChanges completed for 'SaviContext'.
+2023-08-04 22:44:27.980 +01:00 [DBG] 'SaviContext' disposed.
+2023-08-04 22:45:09.734 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-08-04 22:45:10.144 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<string>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2023-08-04 22:45:10.145 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<string>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2023-08-04 22:45:10.209 +01:00 [DBG] The property 'PersonalSaving.categoryId' was created in shadow state because there are no eligible CLR members with a matching name.
+2023-08-04 22:45:10.209 +01:00 [DBG] The property 'Wallet.applicationUserId' was created in shadow state because there are no eligible CLR members with a matching name.
+2023-08-04 22:45:10.346 +01:00 [INF] Entity Framework Core 6.0.20 initialized 'SaviContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.20' with options: None
+2023-08-04 22:45:10.403 +01:00 [DBG] Migrating using database 'main' on server 'Savi.db'.
+2023-08-04 22:45:10.408 +01:00 [DBG] Opening connection to database 'main' on server 'Savi.db'.
+2023-08-04 22:45:10.430 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-04 22:45:10.443 +01:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2023-08-04 22:45:10.449 +01:00 [DBG] Created DbCommand for 'ExecuteScalar' (4ms).
+2023-08-04 22:45:10.450 +01:00 [DBG] Opening connection to database 'main' on server 'Savi.db'.
+2023-08-04 22:45:10.454 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-04 22:45:10.460 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-08-04 22:45:10.483 +01:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-08-04 22:45:10.485 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-04 22:45:10.488 +01:00 [DBG] Closed connection to database 'main' on server 'Savi.db'.
+2023-08-04 22:45:10.489 +01:00 [DBG] Opening connection to database 'main' on server 'Savi.db'.
+2023-08-04 22:45:10.489 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-04 22:45:10.489 +01:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2023-08-04 22:45:10.489 +01:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2023-08-04 22:45:10.489 +01:00 [DBG] Opening connection to database 'main' on server 'Savi.db'.
+2023-08-04 22:45:10.489 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-04 22:45:10.489 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-08-04 22:45:10.490 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-08-04 22:45:10.490 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-04 22:45:10.490 +01:00 [DBG] Closed connection to database 'main' on server 'Savi.db'.
+2023-08-04 22:45:10.495 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-08-04 22:45:10.495 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-08-04 22:45:10.495 +01:00 [DBG] Opening connection to database 'main' on server 'Savi.db'.
+2023-08-04 22:45:10.495 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-04 22:45:10.495 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-08-04 22:45:10.496 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-08-04 22:45:10.497 +01:00 [DBG] A data reader was disposed.
+2023-08-04 22:45:10.498 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-04 22:45:10.498 +01:00 [DBG] Closed connection to database 'main' on server 'Savi.db'.
+2023-08-04 22:45:10.513 +01:00 [INF] Applying migration '20230804214427_paymentSavings'.
+2023-08-04 22:45:10.582 +01:00 [DBG] Opening connection to database 'main' on server 'Savi.db'.
+2023-08-04 22:45:10.583 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-04 22:45:10.584 +01:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2023-08-04 22:45:10.587 +01:00 [DBG] Began transaction with isolation level 'Serializable'.
+2023-08-04 22:45:10.588 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-08-04 22:45:10.588 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-08-04 22:45:10.588 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP INDEX "IX_WalletFundings_walletId1";
+2023-08-04 22:45:10.594 +01:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP INDEX "IX_WalletFundings_walletId1";
+2023-08-04 22:45:10.594 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-08-04 22:45:10.594 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-08-04 22:45:10.594 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "categories" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_categories" PRIMARY KEY,
+    "CategoryName" TEXT NOT NULL,
+    "CategoryDescription" TEXT NOT NULL,
+    "CreatedAt" TEXT NOT NULL,
+    "ModifiedAt" TEXT NOT NULL,
+    "IsDeleted" INTEGER NOT NULL
+);
+2023-08-04 22:45:10.595 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "categories" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_categories" PRIMARY KEY,
+    "CategoryName" TEXT NOT NULL,
+    "CategoryDescription" TEXT NOT NULL,
+    "CreatedAt" TEXT NOT NULL,
+    "ModifiedAt" TEXT NOT NULL,
+    "IsDeleted" INTEGER NOT NULL
+);
+2023-08-04 22:45:10.595 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-08-04 22:45:10.595 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-08-04 22:45:10.595 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "frequencies" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_frequencies" PRIMARY KEY,
+    "FrequencyId" TEXT NOT NULL,
+    "FrequencyName" TEXT NOT NULL,
+    "CreatedAt" TEXT NOT NULL,
+    "ModifiedAt" TEXT NOT NULL,
+    "IsDeleted" INTEGER NOT NULL
+);
+2023-08-04 22:45:10.595 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "frequencies" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_frequencies" PRIMARY KEY,
+    "FrequencyId" TEXT NOT NULL,
+    "FrequencyName" TEXT NOT NULL,
+    "CreatedAt" TEXT NOT NULL,
+    "ModifiedAt" TEXT NOT NULL,
+    "IsDeleted" INTEGER NOT NULL
+);
+2023-08-04 22:45:10.595 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-08-04 22:45:10.595 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-08-04 22:45:10.595 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "personalSavingsFundings" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_personalSavingsFundings" PRIMARY KEY,
+    "ActionType" INTEGER NOT NULL,
+    "Amount" TEXT NOT NULL,
+    "CumulativeAmount" TEXT NOT NULL,
+    "CreatedAt" TEXT NOT NULL,
+    "ModifiedAt" TEXT NOT NULL,
+    "IsDeleted" INTEGER NOT NULL
+);
+2023-08-04 22:45:10.595 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "personalSavingsFundings" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_personalSavingsFundings" PRIMARY KEY,
+    "ActionType" INTEGER NOT NULL,
+    "Amount" TEXT NOT NULL,
+    "CumulativeAmount" TEXT NOT NULL,
+    "CreatedAt" TEXT NOT NULL,
+    "ModifiedAt" TEXT NOT NULL,
+    "IsDeleted" INTEGER NOT NULL
+);
+2023-08-04 22:45:10.595 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-08-04 22:45:10.595 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-08-04 22:45:10.595 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "personalSavings" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_personalSavings" PRIMARY KEY,
+    "UserId" TEXT NOT NULL,
+    "SafeCategoryId" TEXT NOT NULL,
+    "SaveName" TEXT NOT NULL,
+    "TargetAmount" TEXT NOT NULL,
+    "TargetDate" TEXT NOT NULL,
+    "CurrentAmount" TEXT NOT NULL,
+    "AutoSave" INTEGER NOT NULL,
+    "AutoSaveAmount" TEXT NOT NULL,
+    "FrequencyId" TEXT NOT NULL,
+    "MaxLimit" TEXT NOT NULL,
+    "SavingsImageUrl" TEXT NOT NULL,
+    "categoryId" TEXT NOT NULL,
+    "CreatedAt" TEXT NOT NULL,
+    "ModifiedAt" TEXT NOT NULL,
+    "IsDeleted" INTEGER NOT NULL,
+    CONSTRAINT "FK_personalSavings_AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE,
+    CONSTRAINT "FK_personalSavings_categories_categoryId" FOREIGN KEY ("categoryId") REFERENCES "categories" ("Id") ON DELETE CASCADE
+);
+2023-08-04 22:45:10.595 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "personalSavings" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_personalSavings" PRIMARY KEY,
+    "UserId" TEXT NOT NULL,
+    "SafeCategoryId" TEXT NOT NULL,
+    "SaveName" TEXT NOT NULL,
+    "TargetAmount" TEXT NOT NULL,
+    "TargetDate" TEXT NOT NULL,
+    "CurrentAmount" TEXT NOT NULL,
+    "AutoSave" INTEGER NOT NULL,
+    "AutoSaveAmount" TEXT NOT NULL,
+    "FrequencyId" TEXT NOT NULL,
+    "MaxLimit" TEXT NOT NULL,
+    "SavingsImageUrl" TEXT NOT NULL,
+    "categoryId" TEXT NOT NULL,
+    "CreatedAt" TEXT NOT NULL,
+    "ModifiedAt" TEXT NOT NULL,
+    "IsDeleted" INTEGER NOT NULL,
+    CONSTRAINT "FK_personalSavings_AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE,
+    CONSTRAINT "FK_personalSavings_categories_categoryId" FOREIGN KEY ("categoryId") REFERENCES "categories" ("Id") ON DELETE CASCADE
+);
+2023-08-04 22:45:10.595 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-08-04 22:45:10.595 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-08-04 22:45:10.595 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_WalletFundings_walletId" ON "WalletFundings" ("walletId");
+2023-08-04 22:45:10.596 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_WalletFundings_walletId" ON "WalletFundings" ("walletId");
+2023-08-04 22:45:10.596 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-08-04 22:45:10.596 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-08-04 22:45:10.596 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_personalSavings_categoryId" ON "personalSavings" ("categoryId");
+2023-08-04 22:45:10.596 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_personalSavings_categoryId" ON "personalSavings" ("categoryId");
+2023-08-04 22:45:10.596 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-08-04 22:45:10.596 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-08-04 22:45:10.596 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_personalSavings_UserId" ON "personalSavings" ("UserId");
+2023-08-04 22:45:10.596 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_personalSavings_UserId" ON "personalSavings" ("UserId");
+2023-08-04 22:45:10.596 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-08-04 22:45:10.596 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-08-04 22:45:10.596 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "ef_temp_WalletFundings" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_WalletFundings" PRIMARY KEY,
+    "Action" INTEGER NOT NULL,
+    "Amount" REAL NOT NULL,
+    "CreatedAt" TEXT NOT NULL,
+    "CumulativeAmount" REAL NOT NULL,
+    "Description" TEXT NOT NULL,
+    "IsDeleted" INTEGER NOT NULL,
+    "ModifiedAt" TEXT NOT NULL,
+    "Reference" TEXT NOT NULL,
+    "walletId" TEXT NOT NULL,
+    CONSTRAINT "FK_WalletFundings_Wallets_walletId" FOREIGN KEY ("walletId") REFERENCES "Wallets" ("Id") ON DELETE CASCADE
+);
+2023-08-04 22:45:10.597 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "ef_temp_WalletFundings" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_WalletFundings" PRIMARY KEY,
+    "Action" INTEGER NOT NULL,
+    "Amount" REAL NOT NULL,
+    "CreatedAt" TEXT NOT NULL,
+    "CumulativeAmount" REAL NOT NULL,
+    "Description" TEXT NOT NULL,
+    "IsDeleted" INTEGER NOT NULL,
+    "ModifiedAt" TEXT NOT NULL,
+    "Reference" TEXT NOT NULL,
+    "walletId" TEXT NOT NULL,
+    CONSTRAINT "FK_WalletFundings_Wallets_walletId" FOREIGN KEY ("walletId") REFERENCES "Wallets" ("Id") ON DELETE CASCADE
+);
+2023-08-04 22:45:10.597 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-08-04 22:45:10.597 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-08-04 22:45:10.597 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ef_temp_WalletFundings" ("Id", "Action", "Amount", "CreatedAt", "CumulativeAmount", "Description", "IsDeleted", "ModifiedAt", "Reference", "walletId")
+SELECT "Id", "Action", "Amount", "CreatedAt", "CumulativeAmount", "Description", "IsDeleted", "ModifiedAt", "Reference", "walletId"
+FROM "WalletFundings";
+2023-08-04 22:45:10.599 +01:00 [ERR] Failed executing DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ef_temp_WalletFundings" ("Id", "Action", "Amount", "CreatedAt", "CumulativeAmount", "Description", "IsDeleted", "ModifiedAt", "Reference", "walletId")
+SELECT "Id", "Action", "Amount", "CreatedAt", "CumulativeAmount", "Description", "IsDeleted", "ModifiedAt", "Reference", "walletId"
+FROM "WalletFundings";
+2023-08-04 22:45:10.600 +01:00 [DBG] Disposing transaction.
+2023-08-04 22:45:10.601 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-04 22:45:10.601 +01:00 [DBG] Closed connection to database 'main' on server 'Savi.db'.
+2023-08-04 22:45:10.602 +01:00 [DBG] 'SaviContext' disposed.

@@ -117,7 +117,6 @@ C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\obj\Debug\net6.0\Savings-A
 C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\obj\Debug\net6.0\Savings-App.AssemblyInfoInputs.cache
 C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\obj\Debug\net6.0\Savings-App.AssemblyInfo.cs
 C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\obj\Debug\net6.0\Savings-App.csproj.CoreCompileInputs.cache
-C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\obj\Debug\net6.0\Savings-App.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\obj\Debug\net6.0\Savings-App.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\obj\Debug\net6.0\staticwebassets\msbuild.Savings-App.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\obj\Debug\net6.0\staticwebassets\msbuild.build.Savings-App.props
@@ -144,3 +143,7 @@ C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\bin\Debug\net6.0\SavingsAp
 C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\bin\Debug\net6.0\SavingsApp.Data.dll
 C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\bin\Debug\net6.0\SavingsApp.Core.pdb
 C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\bin\Debug\net6.0\SavingsApp.Data.pdb
+C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\bin\Debug\net6.0\JsonFiles\Roles.json
+C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\obj\Debug\net6.0\Savings-App.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\bin\Debug\net6.0\JsonFiles\Categories.json
+C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\bin\Debug\net6.0\JsonFiles\Frequencies.json

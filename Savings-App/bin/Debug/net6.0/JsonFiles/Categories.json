@@ -1,0 +1,10 @@
+[
+  {
+    "CategoryId": "48b34c6d-f84e-4649-8224-b01d9ded25b7",
+    "CategoryName": "Rent",
+    "CategoryDescription": "Save towards your rent",
+    "CreatedAt": "2000-01-01",
+    "ModifiedAt": "2021-09-01",
+    "IsDeleted": false
+  }
+]
