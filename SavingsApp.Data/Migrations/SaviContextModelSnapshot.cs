@@ -388,6 +388,7 @@ namespace SavingsApp.Data.Migrations
             modelBuilder.Entity("SavingsApp.Data.Entities.Models.PersonalSavingsFunding", b =>
                 {
                     b.Property<string>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("TEXT");
 
                     b.Property<int>("ActionType")
@@ -406,10 +407,6 @@ namespace SavingsApp.Data.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<DateTime>("ModifiedAt")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("SavingId")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("personalSavingId")

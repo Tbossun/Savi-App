@@ -11,8 +11,8 @@ using SavingsApp.Data.Context;
 namespace SavingsApp.Data.Migrations
 {
     [DbContext(typeof(SaviContext))]
-    [Migration("20230810181350_personalSav")]
-    partial class personalSav
+    [Migration("20230811110653_saving")]
+    partial class saving
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -337,6 +337,10 @@ namespace SavingsApp.Data.Migrations
                     b.Property<decimal>("AutoSaveAmount")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("CategoryId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("TEXT");
 
@@ -374,15 +378,11 @@ namespace SavingsApp.Data.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("categoryId")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("CategoryId");
 
-                    b.HasIndex("categoryId");
+                    b.HasIndex("UserId");
 
                     b.ToTable("personalSavings");
                 });
@@ -390,6 +390,7 @@ namespace SavingsApp.Data.Migrations
             modelBuilder.Entity("SavingsApp.Data.Entities.Models.PersonalSavingsFunding", b =>
                 {
                     b.Property<string>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("TEXT");
 
                     b.Property<int>("ActionType")
@@ -569,15 +570,15 @@ namespace SavingsApp.Data.Migrations
 
             modelBuilder.Entity("SavingsApp.Data.Entities.Models.PersonalSaving", b =>
                 {
-                    b.HasOne("SavingsApp.Data.Entities.Models.ApplicationUser", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
+                    b.HasOne("SavingsApp.Data.Entities.Models.Category", "category")
+                        .WithMany("personalSavings")
+                        .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SavingsApp.Data.Entities.Models.Category", "category")
-                        .WithMany("personalSavings")
-                        .HasForeignKey("categoryId")
+                    b.HasOne("SavingsApp.Data.Entities.Models.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

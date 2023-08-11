@@ -4,7 +4,7 @@
 
 namespace SavingsApp.Data.Migrations
 {
-    public partial class personalSavi : Migration
+    public partial class saving : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

@@ -51,5 +51,12 @@ namespace Savings_App.Controllers
             return Ok(response); 
         }
 
+        [HttpPost("Fund-personal-Saving")]
+        public async Task<IActionResult> FundPersonalSaving([FromBody] PersonalSavingsFundingRequest walletFundingRequest)
+        {
+            var response = await _paystackService.FundPersonalSavings(walletFundingRequest.SenderId, walletFundingRequest.SavingsId, walletFundingRequest.Amount);
+            return Ok(response);
+        }
+
     }
 }

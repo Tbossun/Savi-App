@@ -10,6 +10,6 @@ namespace SavingsApp.Data.Repositories.IRepositories
     public interface IPersonalSavingFundingRepository : IRepositoryBase<PersonalSavingsFunding>
     {
         void Update(PersonalSavingsFunding funding);
-       // double GetLastCumulativeAmount(string walletId);
+        decimal GetLastCumulativeAmount(string savingsId);
     }
 }

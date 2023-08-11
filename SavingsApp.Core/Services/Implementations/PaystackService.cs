@@ -156,12 +156,13 @@ namespace SavingsApp.Core.Services.Implementations
                     walletId = WalletId
                 };
                 _unitOfWork.WalletFundingRepository.Add(walletFunding);
+                _unitOfWork.Save();
 
                 // Update the wallet's balance
                 Wallet.Balance += (response.data.amount/100);
                 _unitOfWork.WalletRepository.Update(Wallet);
+                
 
-                _unitOfWork.Save();
 
                 responseDto.DisplayMessage = "Wallet Funded successfully";
                 responseDto.StatusCode = 200;
@@ -299,10 +300,91 @@ namespace SavingsApp.Core.Services.Implementations
         }
 
 
+
+        /// <summary>
+        /// Transfer funds from one wallet to another.
+        /// </summary>
+        /// <param name="senderWalletId">The ID of the sender's wallet.</param>
+        /// <param name="receiverWalletId">The ID of the receiver's wallet.</param>
+        /// <param name="amount">The amount to transfer.</param>
+        /// <returns>A response indicating if the transfer was successful.</returns>
+        /// <exception cref="Exception">Thrown if the sender or receiver wallet is invalid, or if there is insufficient balance for the transfer.</exception>
+        public async Task<ResponseDto<bool>> FundPersonalSavings(string senderWalletId, string personalSavingsId, double amount)
+        {
+            var responseDto = new ResponseDto<bool>();
+
+            var senderWallet = _unitOfWork.WalletRepository.Get(W => W.WalletId == senderWalletId);
+            var receiverWallet = _unitOfWork.PersonalSavingRepository.Get(W => W.Id == personalSavingsId);
+
+            if (senderWallet == null || receiverWallet == null)
+            {
+                responseDto.DisplayMessage = "Invalid sender or receiver wallet.";
+                responseDto.StatusCode = 400;
+                responseDto.Result = false;
+                return responseDto;
+            }
+
+            // Check if the sender has sufficient balance for the transfer
+            if (senderWallet.Balance < amount || senderWallet.Balance == 0)
+            {
+                responseDto.DisplayMessage = "Insufficient balance for the transfer.";
+                responseDto.StatusCode = 400;
+                responseDto.Result = false;
+                return responseDto;
+            }
+
+            var senderpreviousCumulativeAmount = _unitOfWork.WalletFundingRepository.GetLastCumulativeAmount(senderWalletId);
+            var SavingsCumulativeAmount = _unitOfWork.PersonalSavingFundingRepository.GetLastCumulativeAmount(personalSavingsId);
+
+            // Debit the sender's wallet
+            var senderFunding = new WalletFunding
+            {
+                Reference = "Deb" + GenerateUniqueReference(),
+                Action = ActionType.Debit,
+                Amount = amount,
+                CumulativeAmount = senderpreviousCumulativeAmount - amount,
+                Description = $"Local Transfer to {receiverWallet.personalSavings}",
+                walletId = senderWalletId,
+                ModifiedAt = DateTime.UtcNow,
+            };
+            _unitOfWork.WalletFundingRepository.Add(senderFunding);
+
+            senderWallet.Balance -= amount;
+            senderWallet.ModifiedAt = DateTime.UtcNow;
+            _unitOfWork.WalletRepository.Update(senderWallet);
+
+            // Credit the Personal saving target wallet
+            var receiverFunding = new PersonalSavingsFunding
+            {
+               // Reference = "Cre" + GenerateUniqueReference(),
+                ActionType = ActionType.Credit,
+                Amount = (decimal)amount,
+                CumulativeAmount = SavingsCumulativeAmount + (decimal)amount,
+               // Description = $"Transfer received from {senderWallet.WalletId}",
+                personalSavingId = personalSavingsId,
+                ModifiedAt = DateTime.UtcNow,
+            };
+            _unitOfWork.PersonalSavingFundingRepository.Add(receiverFunding);
+           /// receiverWallet.Balance += amount;
+            receiverWallet.ModifiedAt = DateTime.UtcNow;
+            _unitOfWork.PersonalSavingRepository.Update(receiverWallet);
+
+            _unitOfWork.Save();
+
+            responseDto.DisplayMessage = "Personal Saving funded successfully";
+            responseDto.StatusCode = 200;
+            responseDto.Result = true;
+
+            return responseDto;
+        }
+
+
         private string GenerateUniqueReference()
         {
             return "REF_" + Guid.NewGuid().ToString("N");
         }
+
+
 
 
 

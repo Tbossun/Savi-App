@@ -9,6 +9,7 @@ using SavingsApp.Data.Entities.Models;
 using SavingsApp.Data.Repositories.IRepositories;
 using System.Text.Json.Serialization;
 using System.Text.Json;
+using SavingsApp.Data.Entities.Enums;
 
 namespace Savings_App.Controllers
 {
@@ -77,16 +78,26 @@ namespace Savings_App.Controllers
                 string documentUploadUrl = documentUpload.Url.ToString();
 
                 PersonalSaving SavingDetail = _mapper.Map<PersonalSaving>(saving);
-                SavingDetail.UserId = user.Id;
-                SavingDetail.FrequencyId = frequency.Id;
-                SavingDetail.CategoryId = catId.Id;
+                SavingDetail.UserId = saving.UserId;
+                SavingDetail.FrequencyId = saving.FrequencyId;
+                SavingDetail.CategoryId = saving.CategoryId;
                 SavingDetail.SavingsImageUrl = documentUploadUrl;
-                SavingDetail.SavingsImageUrl = string.Empty;
-                
 
                 _unitOfWork.PersonalSavingRepository.Add(SavingDetail);
-                //  user.IsKycComplete = true;
                 _unitOfWork.Save();
+
+                PersonalSavingsFunding savingFunds = new PersonalSavingsFunding();
+                savingFunds.personalSavingId = SavingDetail.Id;
+                savingFunds.ActionType = ActionType.Credit;
+                savingFunds.Amount = 0;
+                savingFunds.CumulativeAmount = 0;
+                savingFunds.IsDeleted = false;
+                savingFunds.ModifiedAt = DateTime.Now;
+                savingFunds.CreatedAt = DateTime.Now;
+                
+                _unitOfWork.PersonalSavingFundingRepository.Add(savingFunds);
+                _unitOfWork.Save();
+
 
                 var jsonOptions = new JsonSerializerOptions
                 {
@@ -104,8 +115,8 @@ namespace Savings_App.Controllers
                 };
                 return response;
             }
-           // return StatusCode(StatusCodes.Status400BadRequest,
-            //   new APIResponse { StatusCode = StatusCodes.Status400BadRequest.ToString(), IsSuccess = false, Message = "User KYC is already completed." });
+          // return StatusCode(StatusCodes.Status400BadRequest,
+              // new APIResponse { StatusCode = StatusCodes.Status400BadRequest.ToString(), IsSuccess = false, Message = "User KYC is already completed." });
         }           
       
     }

@@ -4,23 +4,22 @@
 
 namespace SavingsApp.Data.Migrations
 {
-    public partial class personalSavings : Migration
+    public partial class savings : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AddColumn<string>(
+            migrationBuilder.RenameColumn(
                 name: "SavingId",
                 table: "personalSavingsFundings",
-                type: "TEXT",
-                nullable: false,
-                defaultValue: "");
+                newName: "SavingsId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropColumn(
-                name: "SavingId",
-                table: "personalSavingsFundings");
+            migrationBuilder.RenameColumn(
+                name: "SavingsId",
+                table: "personalSavingsFundings",
+                newName: "SavingId");
         }
     }
 }

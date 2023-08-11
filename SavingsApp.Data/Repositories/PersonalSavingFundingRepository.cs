@@ -24,5 +24,14 @@ namespace SavingsApp.Data.Repositories
             _saviDbContext.Entry(personalSavings).State = EntityState.Modified;
             _saviDbContext.SaveChanges();
         }
+
+        public decimal GetLastCumulativeAmount(string savingsId)
+        {
+            var lastWalletFunding = _saviDbContext.personalSavingsFundings
+                .Where(wf => wf.personalSavingId == savingsId)
+                .OrderByDescending(wf => wf.ModifiedAt)
+                .FirstOrDefault();
+            return lastWalletFunding != null ? lastWalletFunding.CumulativeAmount : 0;
+        }
     }
 }

@@ -11,8 +11,8 @@ using SavingsApp.Data.Context;
 namespace SavingsApp.Data.Migrations
 {
     [DbContext(typeof(SaviContext))]
-    [Migration("20230810182047_personalSa")]
-    partial class personalSa
+    [Migration("20230811110901_savings")]
+    partial class savings
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -390,6 +390,7 @@ namespace SavingsApp.Data.Migrations
             modelBuilder.Entity("SavingsApp.Data.Entities.Models.PersonalSavingsFunding", b =>
                 {
                     b.Property<string>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("TEXT");
 
                     b.Property<int>("ActionType")
@@ -410,7 +411,7 @@ namespace SavingsApp.Data.Migrations
                     b.Property<DateTime>("ModifiedAt")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("SavingId")
+                    b.Property<string>("SavingsId")
                         .IsRequired()
                         .HasColumnType("TEXT");
 

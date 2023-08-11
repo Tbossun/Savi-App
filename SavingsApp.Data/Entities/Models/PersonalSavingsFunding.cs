@@ -9,11 +9,11 @@ namespace SavingsApp.Data.Entities.Models
 {
     public class PersonalSavingsFunding : BaseEntity
     {
-        public string Id { get; set; }
+
         public ActionType ActionType { get; set; }
         public decimal Amount { get; set; }
         public decimal CumulativeAmount { get; set; }
-        public string SavingId { get; set; }
+        public string personalSavingId { get; set; }
         public PersonalSaving personalSaving { get; set; }
     }
 }

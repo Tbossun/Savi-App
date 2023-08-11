@@ -19,23 +19,23 @@ namespace SavingsApp.Data.Seeding
                 await context.Database.EnsureCreatedAsync();
                 if (!context.frequencies.Any())
                 {
-                    /*string roles = File.ReadAllText(@"JsonFiles/Roles.json");
+                    string roles = File.ReadAllText(@"JsonFiles/Roles.json");
                     List<IdentityRole> listOfRoles = JsonConvert.DeserializeObject<List<IdentityRole>>(roles);
                     //List<string> listOfRoles = new List<string> { "Admin", "Regular" };
 
                     foreach (var role in listOfRoles)
                     {
                         await roleManager.CreateAsync(role);
-                    }*/
+                    }
 
-                    /*string categories = File.ReadAllText(@"JsonFiles/Categories.json");
+                    string categories = File.ReadAllText(@"JsonFiles/Categories.json");
                     List<Category> listOfCategories = JsonConvert.DeserializeObject<List<Category>>(categories);
                     //List<string> listOfRoles = new List<string> { "Admin", "Regular" };
 
                     foreach (var cat in listOfCategories)
                     {
                         await context.categories.AddAsync(cat);
-                    }*/
+                    }
 
                     string frequencies = File.ReadAllText(@"JsonFiles/Frequencies.json");
                     List<Frequency> listOfFrequencies = JsonConvert.DeserializeObject<List<Frequency>>(frequencies);
