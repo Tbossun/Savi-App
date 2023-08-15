@@ -87,7 +87,6 @@ namespace Savings_App.Controllers
                 SavingDetail.SavingsImageUrl = documentUploadUrl;
 
                 _unitOfWork.PersonalSavingRepository.Add(SavingDetail);
-                _unitOfWork.Save();
 
                 PersonalSavingsFunding savingFunds = new PersonalSavingsFunding();
                 savingFunds.personalSavingId = SavingDetail.Id;
