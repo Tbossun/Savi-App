@@ -152,7 +152,8 @@ namespace SavingsApp.Core.Services.Implementations
                     Amount = (response.data.amount/100),
                     CumulativeAmount = newCumulativeAmount,
                     Description = description,
-                    walletId = WalletId
+                    walletId = Wallet.Id,
+                    AcctNumber = Wallet.WalletId
                 };
                 Wallet.Balance += (response.data.amount / 100);
                 _unitOfWork.WalletRepository.Update(Wallet);
@@ -219,7 +220,8 @@ namespace SavingsApp.Core.Services.Implementations
                 Amount = amount,
                 CumulativeAmount = senderpreviousCumulativeAmount - amount,
                 Description = $"Local Transfer to {receiverWallet.WalletId}",
-                walletId = senderWalletId ,
+                walletId = senderWallet.Id,
+                AcctNumber = senderWallet.WalletId,
                 ModifiedAt = DateTime.UtcNow,
             };
             _unitOfWork.WalletFundingRepository.Add(senderFunding);
@@ -235,7 +237,8 @@ namespace SavingsApp.Core.Services.Implementations
                 Amount = amount,
                 CumulativeAmount = receiverpreviousCumulativeAmount + amount,
                 Description = $"Transfer received from {senderWallet.WalletId}",
-                walletId = receiverWalletId,
+                walletId = receiverWallet.Id,
+                AcctNumber= receiverWallet.WalletId,
                 ModifiedAt = DateTime.UtcNow,
             };
             _unitOfWork.WalletFundingRepository.Add(receiverFunding);
@@ -283,7 +286,8 @@ namespace SavingsApp.Core.Services.Implementations
                 Amount = amount,
                 CumulativeAmount = previousCumulativeAmount - amount,
                 Description = description,
-                walletId = walletId
+                walletId = wallet.Id,
+                AcctNumber = wallet.WalletId
             };
             _unitOfWork.WalletFundingRepository.Add(walletFunding);
             wallet.Balance -= amount;

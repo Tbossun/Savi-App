@@ -6,7 +6,6 @@ namespace SavingsApp.Data.Entities.Models
 {
     public class WalletFunding
     {
-
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key]
         public string Id { get; set; }

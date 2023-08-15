@@ -19,6 +19,7 @@ namespace SavingsApp.Data.Entities.Models
         public ActionType ActionType { get; set; }
         public decimal Amount { get; set; }
         public decimal CumulativeAmount { get; set; }
+        public string Description { get; set; }
         public string personalSavingId { get; set; }
         public PersonalSaving personalSaving { get; set; }
     }

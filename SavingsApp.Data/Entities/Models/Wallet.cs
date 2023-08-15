@@ -19,8 +19,7 @@ namespace SavingsApp.Data.Entities.Models
         public string userId { get; set; }
 
         public double Balance { get; set; }
-
-        
+       
         public DateTime CreatedAt { get; set; }
 
         public DateTime ModifiedAt { get; set; }

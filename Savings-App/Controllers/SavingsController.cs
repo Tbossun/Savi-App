@@ -96,6 +96,7 @@ namespace Savings_App.Controllers
                 savingFunds.CumulativeAmount = 0;
                 savingFunds.ModifiedAt = DateTime.Now;
                 savingFunds.CreatedAt = DateTime.Now;
+                savingFunds.Description = $"{saving.SaveName}";
                 
                 _unitOfWork.PersonalSavingFundingRepository.Add(savingFunds);
                 _unitOfWork.Save();
