@@ -155,14 +155,12 @@ namespace SavingsApp.Core.Services.Implementations
                     walletId = Wallet.Id,
                     AcctNumber = Wallet.WalletId
                 };
+
+                // Update the wallet's balance
                 Wallet.Balance += (response.data.amount / 100);
                 _unitOfWork.WalletRepository.Update(Wallet);
-                _unitOfWork.WalletFundingRepository.Add(walletFunding);
-                // Update the wallet's balance
-                
+                _unitOfWork.WalletFundingRepository.Add(walletFunding);                
                 _unitOfWork.Save();
-
-                
 
                 responseDto.DisplayMessage = "Wallet Funded successfully";
                 responseDto.StatusCode = 200;
