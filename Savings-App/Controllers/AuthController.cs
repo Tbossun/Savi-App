@@ -75,7 +75,6 @@ namespace Savings_App.Controllers
                 userWallet.userId = user.Email;
                 userWallet.Balance = 0.00;
                 userWallet.CreatedAt = DateTime.UtcNow;
-                userWallet.IsDeleted = false;
                 userWallet.WalletId = ID;
 
                 // Save the Wallet to the database

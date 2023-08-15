@@ -9,6 +9,7 @@ using SavingsApp.Core.Services.Interfaces;
 using SavingsApp.Data.Entities.DTOs.Response;
 using SavingsApp.Data.Entities.DTOs.Request;
 using SavingsApp.Data.Entities.Enums;
+using System.Net;
 
 namespace Savings_App.Controllers
 {
@@ -146,6 +147,26 @@ namespace Savings_App.Controllers
             return Ok(users);
         }
 
+       /* [HttpPost("update-wallet")]
+        public async Task<ActionResult<APIResponse>> Updatewallet([FromBody] WalletUpdate walletUpdate, string id)
+        {
+            var walletToUpdate = _unitOfWork.WalletRepository.Get(w => w.Id == id);
+            if (walletToUpdate == null)
+            {
+                return BadRequest();
+            }
+
+            // Update the properties of the walletToUpdate entity based on the walletUpdate DTO
+            walletToUpdate.CreatedAt = walletUpdate.CreatedAt;
+            walletToUpdate.ModifiedAt = walletUpdate.ModifiedAt;
+            walletToUpdate.Balance = walletUpdate.Balance;
+
+            // Update the entity in the repository
+            _unitOfWork.WalletRepository.Update(walletToUpdate);
+            _unitOfWork.Save();
+
+            return Ok();
+        }*/
 
 
     }

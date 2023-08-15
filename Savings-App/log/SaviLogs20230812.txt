@@ -1,0 +1,125 @@
+2023-08-12 11:40:22.418 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-08-12 11:40:22.615 +01:00 [INF] User profile is available. Using 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-12 11:40:24.070 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<string>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2023-08-12 11:40:24.070 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<string>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2023-08-12 11:40:24.338 +01:00 [DBG] The property 'Wallet.applicationUserId' was created in shadow state because there are no eligible CLR members with a matching name.
+2023-08-12 11:40:25.042 +01:00 [INF] Entity Framework Core 6.0.20 initialized 'SaviContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.20' with options: None
+2023-08-12 11:40:25.222 +01:00 [DBG] Opening connection to database 'main' on server 'Savi.db'.
+2023-08-12 11:40:25.262 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-12 11:40:25.284 +01:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2023-08-12 11:40:25.301 +01:00 [DBG] Created DbCommand for 'ExecuteScalar' (8ms).
+2023-08-12 11:40:25.303 +01:00 [DBG] Opening connection to database 'main' on server 'Savi.db'.
+2023-08-12 11:40:25.310 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-12 11:40:25.325 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-08-12 11:40:25.401 +01:00 [INF] Executed DbCommand (77ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2023-08-12 11:40:25.405 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-12 11:40:25.412 +01:00 [DBG] Closed connection to database 'main' on server 'Savi.db'.
+2023-08-12 11:40:25.482 +01:00 [DBG] Compiling query expression: 
+'DbSet<Frequency>()
+    .Any()'
+2023-08-12 11:40:26.021 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM frequencies AS f)), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+    SavingsApp.Data.Context.SaviContext, 
+    False, 
+    False, 
+    True
+)
+    .Single()'
+2023-08-12 11:40:26.095 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-08-12 11:40:26.095 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-08-12 11:40:26.095 +01:00 [DBG] Opening connection to database 'main' on server 'Savi.db'.
+2023-08-12 11:40:26.095 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-12 11:40:26.096 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "frequencies" AS "f")
+2023-08-12 11:40:26.097 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "frequencies" AS "f")
+2023-08-12 11:40:26.102 +01:00 [DBG] A data reader was disposed.
+2023-08-12 11:40:26.102 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\Savi.db'.
+2023-08-12 11:40:26.102 +01:00 [DBG] Closed connection to database 'main' on server 'Savi.db'.
+2023-08-12 11:40:26.108 +01:00 [DBG] SaveChanges starting for 'SaviContext'.
+2023-08-12 11:40:26.113 +01:00 [DBG] DetectChanges starting for 'SaviContext'.
+2023-08-12 11:40:26.118 +01:00 [DBG] DetectChanges completed for 'SaviContext'.
+2023-08-12 11:40:26.127 +01:00 [DBG] SaveChanges completed for 'SaviContext' with 0 entities written to the database.
+2023-08-12 11:40:26.130 +01:00 [DBG] 'SaviContext' disposed.
+2023-08-12 11:40:26.194 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-12 11:40:26.285 +01:00 [DBG] Hosting starting
+2023-08-12 11:40:26.291 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-2233cea8-8ad9-4f56-bb58-30e16e00e4d0.xml'.
+2023-08-12 11:40:26.330 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-96cf26c6-6150-4a38-a968-bbbe32717644.xml'.
+2023-08-12 11:40:26.333 +01:00 [DBG] Reading data from file 'C:\Users\alabi\AppData\Local\ASP.NET\DataProtection-Keys\key-ba4a300a-6c51-469e-b2e4-a9cd1daa9c85.xml'.
+2023-08-12 11:40:26.351 +01:00 [DBG] Found key {2233cea8-8ad9-4f56-bb58-30e16e00e4d0}.
+2023-08-12 11:40:26.373 +01:00 [DBG] Found key {96cf26c6-6150-4a38-a968-bbbe32717644}.
+2023-08-12 11:40:26.373 +01:00 [DBG] Found key {ba4a300a-6c51-469e-b2e4-a9cd1daa9c85}.
+2023-08-12 11:40:26.388 +01:00 [DBG] Considering key {96cf26c6-6150-4a38-a968-bbbe32717644} with expiration date 2023-10-26 20:18:55Z as default key.
+2023-08-12 11:40:26.391 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-08-12 11:40:26.391 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2023-08-12 11:40:26.400 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-08-12 11:40:26.403 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-08-12 11:40:26.418 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-08-12 11:40:26.424 +01:00 [DBG] Using key {96cf26c6-6150-4a38-a968-bbbe32717644} as the default key.
+2023-08-12 11:40:26.425 +01:00 [DBG] Key ring with default key {96cf26c6-6150-4a38-a968-bbbe32717644} was loaded during application startup.
+2023-08-12 11:40:26.688 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 60B4004B0E7F50E239AF827782FF73E25B47E3DE)
+2023-08-12 11:40:26.755 +01:00 [INF] Now listening on: https://localhost:7049
+2023-08-12 11:40:26.755 +01:00 [INF] Now listening on: http://localhost:5159
+2023-08-12 11:40:26.755 +01:00 [DBG] Loaded hosting startup assembly Savings-App
+2023-08-12 11:40:26.755 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-08-12 11:40:26.756 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-08-12 11:40:26.756 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-12 11:40:26.756 +01:00 [INF] Hosting environment: Development
+2023-08-12 11:40:26.756 +01:00 [INF] Content root path: C:\Users\alabi\Desktop\OnBoard\SavingsApp\Savings-App\
+2023-08-12 11:40:26.756 +01:00 [DBG] Hosting started
+2023-08-12 11:40:27.057 +01:00 [DBG] Connection id "0HMSR425AENIO" accepted.
+2023-08-12 11:40:27.057 +01:00 [DBG] Connection id "0HMSR425AENIP" accepted.
+2023-08-12 11:40:27.058 +01:00 [DBG] Connection id "0HMSR425AENIP" started.
+2023-08-12 11:40:27.058 +01:00 [DBG] Connection id "0HMSR425AENIO" started.
+2023-08-12 11:40:27.075 +01:00 [DBG] Connection id "0HMSR425AENIO" received FIN.
+2023-08-12 11:40:27.076 +01:00 [DBG] Connection id "0HMSR425AENIP" received FIN.
+2023-08-12 11:40:27.089 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-12 11:40:27.096 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-12 11:40:27.135 +01:00 [DBG] Connection id "0HMSR425AENIO" stopped.
+2023-08-12 11:40:27.135 +01:00 [DBG] Connection id "0HMSR425AENIP" stopped.
+2023-08-12 11:40:27.138 +01:00 [DBG] Connection id "0HMSR425AENIO" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-12 11:40:27.139 +01:00 [DBG] Connection id "0HMSR425AENIP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-12 11:40:35.834 +01:00 [DBG] Connection id "0HMSR425AENIQ" accepted.
+2023-08-12 11:40:35.834 +01:00 [DBG] Connection id "0HMSR425AENIQ" started.
+2023-08-12 11:40:35.932 +01:00 [DBG] Connection 0HMSR425AENIQ established using the following protocol: "Tls13"
+2023-08-12 11:40:36.018 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/index.html - -
+2023-08-12 11:40:36.068 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-12 11:40:36.120 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-08-12 11:40:36.121 +01:00 [DBG] Request did not match any endpoints
+2023-08-12 11:40:36.287 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-08-12 11:40:36.515 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-08-12 11:40:36.518 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/index.html - - - 200 - text/html;charset=utf-8 508.0527ms
+2023-08-12 11:40:36.538 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/_framework/aspnetcore-browser-refresh.js - -
+2023-08-12 11:40:36.553 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/_framework/aspnetcore-browser-refresh.js - - - 200 12354 application/javascript;+charset=utf-8 14.8940ms
+2023-08-12 11:40:36.569 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/_vs/browserLink - -
+2023-08-12 11:40:36.792 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 222.8102ms
+2023-08-12 11:40:37.314 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - -
+2023-08-12 11:40:37.317 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-08-12 11:40:37.317 +01:00 [DBG] Request did not match any endpoints
+2023-08-12 11:40:37.760 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7049/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 445.8661ms
+2023-08-12 11:40:43.468 +01:00 [DBG] Connection id "0HMSR425AENIQ" received FIN.
+2023-08-12 11:40:43.469 +01:00 [DBG] Connection id "0HMSR425AENIQ" is closed. The last processed stream ID was 7.
+2023-08-12 11:40:43.471 +01:00 [DBG] Connection id "0HMSR425AENIQ" sending FIN because: "The client closed the connection."
+2023-08-12 11:40:43.476 +01:00 [DBG] Connection id "0HMSR425AENIQ" stopped.

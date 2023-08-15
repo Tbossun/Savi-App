@@ -1,6 +1,4 @@
-﻿using SavingsApp.Data.Migrations;
-
-namespace SavingsApp.Data.Entities.Models
+﻿namespace SavingsApp.Data.Entities.Models
 {
     public class Frequency :  BaseEntity
     {

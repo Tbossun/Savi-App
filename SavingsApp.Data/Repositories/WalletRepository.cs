@@ -17,7 +17,7 @@ namespace SavingsApp.Data.Repositories
         public void Update(Wallet wallet)
         {
             _saviDbContext.Entry(wallet).State = EntityState.Modified;
-            _saviDbContext.SaveChanges();
+            _saviDbContext.SaveChangesAsync().Wait();
         }
 
     }

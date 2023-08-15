@@ -1,11 +1,19 @@
 ﻿using SavingsApp.Data.Entities.Enums;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace SavingsApp.Data.Entities.Models
 {
-    public class WalletFunding : BaseEntity
+    public class WalletFunding
     {
 
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Key]
+        public string Id { get; set; }
+
         public string walletId { get; set; }
+
+        public string AcctNumber { get; set; }
 
         public ActionType Action { get; set; }
 
@@ -17,6 +25,11 @@ namespace SavingsApp.Data.Entities.Models
 
         public string Description { get; set; }
 
+        public DateTime CreatedAt { get; set; }
+
+        public DateTime ModifiedAt { get; set; }
+
+        [ForeignKey(nameof(walletId))]
         public Wallet wallet { get; set; }
 
     }

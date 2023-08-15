@@ -15,9 +15,8 @@ namespace SavingsApp.Data.Entities.Models
         public string? ImageUrl { get; set; } = string.Empty;
         public bool IsKycComplete { get; set; } = false;
         public virtual KYC Kyc { get; set; }
-       // public virtual ICollection<PaymentReference> UserPayments { get; set; }
 
-
-
+        public virtual Wallet Wallet { get; set; }
+        public virtual ICollection<PersonalSaving> PersonalSavings { get; set;}
     }
 }

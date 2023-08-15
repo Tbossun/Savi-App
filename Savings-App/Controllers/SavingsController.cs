@@ -10,6 +10,7 @@ using SavingsApp.Data.Repositories.IRepositories;
 using System.Text.Json.Serialization;
 using System.Text.Json;
 using SavingsApp.Data.Entities.Enums;
+using SavingsApp.Core.Services.Implementations;
 
 namespace Savings_App.Controllers
 {
@@ -17,18 +18,20 @@ namespace Savings_App.Controllers
     [ApiController]
     public class SavingsController : ControllerBase
     {
+        private readonly IPaymentService _paymentService;
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
         private readonly IDocumentUploadService _uploadService;
 
         public SavingsController(UserManager<ApplicationUser> userManager, IUnitOfWork unitOfWork,
-            IMapper mapper, IDocumentUploadService uploadService)
+            IMapper mapper, IDocumentUploadService uploadService, IPaymentService paymentService)
         {
             _userManager = userManager;
             _unitOfWork = unitOfWork;
             _mapper = mapper;
             _uploadService = uploadService;
+            _paymentService = paymentService;
         }
 
 
@@ -91,7 +94,6 @@ namespace Savings_App.Controllers
                 savingFunds.ActionType = ActionType.Credit;
                 savingFunds.Amount = 0;
                 savingFunds.CumulativeAmount = 0;
-                savingFunds.IsDeleted = false;
                 savingFunds.ModifiedAt = DateTime.Now;
                 savingFunds.CreatedAt = DateTime.Now;
                 
@@ -117,7 +119,14 @@ namespace Savings_App.Controllers
             }
           // return StatusCode(StatusCodes.Status400BadRequest,
               // new APIResponse { StatusCode = StatusCodes.Status400BadRequest.ToString(), IsSuccess = false, Message = "User KYC is already completed." });
-        }           
-      
+        }
+
+        [HttpPost("Fund-personal-Saving")]
+        public async Task<IActionResult> FundPersonalSaving([FromBody] PersonalSavingsFundingRequest walletFundingRequest)
+        {
+            var response = await _paymentService.FundPersonalSavings(walletFundingRequest.SenderId, walletFundingRequest.SavingsId, walletFundingRequest.Amount);
+            return Ok(response);
+        }
+
     }
 }

@@ -240,9 +240,6 @@ namespace SavingsApp.Data.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("TEXT");
 
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("INTEGER");
-
                     b.Property<DateTime>("ModifiedAt")
                         .HasColumnType("TEXT");
 
@@ -267,9 +264,6 @@ namespace SavingsApp.Data.Migrations
                     b.Property<string>("FrequencyName")
                         .IsRequired()
                         .HasColumnType("TEXT");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("INTEGER");
 
                     b.Property<DateTime>("ModifiedAt")
                         .HasColumnType("TEXT");
@@ -349,9 +343,6 @@ namespace SavingsApp.Data.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("INTEGER");
-
                     b.Property<decimal>("MaxLimit")
                         .HasColumnType("TEXT");
 
@@ -380,6 +371,8 @@ namespace SavingsApp.Data.Migrations
 
                     b.HasIndex("CategoryId");
 
+                    b.HasIndex("FrequencyId");
+
                     b.HasIndex("UserId");
 
                     b.ToTable("personalSavings");
@@ -402,9 +395,6 @@ namespace SavingsApp.Data.Migrations
 
                     b.Property<decimal>("CumulativeAmount")
                         .HasColumnType("TEXT");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("INTEGER");
 
                     b.Property<DateTime>("ModifiedAt")
                         .HasColumnType("TEXT");
@@ -432,17 +422,10 @@ namespace SavingsApp.Data.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("TEXT");
 
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("INTEGER");
-
                     b.Property<DateTime>("ModifiedAt")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("WalletId")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("applicationUserId")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
@@ -452,7 +435,8 @@ namespace SavingsApp.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("applicationUserId");
+                    b.HasIndex("userId")
+                        .IsUnique();
 
                     b.ToTable("Wallets");
                 });
@@ -478,9 +462,6 @@ namespace SavingsApp.Data.Migrations
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("TEXT");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("INTEGER");
 
                     b.Property<DateTime>("ModifiedAt")
                         .HasColumnType("TEXT");
@@ -570,8 +551,14 @@ namespace SavingsApp.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SavingsApp.Data.Entities.Models.ApplicationUser", "User")
+                    b.HasOne("SavingsApp.Data.Entities.Models.Frequency", "frequency")
                         .WithMany()
+                        .HasForeignKey("FrequencyId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("SavingsApp.Data.Entities.Models.ApplicationUser", "User")
+                        .WithMany("PersonalSavings")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -579,6 +566,8 @@ namespace SavingsApp.Data.Migrations
                     b.Navigation("User");
 
                     b.Navigation("category");
+
+                    b.Navigation("frequency");
                 });
 
             modelBuilder.Entity("SavingsApp.Data.Entities.Models.PersonalSavingsFunding", b =>
@@ -595,8 +584,8 @@ namespace SavingsApp.Data.Migrations
             modelBuilder.Entity("SavingsApp.Data.Entities.Models.Wallet", b =>
                 {
                     b.HasOne("SavingsApp.Data.Entities.Models.ApplicationUser", "applicationUser")
-                        .WithMany()
-                        .HasForeignKey("applicationUserId")
+                        .WithOne("Wallet")
+                        .HasForeignKey("SavingsApp.Data.Entities.Models.Wallet", "userId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -606,7 +595,7 @@ namespace SavingsApp.Data.Migrations
             modelBuilder.Entity("SavingsApp.Data.Entities.Models.WalletFunding", b =>
                 {
                     b.HasOne("SavingsApp.Data.Entities.Models.Wallet", "wallet")
-                        .WithMany("WalletFunding")
+                        .WithMany("WalletFundings")
                         .HasForeignKey("walletId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -617,6 +606,11 @@ namespace SavingsApp.Data.Migrations
             modelBuilder.Entity("SavingsApp.Data.Entities.Models.ApplicationUser", b =>
                 {
                     b.Navigation("Kyc")
+                        .IsRequired();
+
+                    b.Navigation("PersonalSavings");
+
+                    b.Navigation("Wallet")
                         .IsRequired();
                 });
 
@@ -632,7 +626,7 @@ namespace SavingsApp.Data.Migrations
 
             modelBuilder.Entity("SavingsApp.Data.Entities.Models.Wallet", b =>
                 {
-                    b.Navigation("WalletFunding");
+                    b.Navigation("WalletFundings");
                 });
 #pragma warning restore 612, 618
         }

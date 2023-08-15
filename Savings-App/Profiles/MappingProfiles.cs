@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using SavingsApp.Data.Entities.DTOs.Request;
 using SavingsApp.Data.Entities.Models;
-using SavingsApp.Data.Migrations;
 
 namespace Savings_App.Profiles
 {
@@ -12,6 +11,8 @@ namespace Savings_App.Profiles
             CreateMap<ApplicationUser, SignUpDto>().ReverseMap();
             CreateMap<KYC, AddKycDto>().ReverseMap();
             CreateMap<PersonalSaving, AddPersonalSavingDto>().ReverseMap();
+            CreateMap<Wallet, WalletUpdate>().ReverseMap();
+            CreateMap<WalletUpdate, Wallet>();
         }
     }
 }

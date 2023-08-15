@@ -16,6 +16,7 @@ using Microsoft.EntityFrameworkCore;
 using SavingsApp.Data.Repositories.IRepositories;
 using SavingsApp.Data.UnitOfWork;
 using SavingsApp.Data.Seeding;
+using AutoMapper;
 
 public class Program
 {
@@ -40,6 +41,10 @@ public class Program
         //Register unitOfWork
         builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
+        builder.Services.AddScoped<IPaymentService, PaymentService>();
+
+
+
         //Register Email  Service
         var emailConfig = builder.Configuration.GetSection("EmailConfiguration").Get<EmailConfiguration>();
         builder.Services.AddSingleton(emailConfig);
@@ -52,6 +57,7 @@ public class Program
         {
             var unitOfWork = provider.GetRequiredService<IUnitOfWork>();
             var apiKey = "sk_test_c1e3948a98584d332e3cebf256c84d13e915e2fe"; // Replace this with your actual Paystack API key.
+           // var mapper = provider.GetRequiredService<IMapper>();
             return new PaystackService(apiKey, unitOfWork);
         });
 

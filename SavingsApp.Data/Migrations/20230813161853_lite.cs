@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace SavingsApp.Data.Migrations
 {
-    public partial class initial : Migration
+    public partial class lite : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -50,6 +50,36 @@ namespace SavingsApp.Data.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "categories",
+                columns: table => new
+                {
+                    Id = table.Column<string>(type: "TEXT", nullable: false),
+                    CategoryName = table.Column<string>(type: "TEXT", nullable: false),
+                    CategoryDescription = table.Column<string>(type: "TEXT", nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    ModifiedAt = table.Column<DateTime>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_categories", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "frequencies",
+                columns: table => new
+                {
+                    Id = table.Column<string>(type: "TEXT", nullable: false),
+                    FrequencyId = table.Column<string>(type: "TEXT", nullable: false),
+                    FrequencyName = table.Column<string>(type: "TEXT", nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    ModifiedAt = table.Column<DateTime>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_frequencies", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -185,6 +215,118 @@ namespace SavingsApp.Data.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "Wallets",
+                columns: table => new
+                {
+                    Id = table.Column<string>(type: "TEXT", nullable: false),
+                    WalletId = table.Column<string>(type: "TEXT", nullable: false),
+                    userId = table.Column<string>(type: "TEXT", nullable: false),
+                    Balance = table.Column<double>(type: "REAL", nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    ModifiedAt = table.Column<DateTime>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Wallets", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Wallets_AspNetUsers_userId",
+                        column: x => x.userId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "personalSavings",
+                columns: table => new
+                {
+                    Id = table.Column<string>(type: "TEXT", nullable: false),
+                    UserId = table.Column<string>(type: "TEXT", nullable: false),
+                    CategoryId = table.Column<string>(type: "TEXT", nullable: false),
+                    SaveName = table.Column<string>(type: "TEXT", nullable: false),
+                    TargetAmount = table.Column<decimal>(type: "TEXT", nullable: false),
+                    TargetDate = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    CurrentAmount = table.Column<decimal>(type: "TEXT", nullable: false),
+                    AutoSave = table.Column<bool>(type: "INTEGER", nullable: false),
+                    AutoSaveAmount = table.Column<decimal>(type: "TEXT", nullable: false),
+                    FrequencyId = table.Column<string>(type: "TEXT", nullable: false),
+                    MaxLimit = table.Column<decimal>(type: "TEXT", nullable: false),
+                    SavingsImageUrl = table.Column<string>(type: "TEXT", nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    ModifiedAt = table.Column<DateTime>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_personalSavings", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_personalSavings_AspNetUsers_UserId",
+                        column: x => x.UserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_personalSavings_categories_CategoryId",
+                        column: x => x.CategoryId,
+                        principalTable: "categories",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_personalSavings_frequencies_FrequencyId",
+                        column: x => x.FrequencyId,
+                        principalTable: "frequencies",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "WalletFundings",
+                columns: table => new
+                {
+                    Id = table.Column<string>(type: "TEXT", nullable: false),
+                    walletId = table.Column<string>(type: "TEXT", nullable: false),
+                    Action = table.Column<int>(type: "INTEGER", nullable: false),
+                    Reference = table.Column<string>(type: "TEXT", nullable: false),
+                    Amount = table.Column<double>(type: "REAL", nullable: false),
+                    CumulativeAmount = table.Column<double>(type: "REAL", nullable: false),
+                    Description = table.Column<string>(type: "TEXT", nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    ModifiedAt = table.Column<DateTime>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_WalletFundings", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_WalletFundings_Wallets_walletId",
+                        column: x => x.walletId,
+                        principalTable: "Wallets",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "personalSavingsFundings",
+                columns: table => new
+                {
+                    Id = table.Column<string>(type: "TEXT", nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    ModifiedAt = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    ActionType = table.Column<int>(type: "INTEGER", nullable: false),
+                    Amount = table.Column<decimal>(type: "TEXT", nullable: false),
+                    CumulativeAmount = table.Column<decimal>(type: "TEXT", nullable: false),
+                    personalSavingId = table.Column<string>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_personalSavingsFundings", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_personalSavingsFundings_personalSavings_personalSavingId",
+                        column: x => x.personalSavingId,
+                        principalTable: "personalSavings",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
                 table: "AspNetRoleClaims",
@@ -227,6 +369,37 @@ namespace SavingsApp.Data.Migrations
                 table: "kYCs",
                 column: "UserId",
                 unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_personalSavings_CategoryId",
+                table: "personalSavings",
+                column: "CategoryId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_personalSavings_FrequencyId",
+                table: "personalSavings",
+                column: "FrequencyId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_personalSavings_UserId",
+                table: "personalSavings",
+                column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_personalSavingsFundings_personalSavingId",
+                table: "personalSavingsFundings",
+                column: "personalSavingId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_WalletFundings_walletId",
+                table: "WalletFundings",
+                column: "walletId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Wallets_userId",
+                table: "Wallets",
+                column: "userId",
+                unique: true);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -250,7 +423,25 @@ namespace SavingsApp.Data.Migrations
                 name: "kYCs");
 
             migrationBuilder.DropTable(
+                name: "personalSavingsFundings");
+
+            migrationBuilder.DropTable(
+                name: "WalletFundings");
+
+            migrationBuilder.DropTable(
                 name: "AspNetRoles");
+
+            migrationBuilder.DropTable(
+                name: "personalSavings");
+
+            migrationBuilder.DropTable(
+                name: "Wallets");
+
+            migrationBuilder.DropTable(
+                name: "categories");
+
+            migrationBuilder.DropTable(
+                name: "frequencies");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
