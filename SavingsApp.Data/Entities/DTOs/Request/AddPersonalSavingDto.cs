@@ -19,7 +19,7 @@ namespace SavingsApp.Data.Entities.DTOs.Request
         public decimal AutoSaveAmount { get; set; }
         public string FrequencyId { get; set; }
         public decimal MaxLimit { get; set; }
-        public IFormFile SavingsImageUrl { get; set; } = null;
+        public IFormFile? SavingsImageUrl { get; set; } = null;
         public string CategoryId { get; set; }
     }
 }

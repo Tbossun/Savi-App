@@ -18,7 +18,7 @@ namespace SavingsApp.Data.Entities.Models
         public decimal AutoSaveAmount { get; set; }
         public string FrequencyId { get; set; }
         public decimal MaxLimit { get; set;}
-        public string SavingsImageUrl { get; set; } = string.Empty;
+        public string? SavingsImageUrl { get; set; } = string.Empty;
         public ApplicationUser User { get; set; }
         public Category category { get; set; }
         public Frequency frequency { get;}

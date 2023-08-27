@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SavingsApp.Data.Context;
 
@@ -10,9 +11,10 @@ using SavingsApp.Data.Context;
 namespace SavingsApp.Data.Migrations
 {
     [DbContext(typeof(SaviContext))]
-    partial class SaviContextModelSnapshot : ModelSnapshot
+    [Migration("20230827111418_group-Savings model")]
+    partial class groupSavingsmodel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "6.0.20");
@@ -386,7 +388,7 @@ namespace SavingsApp.Data.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("GroupSavingsFundings");
+                    b.ToTable("GroupSavingsFunding");
                 });
 
             modelBuilder.Entity("SavingsApp.Data.Entities.Models.GroupSavingsMember", b =>
@@ -420,7 +422,7 @@ namespace SavingsApp.Data.Migrations
 
                     b.HasIndex("GroupSavingId");
 
-                    b.ToTable("GroupSavingsMembers");
+                    b.ToTable("GroupSavingsMember");
                 });
 
             modelBuilder.Entity("SavingsApp.Data.Entities.Models.KYC", b =>

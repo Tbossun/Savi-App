@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
+using Savings_App.Extensions.Util;
 using SavingsApp.Core.Services.Interfaces;
 using SavingsApp.Data.Entities.DTOs.Request;
 using SavingsApp.Data.Entities.DTOs.Response;
@@ -90,7 +91,9 @@ namespace Savings_App.Controllers
 
                 var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                 var confirmationLink = Url.Action(nameof(ConfirmEmail), "Auth", new { token, email = user.Email }, Request.Scheme);
-                var message = new Message(new string[] { user.Email! }, "Confirmation Email Link", $"Click on the link to confirm your email: {confirmationLink!}");
+               // var message = new Message(new string[] { user.Email! }, "Confirmation Email Link", $"Click on the link to confirm your email: {confirmationLink!}");
+                var messageBody = EmailTemplateProvider.GenerateConfirmationEmail($"{user.FirstName} {user.LastName}", confirmationLink);
+                var message = new Message(new string[] { user.Email! }, "Email Confirmation Link", messageBody);
                 _emailService.SendEmail(message);
 
                 return StatusCode(StatusCodes.Status200OK,
@@ -120,7 +123,9 @@ namespace Savings_App.Controllers
                 await _signInManager.SignOutAsync();
                 await _signInManager.PasswordSignInAsync(user, loginRequest.Password, false, true);
                 var token = await _userManager.GenerateTwoFactorTokenAsync(user, "Email");
-                var message = new Message(new string[] { user.Email! }, "OTP Confirmation", $"Your token is {token!} ");
+                var messageBody = EmailTemplateProvider.OTP($"{user.FirstName} {user.LastName}", token);
+                var message = new Message(new string[] { user.Email! }, "Login Token", messageBody);
+               // var message = new Message(new string[] { user.Email! }, "OTP Confirmation", $"Your token is {token!} ");
                 _emailService.SendEmail(message);
 
                 return StatusCode(StatusCodes.Status500InternalServerError,
@@ -187,7 +192,9 @@ namespace Savings_App.Controllers
             {
                 var token = await _userManager.GeneratePasswordResetTokenAsync(user);
                 var forgotPasswordLink = Url.Action(nameof(ResetPassword), "Auth", new { token, email = user.Email }, Request.Scheme);
-                var message = new Message(new string[] { user.Email! }, "Forgot password link", $"Click on the link {forgotPasswordLink!} to reset your password ");
+                // var message = new Message(new string[] { user.Email! }, "Forgot password link", $"Click on the link {forgotPasswordLink!} to reset your password ");
+                var messageBody = EmailTemplateProvider.ResetPassword($"{user.FirstName} {user.LastName}", forgotPasswordLink);
+                var message = new Message(new string[] { user.Email! }, "Reset Password", messageBody);
                 _emailService.SendEmail(message);
                 return StatusCode(StatusCodes.Status500InternalServerError,
                     new APIResponse { StatusCode = "Success", IsSuccess = true, Message = $"Password reset link sent to {user.Email} successfully" });

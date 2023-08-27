@@ -299,17 +299,6 @@ namespace SavingsApp.Core.Services.Implementations
 
             return responseDto;
         }
-
-
-
-        /// <summary>
-        /// Transfer funds from one wallet to another.
-        /// </summary>
-        /// <param name="senderWalletId">The ID of the sender's wallet.</param>
-        /// <param name="receiverWalletId">The ID of the receiver's wallet.</param>
-        /// <param name="amount">The amount to transfer.</param>
-        /// <returns>A response indicating if the transfer was successful.</returns>
-        /// <exception cref="Exception">Thrown if the sender or receiver wallet is invalid, or if there is insufficient balance for the transfer.</exception>
        
 
 

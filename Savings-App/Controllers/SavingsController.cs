@@ -49,6 +49,34 @@ namespace Savings_App.Controllers
             return Ok(response);
         }
 
+        [HttpGet("All-Personal-Savings")]
+        public ActionResult<APIResponse> GetPersonalSavings()
+        {
+            var personalSavings = _unitOfWork.PersonalSavingRepository.GetAll().ToList();
+            var response = new APIResponse
+            {
+                StatusCode = StatusCodes.Status200OK.ToString(),
+                IsSuccess = true,
+                Message = "Your personal saving targets retrieved successfully",
+                Result = personalSavings
+            };
+            return Ok(response);
+        }
+
+        [HttpGet("Personal-Saving")]
+        public ActionResult<APIResponse> GetAPersonalSaving(string id)
+        {
+            var personalSavings = _unitOfWork.PersonalSavingRepository.Get(i =>i.Id == id);
+            var response = new APIResponse
+            {
+                StatusCode = StatusCodes.Status200OK.ToString(),
+                IsSuccess = true,
+                Message = "Personal saving target retrieved successfully",
+                Result = personalSavings
+            };
+            return Ok(response);
+        }
+
         [HttpGet("Saving-Frequency")]
         public ActionResult<APIResponse> GetSavingFrequencies()
         {
@@ -63,7 +91,7 @@ namespace Savings_App.Controllers
             return Ok(response);
         }
 
-        [HttpPost]
+        [HttpPost("New-Saving-Target")]
         public async Task<ActionResult<APIResponse>> AddPersonalSaving([FromForm] AddPersonalSavingDto saving)
         {
             var user = await _userManager.FindByIdAsync(saving.UserId);
@@ -76,15 +104,26 @@ namespace Savings_App.Controllers
             }
             else
             {
-
-                var documentUpload = await _uploadService.UploadImageAsync(saving.SavingsImageUrl);
-                string documentUploadUrl = documentUpload.Url.ToString();
-
+               
+                 
                 PersonalSaving SavingDetail = _mapper.Map<PersonalSaving>(saving);
                 SavingDetail.UserId = saving.UserId;
                 SavingDetail.FrequencyId = saving.FrequencyId;
                 SavingDetail.CategoryId = saving.CategoryId;
-                SavingDetail.SavingsImageUrl = documentUploadUrl;
+               
+                string documentUploadUrl = string.Empty;
+
+                if (saving.SavingsImageUrl == null)
+                {
+                    documentUploadUrl = string.Empty;
+                    SavingDetail.SavingsImageUrl = documentUploadUrl;
+                }
+                else
+                {
+                    var documentUpload = await _uploadService.UploadImageAsync(saving.SavingsImageUrl);
+                    documentUploadUrl = documentUpload.Url.ToString();
+                    SavingDetail.SavingsImageUrl = documentUploadUrl;
+                }
 
                 _unitOfWork.PersonalSavingRepository.Add(SavingDetail);
 

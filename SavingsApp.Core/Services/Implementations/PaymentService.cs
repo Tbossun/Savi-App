@@ -21,6 +21,16 @@ namespace SavingsApp.Core.Services.Implementations
             _unitOfWork = unitOfWork;
         }
 
+
+
+        /// <summary>
+        /// Fund a personal saving target
+        /// </summary>
+        /// <param name="senderWalletId">The ID of the sender's wallet.</param>
+        /// <param name="personalSaving">The ID of the personal target saving</param>
+        /// <param name="amount">The amount to transfer.</param>
+        /// <returns>A response indicating if the transfer was successful.</returns>
+        /// <exception cref="Exception">Thrown if the sender or saving id is invalid, or if there is insufficient balance for the transfer.</exception>
         public async Task<ResponseDto<bool>> FundPersonalSavings(string senderWalletId, string personalSavingsId, double amount)
         {
             var responseDto = new ResponseDto<bool>();
@@ -54,7 +64,7 @@ namespace SavingsApp.Core.Services.Implementations
                 Reference = "Deb" + GenerateUniqueReference(),
                 Action = ActionType.Debit,
                 Amount = amount,
-                CumulativeAmount = senderpreviousCumulativeAmount - amount,
+                CumulativeAmount = (senderpreviousCumulativeAmount - amount),
                 Description = "Personal Savings funding",
                 walletId = senderWallet.Id,
                 AcctNumber = senderWallet.WalletId,
@@ -67,7 +77,7 @@ namespace SavingsApp.Core.Services.Implementations
             {
                 ActionType = ActionType.Credit,
                 Amount = (decimal)amount,
-                CumulativeAmount = SavingsCumulativeAmount + (decimal)amount,
+                CumulativeAmount = (SavingsCumulativeAmount + (decimal)amount),
                 Description = $"Personal savings funded from {senderWallet.WalletId}",
                 personalSavingId = personalSaving.Id,
                 ModifiedAt = DateTime.UtcNow,

@@ -19,6 +19,9 @@ namespace SavingsApp.Data.Context
         public DbSet<Category> categories { get; set; }
         public DbSet<Frequency> frequencies { get; set; } 
         public DbSet<PersonalSavingsFunding> personalSavingsFundings { get; set; }
+        public DbSet<GroupSavings> GroupSavings { get; set; }
+        public DbSet<GroupSavingsFunding> GroupSavingsFundings { get; set; }
+        public DbSet<GroupSavingsMember> GroupSavingsMembers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
