@@ -110,7 +110,7 @@
         <body>
              <div class='container'>
                 <div class='header'>
-                    <h1>Email Confirmation</h1>
+                    <h1>Reset Password</h1>
                 </div>
                 <div class='content'>
                     <p>Hello {userName},</p>
@@ -172,7 +172,7 @@
         <body>
              <div class='container'>
                 <div class='header'>
-                    <h1>Email Confirmation</h1>
+                    <h1>Login OTP</h1>
                 </div>
                 <div class='content'>
                     <p>Hello {userName},</p>
