@@ -8,6 +8,8 @@ using SavingsApp.Data.Entities.DTOs.Response;
 using SavingsApp.Data.Entities.Enums;
 using SavingsApp.Data.Entities.Models;
 using SavingsApp.Data.Repositories.IRepositories;
+using System.Text.Json.Serialization;
+using System.Text.Json;
 
 namespace Savings_App.Controllers
 {
@@ -49,6 +51,7 @@ namespace Savings_App.Controllers
                 GroupSavings groupSaving = _mapper.Map<GroupSavings>(saving);
                 groupSaving.UserId = saving.UserId;
                 groupSaving.FrequencyId = saving.FrequencyId;
+                groupSaving.MemberCount = 1;
 
                 string documentUploadUrl = string.Empty;
 
@@ -111,6 +114,8 @@ namespace Savings_App.Controllers
             }
         }
 
+
+
         [HttpPost("Join-Group-Saving")]
         public async Task<ActionResult<APIResponse>> JoinGroupSaving([FromForm] JoinGroupSavingDto joinRequest)
         {
@@ -144,6 +149,10 @@ namespace Savings_App.Controllers
                 // Set other properties
             };
             _unitOfWork.GroupSavingMemberRepo.Add(newMember);
+
+            // Update the MemberCount of the group
+            groupSaving.MemberCount += 1; // Increment the member count
+            _unitOfWork.GroupSavingRepository.Update(groupSaving); // Update the entity
             _unitOfWork.Save();
 
             var response = new APIResponse
@@ -153,7 +162,12 @@ namespace Savings_App.Controllers
                 Message = "User successfully joined the group saving.",
                 Result = newMember
             };
-            return response;
+            var options = new JsonSerializerOptions
+            {
+                ReferenceHandler = ReferenceHandler.Preserve, // Use this option to preserve references
+                WriteIndented = true // Optional: Makes the JSON output formatted for readability
+            };
+            return Content(JsonSerializer.Serialize(response, options), "application/json");
         }
 
 

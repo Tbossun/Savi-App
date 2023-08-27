@@ -1,4 +1,5 @@
-﻿using SavingsApp.Data.Context;
+﻿using Microsoft.EntityFrameworkCore;
+using SavingsApp.Data.Context;
 using SavingsApp.Data.Entities.Models;
 using SavingsApp.Data.Repositories.IRepositories;
 using System;
@@ -20,7 +21,8 @@ namespace SavingsApp.Data.Repositories
 
         public void Update(GroupSavings groupSavings)
         {
-            throw new NotImplementedException();
+            _saviDbContext.Entry(groupSavings).State = EntityState.Modified;
+            _saviDbContext.SaveChanges();
         }
     }
 }
