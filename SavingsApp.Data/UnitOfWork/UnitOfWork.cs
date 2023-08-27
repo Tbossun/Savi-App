@@ -15,10 +15,13 @@ namespace SavingsApp.Data.UnitOfWork
         public IWalletFundingRepository WalletFundingRepository { get; private set; }
         public IFrequencyRepository FrequencyRepository { get; private set; }
         public ICategoryRepository CategoryRepository { get; private set; }
-      //  public IPersonalSavingFundingRepository PersonalSavingFundingRepository { get; private set; }
         public IPersonalSavingRepository PersonalSavingRepository { get; private set; }
-
         public IPersonalSavingFundingRepository PersonalSavingFundingRepository { get; private set; }
+        public IGroupSavingMemberRepo GroupSavingMemberRepo { get; private set; }
+
+        public IGroupSavingRepo GroupSavingRepository { get; private set; }
+
+        public IGroupSavingFundingRepo GroupSavingFundingRepository { get; private set; }
 
         public UnitOfWork(SaviContext saviDbContext)
         {
@@ -30,6 +33,9 @@ namespace SavingsApp.Data.UnitOfWork
             CategoryRepository = new CategoryRepository(_saviDbContext);
             PersonalSavingFundingRepository = new PersonalSavingFundingRepository(_saviDbContext);
             PersonalSavingRepository = new PersonalSavingRepository(_saviDbContext);
+            GroupSavingRepository = new GroupSavingRepo(_saviDbContext);
+            GroupSavingMemberRepo = new GroupSavingMemberRepo(_saviDbContext);
+            GroupSavingFundingRepository = new GroupSavingFundingRepo(_saviDbContext);
 
         }
 

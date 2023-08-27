@@ -13,6 +13,7 @@ namespace Savings_App.Profiles
             CreateMap<PersonalSaving, AddPersonalSavingDto>().ReverseMap();
             CreateMap<Wallet, WalletUpdate>().ReverseMap();
             CreateMap<WalletUpdate, Wallet>();
+            CreateMap<GroupSavings, AddGroupSavingDto>().ReverseMap();
         }
     }
 }

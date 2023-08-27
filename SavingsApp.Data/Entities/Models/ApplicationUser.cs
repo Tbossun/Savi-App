@@ -19,5 +19,6 @@ namespace SavingsApp.Data.Entities.Models
         public virtual Wallet Wallet { get; set; }
         public virtual ICollection<PersonalSaving> PersonalSavings { get; set;}
         public virtual ICollection<GroupSavingsMember> GroupSavingsMembers { get; set; }
+
     }
 }

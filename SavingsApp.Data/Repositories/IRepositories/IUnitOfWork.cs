@@ -13,6 +13,9 @@ namespace SavingsApp.Data.Repositories.IRepositories
         IFrequencyRepository FrequencyRepository { get; }
         IPersonalSavingRepository PersonalSavingRepository { get; }
         IPersonalSavingFundingRepository PersonalSavingFundingRepository { get; }
+        IGroupSavingRepo GroupSavingRepository { get; }
+        IGroupSavingMemberRepo GroupSavingMemberRepo { get; }
+        IGroupSavingFundingRepo GroupSavingFundingRepository { get; }
 
         void Save();
     }
