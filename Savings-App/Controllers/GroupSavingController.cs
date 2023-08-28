@@ -176,5 +176,54 @@ namespace Savings_App.Controllers
         }
 
 
+        [HttpPost("Leave-Group-Saving")]
+        public async Task<ActionResult<APIResponse>> LeaveGroupSaving([FromForm] LeaveGroupSavingDto leaveRequest)
+        {
+            var user = await _userManager.FindByIdAsync(leaveRequest.UserId);
+            var groupSaving = _unitOfWork.GroupSavingRepository.Get(id => id.Id == leaveRequest.GroupSavingId);
+
+            if (user == null || groupSaving == null)
+            {
+                return StatusCode(StatusCodes.Status404NotFound,
+                    new APIResponse { StatusCode = StatusCodes.Status404NotFound.ToString(), IsSuccess = false, Message = "User or group saving not found." });
+            }
+
+            // Check if the user is a member of the group
+            var groupMember = _unitOfWork.GroupSavingMemberRepo.Get(member => member.UserId == leaveRequest.UserId && member.GroupSavingId == leaveRequest.GroupSavingId);
+            if (groupMember == null)
+            {
+                return StatusCode(StatusCodes.Status400BadRequest,
+                    new APIResponse { StatusCode = StatusCodes.Status400BadRequest.ToString(), IsSuccess = false, Message = "User is not a member of the group." });
+            }
+
+            // Remove the user as a member
+            _unitOfWork.GroupSavingMemberRepo.Remove(groupMember);
+
+            // Decrement the MemberCount of the group
+            groupSaving.MemberCount -= 1;
+            _unitOfWork.GroupSavingRepository.Update(groupSaving);
+            _unitOfWork.Save();
+
+            var response = new APIResponse
+            {
+                StatusCode = StatusCodes.Status200OK.ToString(),
+                IsSuccess = true,
+                Message = "User successfully left the group saving.",
+                Result = null // No need to include result in this case
+            };
+            return response;
+        }
+
+        [HttpGet("All-Group-Savings")]
+        public ActionResult<IEnumerable<GroupSavingsDto>> GetAllGroupSavings()
+        {
+            var groupSavingsList = _unitOfWork.GroupSavingRepository.GetAll();
+            var groupSavingsDtoList = _mapper.Map<IEnumerable<GroupSavingsDto>>(groupSavingsList);
+
+            return Ok(groupSavingsDtoList);
+        }
+
+
+
     }
 }
