@@ -110,7 +110,12 @@ namespace Savings_App.Controllers
                     Message = "New Group Saving Added successfully",
                     Result = groupSaving
                 };
-                return response;
+                var options = new JsonSerializerOptions
+                {
+                    ReferenceHandler = ReferenceHandler.Preserve, // Use this option to preserve references
+                    WriteIndented = true // Optional: Makes the JSON output formatted for readability
+                };
+                return Content(JsonSerializer.Serialize(response, options), "application/json");
             }
         }
 
@@ -143,7 +148,7 @@ namespace Savings_App.Controllers
                 GroupSavingId = joinRequest.GroupSavingId,
                 Position = groupSaving.MemberCount + 1,
                 LastSavingDate = DateTime.Now,
-                CreatedAt = DateTime.Now,
+                CreatedAt = DateTime.Now,                                                                                                                 
                 ModifiedAt = DateTime.Now,
                 UserId = joinRequest.UserId,
                 // Set other properties

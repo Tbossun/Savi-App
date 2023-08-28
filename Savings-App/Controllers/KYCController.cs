@@ -110,7 +110,13 @@ namespace Savings_App.Controllers
                         Message = "kycDetail updated successfully",
                         Result = kycDetail
                     };
-                    return CreatedAtAction("GetKycDetails", new { id = user.Id }, response);
+                   // return CreatedAtAction("GetKycDetails", new { id = user.Id }, response);
+                    var options = new JsonSerializerOptions
+                    {
+                        ReferenceHandler = ReferenceHandler.Preserve, // Use this option to preserve references
+                        WriteIndented = true // Optional: Makes the JSON output formatted for readability
+                    };
+                    return Content(JsonSerializer.Serialize(response, options), "application/json");
                 }
             }
             return StatusCode(StatusCodes.Status400BadRequest,
