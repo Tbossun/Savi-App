@@ -188,6 +188,13 @@ namespace Savings_App.Controllers
                     new APIResponse { StatusCode = StatusCodes.Status404NotFound.ToString(), IsSuccess = false, Message = "User or group saving not found." });
             }
 
+            // Check if the user is the group owner
+            if (groupSaving.UserId == leaveRequest.UserId)
+            {
+                return StatusCode(StatusCodes.Status403Forbidden,
+                    new APIResponse { StatusCode = StatusCodes.Status403Forbidden.ToString(), IsSuccess = false, Message = "Group owner cannot leave the group." });
+            }
+
             // Check if the user is a member of the group
             var groupMember = _unitOfWork.GroupSavingMemberRepo.Get(member => member.UserId == leaveRequest.UserId && member.GroupSavingId == leaveRequest.GroupSavingId);
             if (groupMember == null)
@@ -221,6 +228,123 @@ namespace Savings_App.Controllers
             var groupSavingsDtoList = _mapper.Map<IEnumerable<GroupSavingsDto>>(groupSavingsList);
 
             return Ok(groupSavingsDtoList);
+        }
+
+        [HttpGet("Group-Saving/{id}")]
+        public ActionResult<GroupSavingsDto> GetGroupSaving(string id)
+        {
+            var groupSaving = _unitOfWork.GroupSavingRepository.Get(u => u.Id == id);
+
+            if (groupSaving == null)
+            {
+                return StatusCode(StatusCodes.Status404NotFound,
+                    new APIResponse { StatusCode = StatusCodes.Status404NotFound.ToString(), IsSuccess = false, Message = "Group saving not found." });
+            }
+
+            var groupSavingDto = _mapper.Map<GroupSavingsDto>(groupSaving);
+
+            return Ok(groupSavingDto);
+        }
+
+        [HttpGet("User-Group-Savings/{userId}")]
+        public ActionResult<IEnumerable<GroupSavingsDto>> GetUserGroupSavings(string userId)
+        {
+            var userGroupSavings = _unitOfWork.GroupSavingRepository.GetGroupSavingsByUserId(userId);
+            var userGroupSavingsDtoList = _mapper.Map<IEnumerable<GroupSavingsDto>>(userGroupSavings);
+
+            return Ok(userGroupSavingsDtoList);
+        }
+
+
+
+        [HttpDelete("Delete-Group-Saving")]
+        public async Task<ActionResult<APIResponse>> DeleteGroupSaving([FromBody] DeleteGroupSavingDto deleteRequest)
+        {
+            var user = await _userManager.FindByIdAsync(deleteRequest.UserId);
+            var groupSaving = _unitOfWork.GroupSavingRepository.Get(id => id.Id == deleteRequest.GroupSavingId);
+
+            if (user == null || groupSaving == null)
+            {
+                return StatusCode(StatusCodes.Status404NotFound,
+                    new APIResponse { StatusCode = StatusCodes.Status404NotFound.ToString(), IsSuccess = false, Message = "User or group saving not found." });
+            }
+
+            // Check if the user is the owner of the group
+            bool isGroupOwner = _unitOfWork.GroupSavingMemberRepo.Exists(member => member.UserId == user.Id && member.GroupSavingId == groupSaving.Id && member.IsGroupOwner);
+            if (!isGroupOwner)
+            {
+                return StatusCode(StatusCodes.Status403Forbidden,
+                    new APIResponse { StatusCode = StatusCodes.Status403Forbidden.ToString(), IsSuccess = false, Message = "User is not the owner of the group." });
+            }
+
+            // Delete the group saving and related entities
+            _unitOfWork.GroupSavingMemberRepo.RemoveRange(groupSaving.GroupSavingsMembers);
+            _unitOfWork.GroupSavingFundingRepository.RemoveRange(groupSaving.groupSavingsFundings);
+            _unitOfWork.GroupSavingRepository.Remove(groupSaving);
+            _unitOfWork.Save();
+
+            var response = new APIResponse
+            {
+                StatusCode = StatusCodes.Status200OK.ToString(),
+                IsSuccess = true,
+                Message = "Group Saving successfully deleted.",
+                Result = null // You can provide additional data here if needed
+            };
+
+            var options = new JsonSerializerOptions
+            {
+                ReferenceHandler = ReferenceHandler.Preserve,
+                WriteIndented = true
+            };
+
+            return Content(JsonSerializer.Serialize(response, options), "application/json");
+        }
+
+
+        [HttpPut("Update-Group-Saving")]
+        public async Task<ActionResult<APIResponse>> UpdateGroupSaving([FromBody] UpdateGroupSavingDto updateRequest)
+        {
+            var user = await _userManager.FindByIdAsync(updateRequest.UserId);
+            var groupSaving = _unitOfWork.GroupSavingRepository.Get(id => id.Id == updateRequest.GroupSavingId);
+
+            if (user == null || groupSaving == null)
+            {
+                return StatusCode(StatusCodes.Status404NotFound,
+                    new APIResponse { StatusCode = StatusCodes.Status404NotFound.ToString(), IsSuccess = false, Message = "User or group saving not found." });
+            }
+
+            // Check if the user is the owner of the group
+            bool isGroupOwner = _unitOfWork.GroupSavingMemberRepo.Exists(member => member.UserId == user.Id && member.GroupSavingId == groupSaving.Id && member.IsGroupOwner);
+            if (!isGroupOwner)
+            {
+                return StatusCode(StatusCodes.Status403Forbidden,
+                    new APIResponse { StatusCode = StatusCodes.Status403Forbidden.ToString(), IsSuccess = false, Message = "User is not the owner of the group." });
+            }
+
+            // Update the group saving properties
+            groupSaving.SaveName = updateRequest.GroupName;
+            groupSaving.ContributionAmount = updateRequest.ContributionAmount;
+            groupSaving.FrequencyId = updateRequest.FrequencyId;
+
+
+            _unitOfWork.GroupSavingRepository.Update(groupSaving);
+            _unitOfWork.Save();
+
+            var response = new APIResponse
+            {
+                StatusCode = StatusCodes.Status200OK.ToString(),
+                IsSuccess = true,
+                Message = "Group Saving successfully updated.",
+                Result = groupSaving // Return the updated group saving
+            };
+
+            var options = new JsonSerializerOptions
+            {
+                ReferenceHandler = ReferenceHandler.Preserve,
+                WriteIndented = true
+            };
+
+            return Content(JsonSerializer.Serialize(response, options), "application/json");
         }
 
 

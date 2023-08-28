@@ -10,5 +10,6 @@ namespace SavingsApp.Data.Repositories.IRepositories
     public interface IGroupSavingRepo : IRepositoryBase<GroupSavings>
     {
         void Update(GroupSavings groupSavings);
+        Task<List<GroupSavings>> GetGroupSavingsByUserId(string userId);
     }
 }

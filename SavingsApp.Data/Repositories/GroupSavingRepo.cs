@@ -19,6 +19,13 @@ namespace SavingsApp.Data.Repositories
             _saviDbContext = db;
         }
 
+        public async Task<List<GroupSavings>> GetGroupSavingsByUserId(string userId)
+        {
+            return await _saviDbContext.GroupSavings
+                .Where(gs => gs.GroupSavingsMembers.Any(member => member.UserId == userId))
+                .ToListAsync();
+        }
+
         public void Update(GroupSavings groupSavings)
         {
             _saviDbContext.Entry(groupSavings).State = EntityState.Modified;
