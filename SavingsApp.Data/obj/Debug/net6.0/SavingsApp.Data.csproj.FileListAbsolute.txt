@@ -12,3 +12,17 @@ C:\Users\alabi\Desktop\OnBoard\SavingsApp\SavingsApp.Data\obj\Debug\net6.0\refin
 C:\Users\alabi\Desktop\OnBoard\SavingsApp\SavingsApp.Data\obj\Debug\net6.0\SavingsApp.Data.pdb
 C:\Users\alabi\Desktop\OnBoard\SavingsApp\SavingsApp.Data\obj\Debug\net6.0\SavingsApp.Data.genruntimeconfig.cache
 C:\Users\alabi\Desktop\OnBoard\SavingsApp\SavingsApp.Data\obj\Debug\net6.0\ref\SavingsApp.Data.dll
+C:\Users\alabi\Desktop\Completed\SavingsApp\SavingsApp.Data\bin\Debug\net6.0\SavingsApp.Data.deps.json
+C:\Users\alabi\Desktop\Completed\SavingsApp\SavingsApp.Data\bin\Debug\net6.0\SavingsApp.Data.runtimeconfig.json
+C:\Users\alabi\Desktop\Completed\SavingsApp\SavingsApp.Data\bin\Debug\net6.0\SavingsApp.Data.dll
+C:\Users\alabi\Desktop\Completed\SavingsApp\SavingsApp.Data\bin\Debug\net6.0\SavingsApp.Data.pdb
+C:\Users\alabi\Desktop\Completed\SavingsApp\SavingsApp.Data\obj\Debug\net6.0\SavingsApp.Data.csproj.AssemblyReference.cache
+C:\Users\alabi\Desktop\Completed\SavingsApp\SavingsApp.Data\obj\Debug\net6.0\SavingsApp.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alabi\Desktop\Completed\SavingsApp\SavingsApp.Data\obj\Debug\net6.0\SavingsApp.Data.AssemblyInfoInputs.cache
+C:\Users\alabi\Desktop\Completed\SavingsApp\SavingsApp.Data\obj\Debug\net6.0\SavingsApp.Data.AssemblyInfo.cs
+C:\Users\alabi\Desktop\Completed\SavingsApp\SavingsApp.Data\obj\Debug\net6.0\SavingsApp.Data.csproj.CoreCompileInputs.cache
+C:\Users\alabi\Desktop\Completed\SavingsApp\SavingsApp.Data\obj\Debug\net6.0\SavingsApp.Data.dll
+C:\Users\alabi\Desktop\Completed\SavingsApp\SavingsApp.Data\obj\Debug\net6.0\refint\SavingsApp.Data.dll
+C:\Users\alabi\Desktop\Completed\SavingsApp\SavingsApp.Data\obj\Debug\net6.0\SavingsApp.Data.pdb
+C:\Users\alabi\Desktop\Completed\SavingsApp\SavingsApp.Data\obj\Debug\net6.0\SavingsApp.Data.genruntimeconfig.cache
+C:\Users\alabi\Desktop\Completed\SavingsApp\SavingsApp.Data\obj\Debug\net6.0\ref\SavingsApp.Data.dll

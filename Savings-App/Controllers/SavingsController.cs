@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using SavingsApp.Core.Services.Interfaces;
-using SavingsApp.Data.Entities.DTOs.Request;
 using SavingsApp.Data.Entities.DTOs.Response;
 using SavingsApp.Data.Entities.Models;
 using SavingsApp.Data.Repositories.IRepositories;
@@ -11,11 +10,14 @@ using System.Text.Json.Serialization;
 using System.Text.Json;
 using SavingsApp.Data.Entities.Enums;
 using SavingsApp.Core.Services.Implementations;
+using SavingsApp.Data.Entities.DTOs.Request.PersonalSaving;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Savings_App.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class SavingsController : ControllerBase
     {
         private readonly IPaymentService _paymentService;
@@ -34,7 +36,10 @@ namespace Savings_App.Controllers
             _paymentService = paymentService;
         }
 
-
+        /// <summary>
+        /// Get all Saving Categories
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("Saving-Categories")]
         public ActionResult<APIResponse> GetSavingCategories()
         {
@@ -49,6 +54,11 @@ namespace Savings_App.Controllers
             return Ok(response);
         }
 
+
+        /// <summary>
+        /// Retrieve all personal saving target
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("All-Personal-Savings")]
         public ActionResult<APIResponse> GetPersonalSavings()
         {
@@ -63,6 +73,12 @@ namespace Savings_App.Controllers
             return Ok(response);
         }
 
+
+        /// <summary>
+        /// Gat a single saving target by id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("Personal-Saving")]
         public ActionResult<APIResponse> GetAPersonalSaving(string id)
         {
@@ -77,6 +93,10 @@ namespace Savings_App.Controllers
             return Ok(response);
         }
 
+        /// <summary>
+        /// Retrieve all Saving freqencies
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("Saving-Frequency")]
         public ActionResult<APIResponse> GetSavingFrequencies()
         {
@@ -91,6 +111,12 @@ namespace Savings_App.Controllers
             return Ok(response);
         }
 
+
+        /// <summary>
+        /// Add a new saving target
+        /// </summary>
+        /// <param name="saving"></param>
+        /// <returns></returns>
         [HttpPost("New-Saving-Target")]
         public async Task<ActionResult<APIResponse>> AddPersonalSaving([FromForm] AddPersonalSavingDto saving)
         {
@@ -104,8 +130,7 @@ namespace Savings_App.Controllers
             }
             else
             {
-               
-                 
+                            
                 PersonalSaving SavingDetail = _mapper.Map<PersonalSaving>(saving);
                 SavingDetail.UserId = saving.UserId;
                 SavingDetail.FrequencyId = saving.FrequencyId;
@@ -160,6 +185,12 @@ namespace Savings_App.Controllers
               // new APIResponse { StatusCode = StatusCodes.Status400BadRequest.ToString(), IsSuccess = false, Message = "User KYC is already completed." });
         }
 
+
+        /// <summary>
+        /// Fund a persomal saving target
+        /// </summary>
+        /// <param name="walletFundingRequest"></param>
+        /// <returns></returns>
         [HttpPost("Fund-personal-Saving")]
         public async Task<IActionResult> FundPersonalSaving([FromBody] PersonalSavingsFundingRequest walletFundingRequest)
         {

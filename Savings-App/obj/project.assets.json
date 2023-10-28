@@ -62,7 +62,34 @@
           }
         }
       },
-      "Hangfire.Core/1.8.4": {
+      "Hangfire/1.8.5": {
+        "type": "package",
+        "dependencies": {
+          "Hangfire.AspNetCore": "[1.8.5]",
+          "Hangfire.Core": "[1.8.5]",
+          "Hangfire.SqlServer": "[1.8.5]"
+        }
+      },
+      "Hangfire.AspNetCore/1.8.5": {
+        "type": "package",
+        "dependencies": {
+          "Hangfire.NetCore": "[1.8.5]"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/Hangfire.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Hangfire.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Hangfire.Core/1.8.5": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "11.0.1"
@@ -119,6 +146,41 @@
           },
           "lib/netstandard2.0/zh/Hangfire.Core.resources.dll": {
             "locale": "zh"
+          }
+        }
+      },
+      "Hangfire.NetCore/1.8.5": {
+        "type": "package",
+        "dependencies": {
+          "Hangfire.Core": "[1.8.5]",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.0.0",
+          "Microsoft.Extensions.Hosting.Abstractions": "3.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "3.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/Hangfire.NetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/Hangfire.NetCore.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Hangfire.SqlServer/1.8.5": {
+        "type": "package",
+        "dependencies": {
+          "Hangfire.Core": "[1.8.5]"
+        },
+        "compile": {
+          "lib/netstandard2.0/Hangfire.SqlServer.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Hangfire.SqlServer.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -1363,6 +1425,22 @@
           "build/Swashbuckle.AspNetCore.props": {}
         }
       },
+      "Swashbuckle.AspNetCore.Annotations/6.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Swashbuckle.AspNetCore.SwaggerGen": "6.5.0"
+        },
+        "compile": {
+          "lib/net6.0/Swashbuckle.AspNetCore.Annotations.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Swashbuckle.AspNetCore.Annotations.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore.Swagger/6.5.0": {
         "type": "package",
         "dependencies": {
@@ -1804,6 +1882,9 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "CloudinaryDotNet": "1.21.0",
+          "Hangfire": "1.8.5",
+          "Hangfire.Core": "1.8.5",
+          "Hangfire.SqlServer": "1.8.5",
           "MailKit": "4.1.0",
           "NETCore.MailKit": "2.1.0",
           "Paystack.Net": "1.1.0",
@@ -1907,10 +1988,22 @@
         "lib/netstandard2.0/CloudinaryDotNet.xml"
       ]
     },
-    "Hangfire.Core/1.8.4": {
-      "sha512": "Yov5f6Q+7lWcJEVldIIcmHAEdEmNfhxA8632ntXYE9ir0dA5sijnJoREvO5tZuCTHmi7lAk1dDAvQFmvVhxykQ==",
+    "Hangfire/1.8.5": {
+      "sha512": "Abnr/4fDi+BegLgou39KxLpjlJxYcYcpC7f4QR4aBocJPNLqdChsBFK+KhKaAMczWIrwWsYne3lLJXrwlZQLiA==",
       "type": "package",
-      "path": "hangfire.core/1.8.4",
+      "path": "hangfire/1.8.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "hangfire.1.8.5.nupkg.sha512",
+        "hangfire.nuspec",
+        "readme.txt"
+      ]
+    },
+    "Hangfire.AspNetCore/1.8.5": {
+      "sha512": "STs4GxcT0eVrA1DZZ065RadOUOMTm2XkdWLiESx8VAJT9uPxNw8bC7tYpeYh0CddTDo6xjy21v/E4nIC0Cp9Yg==",
+      "type": "package",
+      "path": "hangfire.aspnetcore/1.8.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1920,7 +2013,34 @@
         "LICENSE_ROYALTYFREE",
         "LICENSE_STANDARD",
         "NOTICES",
-        "hangfire.core.1.8.4.nupkg.sha512",
+        "hangfire.aspnetcore.1.8.5.nupkg.sha512",
+        "hangfire.aspnetcore.nuspec",
+        "lib/net451/Hangfire.AspNetCore.dll",
+        "lib/net451/Hangfire.AspNetCore.xml",
+        "lib/net461/Hangfire.AspNetCore.dll",
+        "lib/net461/Hangfire.AspNetCore.xml",
+        "lib/netcoreapp3.0/Hangfire.AspNetCore.dll",
+        "lib/netcoreapp3.0/Hangfire.AspNetCore.xml",
+        "lib/netstandard1.3/Hangfire.AspNetCore.dll",
+        "lib/netstandard1.3/Hangfire.AspNetCore.xml",
+        "lib/netstandard2.0/Hangfire.AspNetCore.dll",
+        "lib/netstandard2.0/Hangfire.AspNetCore.xml"
+      ]
+    },
+    "Hangfire.Core/1.8.5": {
+      "sha512": "OA5D59dkgS04rU9UDQkSypT36pn5RbtFpFZwhbHA4LL3VDeE0aaf4rShvKRJihJze62fr5AhjktJf4cJMDpYyQ==",
+      "type": "package",
+      "path": "hangfire.core/1.8.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "COPYING",
+        "COPYING.LESSER",
+        "LICENSE.md",
+        "LICENSE_ROYALTYFREE",
+        "LICENSE_STANDARD",
+        "NOTICES",
+        "hangfire.core.1.8.5.nupkg.sha512",
         "hangfire.core.nuspec",
         "lib/net451/Hangfire.Core.dll",
         "lib/net451/Hangfire.Core.xml",
@@ -1986,6 +2106,58 @@
         "lib/netstandard2.0/tr-TR/Hangfire.Core.resources.dll",
         "lib/netstandard2.0/zh-TW/Hangfire.Core.resources.dll",
         "lib/netstandard2.0/zh/Hangfire.Core.resources.dll"
+      ]
+    },
+    "Hangfire.NetCore/1.8.5": {
+      "sha512": "ZwVZBBkzEpWlcXLvuytMghT+EYzvQDbdsGK6zO+ygWsW6I7GxKPxsY/U+9DEj3xB0lqqFmOUnBmOea5AvC7K8A==",
+      "type": "package",
+      "path": "hangfire.netcore/1.8.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "COPYING",
+        "COPYING.LESSER",
+        "LICENSE.md",
+        "LICENSE_ROYALTYFREE",
+        "LICENSE_STANDARD",
+        "NOTICES",
+        "hangfire.netcore.1.8.5.nupkg.sha512",
+        "hangfire.netcore.nuspec",
+        "lib/net451/Hangfire.NetCore.dll",
+        "lib/net451/Hangfire.NetCore.xml",
+        "lib/net461/Hangfire.NetCore.dll",
+        "lib/net461/Hangfire.NetCore.xml",
+        "lib/netstandard1.3/Hangfire.NetCore.dll",
+        "lib/netstandard1.3/Hangfire.NetCore.xml",
+        "lib/netstandard2.0/Hangfire.NetCore.dll",
+        "lib/netstandard2.0/Hangfire.NetCore.xml",
+        "lib/netstandard2.1/Hangfire.NetCore.dll",
+        "lib/netstandard2.1/Hangfire.NetCore.xml"
+      ]
+    },
+    "Hangfire.SqlServer/1.8.5": {
+      "sha512": "U7lYPtSPjgxkCHAeGwtXWiTTIUReuR/+rS4F5ZLZbxYiLT1PXVpw3HJ/9Mgf09ReGCLTto6QLCep+BPjLH8Wvg==",
+      "type": "package",
+      "path": "hangfire.sqlserver/1.8.5",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "COPYING",
+        "COPYING.LESSER",
+        "LICENSE.md",
+        "LICENSE_ROYALTYFREE",
+        "LICENSE_STANDARD",
+        "NOTICES",
+        "hangfire.sqlserver.1.8.5.nupkg.sha512",
+        "hangfire.sqlserver.nuspec",
+        "lib/net451/Hangfire.SqlServer.dll",
+        "lib/net451/Hangfire.SqlServer.xml",
+        "lib/netstandard1.3/Hangfire.SqlServer.dll",
+        "lib/netstandard1.3/Hangfire.SqlServer.xml",
+        "lib/netstandard2.0/Hangfire.SqlServer.dll",
+        "lib/netstandard2.0/Hangfire.SqlServer.xml",
+        "tools/install.sql"
       ]
     },
     "Humanizer.Core/2.8.26": {
@@ -3701,6 +3873,32 @@
         "swashbuckle.aspnetcore.nuspec"
       ]
     },
+    "Swashbuckle.AspNetCore.Annotations/6.5.0": {
+      "sha512": "EcHd1z2pEdnpaBMTI9qjVxk6mFVGVMZ1n0ySC3fjrkXCQQ8O9fMdt9TxPJRKyjiTiTjvO9700jKjmyl+hPBinQ==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.annotations/6.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/Swashbuckle.AspNetCore.Annotations.dll",
+        "lib/net5.0/Swashbuckle.AspNetCore.Annotations.pdb",
+        "lib/net5.0/Swashbuckle.AspNetCore.Annotations.xml",
+        "lib/net6.0/Swashbuckle.AspNetCore.Annotations.dll",
+        "lib/net6.0/Swashbuckle.AspNetCore.Annotations.pdb",
+        "lib/net6.0/Swashbuckle.AspNetCore.Annotations.xml",
+        "lib/net7.0/Swashbuckle.AspNetCore.Annotations.dll",
+        "lib/net7.0/Swashbuckle.AspNetCore.Annotations.pdb",
+        "lib/net7.0/Swashbuckle.AspNetCore.Annotations.xml",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Annotations.dll",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Annotations.pdb",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Annotations.xml",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.Annotations.dll",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.Annotations.pdb",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.Annotations.xml",
+        "swashbuckle.aspnetcore.annotations.6.5.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.annotations.nuspec"
+      ]
+    },
     "Swashbuckle.AspNetCore.Swagger/6.5.0": {
       "sha512": "XWmCmqyFmoItXKFsQSwQbEAsjDKcxlNf1l+/Ki42hcb6LjKL8m5Db69OTvz5vLonMSRntYO1XLqz0OP+n3vKnA==",
       "type": "package",
@@ -4472,7 +4670,8 @@
     "net6.0": [
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
       "CloudinaryDotNet >= 1.21.0",
-      "Hangfire.Core >= 1.8.4",
+      "Hangfire.Core >= 1.8.5",
+      "Hangfire.SqlServer >= 1.8.5",
       "MailKit >= 4.1.0",
       "Microsoft.AspNetCore.Authentication.Google >= 6.0.20",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.20",
@@ -4489,7 +4688,8 @@
       "SavingsApp.Core >= 1.0.0",
       "Serilog.AspNetCore >= 6.1.0",
       "Serilog.Sinks.File >= 5.0.1-dev-00947",
-      "Swashbuckle.AspNetCore >= 6.5.0"
+      "Swashbuckle.AspNetCore >= 6.5.0",
+      "Swashbuckle.AspNetCore.Annotations >= 6.5.0"
     ]
   },
   "packageFolders": {
@@ -4499,11 +4699,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alabi\\Desktop\\OnBoard\\SavingsApp\\Savings-App\\Savings-App.csproj",
+      "projectUniqueName": "C:\\Users\\alabi\\Desktop\\Completed\\SavingsApp\\Savings-App\\Savings-App.csproj",
       "projectName": "Savings-App",
-      "projectPath": "C:\\Users\\alabi\\Desktop\\OnBoard\\SavingsApp\\Savings-App\\Savings-App.csproj",
+      "projectPath": "C:\\Users\\alabi\\Desktop\\Completed\\SavingsApp\\Savings-App\\Savings-App.csproj",
       "packagesPath": "C:\\Users\\alabi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alabi\\Desktop\\OnBoard\\SavingsApp\\Savings-App\\obj\\",
+      "outputPath": "C:\\Users\\alabi\\Desktop\\Completed\\SavingsApp\\Savings-App\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4526,8 +4726,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\alabi\\Desktop\\OnBoard\\SavingsApp\\SavingsApp.Core\\SavingsApp.Core.csproj": {
-              "projectPath": "C:\\Users\\alabi\\Desktop\\OnBoard\\SavingsApp\\SavingsApp.Core\\SavingsApp.Core.csproj"
+            "C:\\Users\\alabi\\Desktop\\Completed\\SavingsApp\\SavingsApp.Core\\SavingsApp.Core.csproj": {
+              "projectPath": "C:\\Users\\alabi\\Desktop\\Completed\\SavingsApp\\SavingsApp.Core\\SavingsApp.Core.csproj"
             }
           }
         }
@@ -4552,7 +4752,11 @@
           },
           "Hangfire.Core": {
             "target": "Package",
-            "version": "[1.8.4, )"
+            "version": "[1.8.5, )"
+          },
+          "Hangfire.SqlServer": {
+            "target": "Package",
+            "version": "[1.8.5, )"
           },
           "MailKit": {
             "target": "Package",
@@ -4619,6 +4823,10 @@
             "version": "[5.0.1-dev-00947, )"
           },
           "Swashbuckle.AspNetCore": {
+            "target": "Package",
+            "version": "[6.5.0, )"
+          },
+          "Swashbuckle.AspNetCore.Annotations": {
             "target": "Package",
             "version": "[6.5.0, )"
           }

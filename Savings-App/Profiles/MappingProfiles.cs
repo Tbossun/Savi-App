@@ -1,6 +1,9 @@
 ﻿using AutoMapper;
-using Savings_App.Controllers;
-using SavingsApp.Data.Entities.DTOs.Request;
+using SavingsApp.Data.Entities.DTOs.Request.Auth;
+using SavingsApp.Data.Entities.DTOs.Request.GroupSaving;
+using SavingsApp.Data.Entities.DTOs.Request.Kyc;
+using SavingsApp.Data.Entities.DTOs.Request.Paystack;
+using SavingsApp.Data.Entities.DTOs.Request.PersonalSaving;
 using SavingsApp.Data.Entities.Models;
 
 namespace Savings_App.Profiles
@@ -16,6 +19,7 @@ namespace Savings_App.Profiles
             CreateMap<WalletUpdate, Wallet>();
             CreateMap<GroupSavings, AddGroupSavingDto>().ReverseMap();
             CreateMap<GroupSavings, GroupSavingsDto>().ReverseMap();
+            CreateMap<UserGroupSavingDto, GroupSavings>().ReverseMap();
         }
     }
 }

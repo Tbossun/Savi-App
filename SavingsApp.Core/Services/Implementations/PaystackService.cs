@@ -1,6 +1,5 @@
 ﻿using Paystack.Net.SDK.Transactions;
 using SavingsApp.Core.Services.Interfaces;
-using SavingsApp.Data.Entities.DTOs.Request;
 using SavingsApp.Data.Entities.DTOs.Response;
 using System;
 using System.Collections.Generic;
@@ -13,6 +12,7 @@ using SavingsApp.Data.Entities.Models;
 using System.Net;
 using SavingsApp.Data.Entities.Enums;
 using SavingsApp.Data.Repositories.IRepositories;
+using SavingsApp.Data.Entities.DTOs.Request.Paystack;
 
 namespace SavingsApp.Core.Services.Implementations
 {

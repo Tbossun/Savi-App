@@ -3,18 +3,20 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using SavingsApp.Core.Services.Interfaces;
-using SavingsApp.Data.Entities.DTOs.Request;
 using SavingsApp.Data.Entities.DTOs.Response;
 using SavingsApp.Data.Entities.Enums;
 using SavingsApp.Data.Entities.Models;
 using SavingsApp.Data.Repositories.IRepositories;
 using System.Text.Json.Serialization;
 using System.Text.Json;
+using SavingsApp.Data.Entities.DTOs.Request.GroupSaving;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Savings_App.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class GroupSavingController : ControllerBase
     {
         private readonly IPaymentService _paymentService;
@@ -34,6 +36,13 @@ namespace Savings_App.Controllers
             _uploadService = uploadService;
         }
 
+
+        /// <summary>
+        /// Create new Saving Group
+        /// </summary>
+        /// <param name="saving"></param>
+        /// <response code="201">Saving group Created successfully</response> 
+        /// <response code="404">User or Frequency not found</response> 
         [HttpPost("New-Group-Saving")]
         public async Task<ActionResult<APIResponse>> AddGroupSaving([FromForm] AddGroupSavingDto saving)
         {
@@ -120,7 +129,13 @@ namespace Savings_App.Controllers
         }
 
 
-
+        /// <summary>
+        /// Join a Saving Group
+        /// </summary>
+        /// <param name="joinRequest"></param>
+        /// <response code="202">User hoin successfully</response> 
+        /// <response code="404">User already the in group</response> 
+        /// <response code="404">Saving group or user not found</response> 
         [HttpPost("Join-Group-Saving")]
         public async Task<ActionResult<APIResponse>> JoinGroupSaving([FromForm] JoinGroupSavingDto joinRequest)
         {
@@ -162,7 +177,7 @@ namespace Savings_App.Controllers
 
             var response = new APIResponse
             {
-                StatusCode = StatusCodes.Status201Created.ToString(),
+                StatusCode = StatusCodes.Status202Accepted.ToString(),
                 IsSuccess = true,
                 Message = "User successfully joined the group saving.",
                 Result = newMember
@@ -175,7 +190,14 @@ namespace Savings_App.Controllers
             return Content(JsonSerializer.Serialize(response, options), "application/json");
         }
 
-
+        /// <summary>
+        /// Leave a Savings Group
+        /// </summary>
+        /// <param name="leaveRequest"></param>
+        /// <response code="200">User left group successfully!</response> 
+        /// <response code="404">Saving group not found</response> 
+        /// <response code="403">User cannot leave group</response> 
+        /// <response code="400">User is not a member of the group.!</response> 
         [HttpPost("Leave-Group-Saving")]
         public async Task<ActionResult<APIResponse>> LeaveGroupSaving([FromForm] LeaveGroupSavingDto leaveRequest)
         {
@@ -221,6 +243,12 @@ namespace Savings_App.Controllers
             return response;
         }
 
+
+       
+        /// <summary>
+        /// Get all Saving Groups
+        /// </summary>
+        /// <response code="200">Saving Groups retrieved successfully!</response> 
         [HttpGet("All-Group-Savings")]
         public ActionResult<IEnumerable<GroupSavingsDto>> GetAllGroupSavings()
         {
@@ -230,6 +258,12 @@ namespace Savings_App.Controllers
             return Ok(groupSavingsDtoList);
         }
 
+        /// <summary>
+        ///  Get a Saving Group
+        /// </summary>
+        /// <param name="id"></param>
+        /// <response code="200">Saving Group retrieved successfully!</response> 
+        /// <response code="404">Saving group not found</response> 
         [HttpGet("Group-Saving/{id}")]
         public ActionResult<GroupSavingsDto> GetGroupSaving(string id)
         {
@@ -246,17 +280,28 @@ namespace Savings_App.Controllers
             return Ok(groupSavingDto);
         }
 
+        /// <summary>
+        ///  Get user's Saving Group
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <response code="200">Saving Groups retrieved successfully!</response> 
         [HttpGet("User-Group-Savings/{userId}")]
-        public ActionResult<IEnumerable<GroupSavingsDto>> GetUserGroupSavings(string userId)
+        public ActionResult<IEnumerable<UserGroupSavingDto>> GetUserGroupSavings(string userId)
         {
             var userGroupSavings = _unitOfWork.GroupSavingRepository.GetGroupSavingsByUserId(userId);
-            var userGroupSavingsDtoList = _mapper.Map<IEnumerable<GroupSavingsDto>>(userGroupSavings);
+            var userGroupSavingsDtoList = _mapper.Map<IEnumerable<UserGroupSavingDto>>(userGroupSavings);
 
             return Ok(userGroupSavingsDtoList);
         }
 
 
-
+        /// <summary>
+        /// Delete  a Saving Group
+        /// </summary>
+        /// <param name="deleteRequest"></param>
+        /// <response code="200">Group Deleted successfully!</response> 
+        /// <response code="404">Group not found</response> 
+        /// <response code="403">User can't delete group as user is not the group owner</response> 
         [HttpDelete("Delete-Group-Saving")]
         public async Task<ActionResult<APIResponse>> DeleteGroupSaving([FromBody] DeleteGroupSavingDto deleteRequest)
         {
@@ -300,12 +345,20 @@ namespace Savings_App.Controllers
             return Content(JsonSerializer.Serialize(response, options), "application/json");
         }
 
-
+        /// <summary>
+        /// Update a Saving Group details
+        /// </summary>
+        /// <param name="updateRequest"></param>
+        /// <param name="UserId"></param>
+        /// <param name="GroupSavingId"></param>
+        /// <response code="200">Saving Groups updated successfully!</response> 
+        /// <response code="403">User can't update group details</response> 
+        /// <response code="404">Group Not found</response> 
         [HttpPut("Update-Group-Saving")]
-        public async Task<ActionResult<APIResponse>> UpdateGroupSaving([FromBody] UpdateGroupSavingDto updateRequest)
+        public async Task<ActionResult<APIResponse>> UpdateGroupSaving([FromBody] UpdateGroupSavingDto updateRequest, string UserId, string GroupSavingId)
         {
-            var user = await _userManager.FindByIdAsync(updateRequest.UserId);
-            var groupSaving = _unitOfWork.GroupSavingRepository.Get(id => id.Id == updateRequest.GroupSavingId);
+            var user = await _userManager.FindByIdAsync(UserId);
+            var groupSaving = _unitOfWork.GroupSavingRepository.Get(id => id.Id == GroupSavingId);
 
             if (user == null || groupSaving == null)
             {

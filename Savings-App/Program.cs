@@ -17,6 +17,10 @@ using SavingsApp.Data.Repositories.IRepositories;
 using SavingsApp.Data.UnitOfWork;
 using SavingsApp.Data.Seeding;
 using AutoMapper;
+using Microsoft.Extensions.Options;
+using System.Reflection;
+using Savings_App.Swagger;
+using Microsoft.AspNetCore.Mvc;
 
 public class Program
 {
@@ -31,6 +35,22 @@ public class Program
         Log.Logger = new LoggerConfiguration().MinimumLevel.Debug().WriteTo.File("log/SaviLogs.txt", rollingInterval: RollingInterval.Day).CreateLogger();
         builder.Host.UseSerilog();
 
+        builder.Services.AddControllers(options =>
+        {
+            options.ModelBindingMessageProvider.SetValueIsInvalidAccessor(
+                (x) => $"The value '{x}' is invalid.");
+            options.ModelBindingMessageProvider.SetValueMustBeANumberAccessor(
+                (x) => $"The field {x} must be a number.");
+            options.ModelBindingMessageProvider.SetAttemptedValueIsInvalidAccessor(
+                (x, y) => $"The value '{x}' is not valid for {y}.");
+            options.ModelBindingMessageProvider.SetMissingKeyOrValueAccessor(
+                () => $"A value is required.");
+
+            options.CacheProfiles.Add("NoCache",
+                new CacheProfile() { NoStore = true });
+            options.CacheProfiles.Add("Any-60",
+                new CacheProfile() { Location = ResponseCacheLocation.Any, Duration = 60 });
+        });
         //Register DbContext 
         builder.Services.AddDbContext<SaviContext>(opt => opt.UseSqlite(builder.Configuration.GetConnectionString("Default")));
 
@@ -43,7 +63,34 @@ public class Program
 
         builder.Services.AddScoped<IPaymentService, PaymentService>();
 
+        //Register Identity Service
+        builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
+        {
+            options.Password.RequireDigit = true;
+            options.Password.RequireLowercase = true;
+            options.Password.RequireUppercase = true;
+            options.Password.RequireNonAlphanumeric = true;
+            options.Password.RequiredLength = 5;
+        })
+            .AddEntityFrameworkStores<SaviContext>();
+        //.AddDefaultTokenProviders();
 
+        builder.Services.AddCors(options =>
+        {
+            options.AddDefaultPolicy(cfg =>
+            {
+                cfg.WithOrigins(builder.Configuration["AllowedOrigins"]);
+                cfg.AllowAnyHeader();
+                cfg.AllowAnyMethod();
+            });
+            options.AddPolicy(name: "AnyOrigin",
+                cfg =>
+                {
+                    cfg.AllowAnyOrigin();
+                    cfg.AllowAnyHeader();
+                    cfg.AllowAnyMethod();
+                });
+        });
 
         //Register Email  Service
         var emailConfig = builder.Configuration.GetSection("EmailConfiguration").Get<EmailConfiguration>();
@@ -61,39 +108,50 @@ public class Program
             return new PaystackService(apiKey, unitOfWork);
         });
 
-        builder.Services.AddControllers();
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
 
         //Configure swagger to user bearer authentication
         builder.Services.AddSwaggerGen(c =>
         {
-            c.SwaggerDoc("v1", new OpenApiInfo { Title = "Savi.Api", Version = "v1" });
+            var xmlFilename =
+            $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+            c.IncludeXmlComments(System.IO.Path.Combine(
+                AppContext.BaseDirectory, xmlFilename));
+
+            c.EnableAnnotations();
+
+            c.SwaggerDoc("v1", new OpenApiInfo { Title = "Savi.Api", Version = "v1.0" });
+            
 
             // To Enable authorization using Swagger (JWT) 
             c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
             {
                 Name = "Authorization",
                 Type = SecuritySchemeType.Http,
-                Scheme = "Bearer",
+                Scheme = "bearer",
                 BearerFormat = "JWT",
                 In = ParameterLocation.Header,
-                Description = "Enter 'Bearer' [space] and then your valid token in the text input below \r\n\r\nExample: \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9\""
+                Description = "Enter your valid token in the text input below \r\n\r\nExample: \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9\""
             });
-            c.AddSecurityRequirement(new OpenApiSecurityRequirement
-                {
-                    {
-                        new OpenApiSecurityScheme
-                        {
-                            Reference = new OpenApiReference
-                            {
-                                Type = ReferenceType.SecurityScheme,
-                                Id = "Bearer"
-                            }
-                        },
-                        new string[]{}
-                    }
-            });
+
+            c.OperationFilter<AuthRequirementFilter>();
+            c.DocumentFilter<CustomDocumentFilter>();
+           // c.RequestBodyFilter<PasswordRequestFilter>();
+            /*      c.AddSecurityRequirement(new OpenApiSecurityRequirement
+                      {
+                          {
+                              new OpenApiSecurityScheme
+                              {
+                                  Reference = new OpenApiReference
+                                  {
+                                      Type = ReferenceType.SecurityScheme,
+                                      Id = "Bearer"
+                                  }
+                              },
+                              new string[]{}
+                          }
+                  });*/
 
         });
 
@@ -103,6 +161,9 @@ public class Program
             options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
             options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
             options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+            options.DefaultForbidScheme = JwtBearerDefaults.AuthenticationScheme;
+            options.DefaultSignInScheme = JwtBearerDefaults.AuthenticationScheme;
+            options.DefaultSignOutScheme = JwtBearerDefaults.AuthenticationScheme;
         }).AddJwtBearer(options =>
         {
             options.TokenValidationParameters = new TokenValidationParameters()
@@ -114,14 +175,11 @@ public class Program
                 ValidAudience = configuration["JWT:ValidAudience"],
                 ValidIssuer = configuration["JWT:ValidIssuer"],
                 IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Secret"])),
-                ClockSkew = TimeSpan.FromSeconds(30)
+                ClockSkew = TimeSpan.FromMinutes(30)
             };
         });
 
-        //Register Identity Service
-        builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
-            .AddEntityFrameworkStores<SaviContext>()
-                .AddDefaultTokenProviders();
+        builder.Services.AddAuthorization();
 
         //Register Automapper service
         builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
@@ -151,6 +209,27 @@ public class Program
         {
             app.UseSwagger();
             app.UseSwaggerUI();
+        }
+        else
+        {
+            app.UseSwagger();
+            app.UseSwaggerUI();
+            // HTTP Security Headers
+            app.UseHsts();
+            app.Use(async (context, next) =>
+            {
+                context.Response.Headers.Add("X-Frame-Options",
+                    "sameorigin");
+                context.Response.Headers.Add("X-XSS-Protection",
+                    "1; mode=block");
+                context.Response.Headers.Add("X-Content-Type-Options",
+                    "nosniff");
+                context.Response.Headers.Add("Content-Security-Policy",
+                    "default-src 'self'; script-src 'self' 'nonce-23a98b38c'");
+                context.Response.Headers.Add("Referrer-Policy",
+                    "strict-origin");
+                await next();
+            });
         }
 
         app.UseHttpsRedirection();

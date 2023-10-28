@@ -21,7 +21,6 @@ namespace SavingsApp.Data.Seeding
                 {
                     string roles = File.ReadAllText(@"JsonFiles/Roles.json");
                     List<IdentityRole> listOfRoles = JsonConvert.DeserializeObject<List<IdentityRole>>(roles);
-                    //List<string> listOfRoles = new List<string> { "Admin", "Regular" };
 
                     foreach (var role in listOfRoles)
                     {
@@ -30,7 +29,7 @@ namespace SavingsApp.Data.Seeding
 
                     string categories = File.ReadAllText(@"JsonFiles/Categories.json");
                     List<Category> listOfCategories = JsonConvert.DeserializeObject<List<Category>>(categories);
-                    //List<string> listOfRoles = new List<string> { "Admin", "Regular" };
+
 
                     foreach (var cat in listOfCategories)
                     {
@@ -39,7 +38,6 @@ namespace SavingsApp.Data.Seeding
 
                     string frequencies = File.ReadAllText(@"JsonFiles/Frequencies.json");
                     List<Frequency> listOfFrequencies = JsonConvert.DeserializeObject<List<Frequency>>(frequencies);
-                    //List<string> listOfRoles = new List<string> { "Admin", "Regular" };
 
                     foreach (var frequency in listOfFrequencies)
                     {

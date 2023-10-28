@@ -19,7 +19,7 @@ namespace SavingsApp.Data.Repositories
             _saviDbContext = db;
         }
 
-        public async Task<List<GroupSavings>> GetGroupSavingsByUserId(string userId)
+        public async Task<IEnumerable<GroupSavings>> GetGroupSavingsByUserId(string userId)
         {
             return await _saviDbContext.GroupSavings
                 .Where(gs => gs.GroupSavingsMembers.Any(member => member.UserId == userId))

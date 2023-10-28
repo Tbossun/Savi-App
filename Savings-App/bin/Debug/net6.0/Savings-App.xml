@@ -1,0 +1,267 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Savings-App</name>
+    </assembly>
+    <members>
+        <member name="M:Savings_App.Controllers.AuthController.Register(SavingsApp.Data.Entities.DTOs.Request.Auth.SignUpDto,System.Boolean)">
+            <summary>
+            Registers a new user. 
+            </summary>
+            <param name="input">A DTO containing the user data.</param>
+            <returns>A 201 - Created Status Code in case of success.</returns>
+            <response code="201">User has been registered</response>                  
+            <response code="403">User Already Exist</response>                
+            <response code="500">Failed to create user!</response>  
+        </member>
+        <member name="M:Savings_App.Controllers.AuthController.Login(SavingsApp.Data.Entities.DTOs.Request.Auth.LoginRequestDTO)">
+            <summary>
+            Performs a user email login. 
+            </summary>
+            <param name="input">A DTO containing the user's credentials.</param>
+            <returns>The Bearer Token (in JWT format).</returns>
+            <response code="200">User has been logged in</response> 
+            <response code="202">OTP sent to user's Email</response>   
+            <response code="401">Login failed (unauthorized)</response>
+            <response code="500">User does not exist (unauthorized)</response>
+        </member>
+        <member name="M:Savings_App.Controllers.AuthController.ConfirmEmail(System.String,System.String)">
+            <summary>
+            Confirm Email Address 
+            </summary>
+            <param name="token"></param>
+            <param name="email"></param>
+            <response code="200">Email Verified</response> 
+            <response code="400">Validation Error</response> 
+            <response code="500">User does not exist</response> 
+        </member>
+        <member name="M:Savings_App.Controllers.AuthController.ForgetPassword(System.String)">
+            <summary>
+            Send a reset password token to user email
+            </summary>
+            <param name="email"></param>
+            <response code="200">Password reset link sent</response> 
+            <response code="400">Fail to verify email or user</response> 
+        </member>
+        <member name="M:Savings_App.Controllers.AuthController.ResetPassword(System.String,System.String)">
+            <summary>
+             Reset/Change Password
+            </summary>
+            <param name="token"></param>
+            <param name="email"></param>
+            <response code="400">Validation Error</response> 
+        </member>
+        <member name="M:Savings_App.Controllers.AuthController.ResetPassword(SavingsApp.Data.Entities.DTOs.Request.Auth.PasswordReset)">
+            <summary>
+             Change to a new password
+            </summary>
+            <param name="resetpassword"></param>
+            <response code="200">Password changed successfully!</response> 
+            <response code="400">Reset password failed</response> 
+        </member>
+        <member name="M:Savings_App.Controllers.AuthController.LoginWithOTP(System.String,System.String)">
+            <summary>
+            Login Using the two factor auth token
+            </summary>
+            <param name="otpCode"></param>
+            <param name="email"></param>
+            <response code="200">Login Successfull</response> 
+            <response code="400">Invalid Token/Validation error</response> 
+        </member>
+        <member name="M:Savings_App.Controllers.GroupSavingController.AddGroupSaving(SavingsApp.Data.Entities.DTOs.Request.GroupSaving.AddGroupSavingDto)">
+            <summary>
+            Create new Saving Group
+            </summary>
+            <param name="saving"></param>
+            <response code="201">Saving group Created successfully</response> 
+            <response code="404">User or Frequency not found</response> 
+        </member>
+        <member name="M:Savings_App.Controllers.GroupSavingController.JoinGroupSaving(SavingsApp.Data.Entities.DTOs.Request.GroupSaving.JoinGroupSavingDto)">
+            <summary>
+            Join a Saving Group
+            </summary>
+            <param name="joinRequest"></param>
+            <response code="202">User hoin successfully</response> 
+            <response code="404">User already the in group</response> 
+            <response code="404">Saving group or user not found</response> 
+        </member>
+        <member name="M:Savings_App.Controllers.GroupSavingController.LeaveGroupSaving(SavingsApp.Data.Entities.DTOs.Request.GroupSaving.LeaveGroupSavingDto)">
+            <summary>
+            Leave a Savings Group
+            </summary>
+            <param name="leaveRequest"></param>
+            <response code="200">User left group successfully!</response> 
+            <response code="404">Saving group not found</response> 
+            <response code="403">User cannot leave group</response> 
+            <response code="400">User is not a member of the group.!</response> 
+        </member>
+        <member name="M:Savings_App.Controllers.GroupSavingController.GetAllGroupSavings">
+            <summary>
+            Get all Saving Groups
+            </summary>
+            <response code="200">Saving Groups retrieved successfully!</response> 
+        </member>
+        <member name="M:Savings_App.Controllers.GroupSavingController.GetGroupSaving(System.String)">
+            <summary>
+             Get a Saving Group
+            </summary>
+            <param name="id"></param>
+            <response code="200">Saving Group retrieved successfully!</response> 
+            <response code="404">Saving group not found</response> 
+        </member>
+        <member name="M:Savings_App.Controllers.GroupSavingController.GetUserGroupSavings(System.String)">
+            <summary>
+             Get user's Saving Group
+            </summary>
+            <param name="userId"></param>
+            <response code="200">Saving Groups retrieved successfully!</response> 
+        </member>
+        <member name="M:Savings_App.Controllers.GroupSavingController.DeleteGroupSaving(SavingsApp.Data.Entities.DTOs.Request.GroupSaving.DeleteGroupSavingDto)">
+            <summary>
+            Delete  a Saving Group
+            </summary>
+            <param name="deleteRequest"></param>
+            <response code="200">Group Deleted successfully!</response> 
+            <response code="404">Group not found</response> 
+            <response code="403">User can't delete group as user is not the group owner</response> 
+        </member>
+        <member name="M:Savings_App.Controllers.GroupSavingController.UpdateGroupSaving(SavingsApp.Data.Entities.DTOs.Request.GroupSaving.UpdateGroupSavingDto,System.String,System.String)">
+            <summary>
+            Update a Saving Group details
+            </summary>
+            <param name="updateRequest"></param>
+            <param name="UserId"></param>
+            <param name="GroupSavingId"></param>
+            <response code="200">Saving Groups updated successfully!</response> 
+            <response code="403">User can't update group details</response> 
+            <response code="404">Group Not found</response> 
+        </member>
+        <member name="M:Savings_App.Controllers.KYCController.GetKycDetails(System.String)">
+            <summary>
+             Get a user's KYC details
+            </summary>
+            <param name="id"></param>
+            <response code="200">User Details retrieved successfully</response>
+            <response code="404">KYC details not completed/Found</response>
+        </member>
+        <member name="M:Savings_App.Controllers.KYCController.UpdateKycDetails(SavingsApp.Data.Entities.DTOs.Request.Kyc.AddKycDto,System.String)">
+            <summary>
+            Update User's KYC details
+            </summary>
+            <param name="kyc"></param>
+            <param name="userid"></param>
+            <response code="201">User details updated successfully</response>
+            <response code="404">User not found</response>
+            <response code="400">User kyc details already updated/completed</response>
+        </member>
+        <member name="M:Savings_App.Controllers.KYCController.GetIdentityTypes">
+            <summary>
+            Retrieve all Identification type
+            </summary>
+            <response code="200">identification type retrieved successfully</response>
+        </member>
+        <member name="M:Savings_App.Controllers.KYCController.GetOccupations">
+            <summary>
+            Retrieve all Occupation type
+            </summary>
+            <response code="200">Occupation type retrieved successfully</response>
+        </member>
+        <member name="M:Savings_App.Controllers.KYCController.GetUsersByOccupation(SavingsApp.Data.Entities.Enums.Occupations)">
+            <summary>
+             Retrieves all users by occupation type
+            </summary>
+            <param name="occupation"></param>
+            <response code="200">User retrieved successfully</response>
+        </member>
+        <member name="M:Savings_App.Controllers.KYCController.GetUsersByIdentityType(SavingsApp.Data.Entities.Enums.IdentificationType)">
+            <summary>
+              Retrieves all users by Identification type
+            </summary>
+            <param name="identityType"></param>
+            <response code="200">User retrieved successfully</response>
+        </member>
+        <member name="M:Savings_App.Controllers.PaymentController.VerifyPayment(SavingsApp.Data.Entities.DTOs.Request.Paystack.PaystackTransactionVerificationRequest)">
+            <summary>
+            Verify Payment
+            </summary>
+            <param name="verificationRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Savings_App.Controllers.PaymentController.FundWallet(SavingsApp.Data.Entities.DTOs.Request.Paystack.PaystackTransactionVerificationRequest,System.String,System.String)">
+            <summary>
+            Fund wallet
+            </summary>
+            <param name="verificationRequest"></param>
+            <param name="WalletId"></param>
+            <param name="description"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Savings_App.Controllers.PaymentController.TransferToWallet(SavingsApp.Data.Entities.DTOs.Request.Paystack.TransferToWalletRequest)">
+            <summary>
+            Transfer from one wallet to another
+            </summary>
+            <param name="transferRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Savings_App.Controllers.PaymentController.DebitFund(SavingsApp.Data.Entities.DTOs.Request.Paystack.WalletFundingRequest)">
+            <summary>
+            Debit a wallet
+            </summary>
+            <param name="walletFundingRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Savings_App.Controllers.SavingsController.GetSavingCategories">
+            <summary>
+            Get all Saving Categories
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Savings_App.Controllers.SavingsController.GetPersonalSavings">
+            <summary>
+            Retrieve all personal saving target
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Savings_App.Controllers.SavingsController.GetAPersonalSaving(System.String)">
+            <summary>
+            Gat a single saving target by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Savings_App.Controllers.SavingsController.GetSavingFrequencies">
+            <summary>
+            Retrieve all Saving freqencies
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Savings_App.Controllers.SavingsController.AddPersonalSaving(SavingsApp.Data.Entities.DTOs.Request.PersonalSaving.AddPersonalSavingDto)">
+            <summary>
+            Add a new saving target
+            </summary>
+            <param name="saving"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Savings_App.Controllers.SavingsController.FundPersonalSaving(SavingsApp.Data.Entities.DTOs.Request.PersonalSaving.PersonalSavingsFundingRequest)">
+            <summary>
+            Fund a persomal saving target
+            </summary>
+            <param name="walletFundingRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Savings_App.Controllers.WalletController.GetAllWallets">
+            <summary>
+            Retrieves All wallets
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Savings_App.Controllers.WalletController.GetAWallet(System.String)">
+            <summary>
+             Get a wallet
+            </summary>
+            <param name="id"></param>
+            <response code="200">wallet retrieved successfully!</response> 
+            <response code="404">wallet not found</response> 
+        </member>
+    </members>
+</doc>

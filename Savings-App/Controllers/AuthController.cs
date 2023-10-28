@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using Savings_App.Extensions.Util;
 using SavingsApp.Core.Services.Interfaces;
-using SavingsApp.Data.Entities.DTOs.Request;
+using SavingsApp.Data.Entities.DTOs.Request.Auth;
 using SavingsApp.Data.Entities.DTOs.Response;
 using SavingsApp.Data.Entities.Models;
 using SavingsApp.Data.Repositories.IRepositories;
@@ -41,7 +41,14 @@ namespace Savings_App.Controllers
             _unitOfWork = unitOfWork;
         }
 
-
+        /// <summary>
+        /// Registers a new user. 
+        /// </summary>
+        /// <param name="input">A DTO containing the user data.</param>
+        /// <returns>A 201 - Created Status Code in case of success.</returns>
+        /// <response code="201">User has been registered</response>                  
+        /// <response code="403">User Already Exist</response>                
+        /// <response code="500">Failed to create user!</response>  
         [HttpPost("Register")]
         public async Task<IActionResult> Register([FromBody] SignUpDto regRequest, bool enableTwoFactorAuthentication = false)
         {
@@ -96,7 +103,7 @@ namespace Savings_App.Controllers
                 var message = new Message(new string[] { user.Email! }, "Email Confirmation Link", messageBody);
                 _emailService.SendEmail(message);
 
-                return StatusCode(StatusCodes.Status200OK,
+                return StatusCode(StatusCodes.Status201Created,
                     new APIResponse { StatusCode = "Success", IsSuccess = true, Message = $"User created successfully. Check your email {user.Email} for a confirmation link!" });
             }
             else
@@ -108,8 +115,18 @@ namespace Savings_App.Controllers
 
 
 
+        /// <summary>
+        /// Performs a user email login. 
+        /// </summary>
+        /// <param name="input">A DTO containing the user's credentials.</param>
+        /// <returns>The Bearer Token (in JWT format).</returns>
+        /// <response code="200">User has been logged in</response> 
+        /// <response code="202">OTP sent to user's Email</response>   
+        /// <response code="401">Login failed (unauthorized)</response>
+        /// <response code="500">User does not exist (unauthorized)</response>
         [HttpPost("Login")]
-        public async Task<IActionResult> Login([FromBody] LoginRequestDTO loginRequest)
+        [ResponseCache(CacheProfileName = "NoCache")]
+        public async Task<IActionResult> Login( LoginRequestDTO loginRequest)
         {
             //check if user exist
             var user = await _userManager.FindByEmailAsync(loginRequest.Email);
@@ -128,7 +145,7 @@ namespace Savings_App.Controllers
                // var message = new Message(new string[] { user.Email! }, "OTP Confirmation", $"Your token is {token!} ");
                 _emailService.SendEmail(message);
 
-                return StatusCode(StatusCodes.Status500InternalServerError,
+                return StatusCode(StatusCodes.Status202Accepted,
                     new APIResponse { StatusCode = "Success", IsSuccess = true, Message = "OTP sent to your Email" });
 
             }
@@ -147,10 +164,18 @@ namespace Savings_App.Controllers
                 });
 
             }
-            return Unauthorized();
+            return StatusCode(StatusCodes.Status401Unauthorized,
+                    new APIResponse { StatusCode = "False", IsSuccess = false, Message = "UNAUTHORIZED" });
         }
 
-
+        /// <summary>
+        /// Confirm Email Address 
+        /// </summary>
+        /// <param name="token"></param>
+        /// <param name="email"></param>
+        /// <response code="200">Email Verified</response> 
+        /// <response code="400">Validation Error</response> 
+        /// <response code="500">User does not exist</response> 
         [HttpGet("ConfirmEmail")]
         public async Task<IActionResult> ConfirmEmail(string token, string email)
         {
@@ -183,6 +208,13 @@ namespace Savings_App.Controllers
             return token;
         }
 
+
+        /// <summary>
+        /// Send a reset password token to user email
+        /// </summary>
+        /// <param name="email"></param>
+        /// <response code="200">Password reset link sent</response> 
+        /// <response code="400">Fail to verify email or user</response> 
         [HttpPost("forgot-password")]
         [AllowAnonymous]
         public async Task<IActionResult> ForgetPassword([Required] string email)
@@ -196,13 +228,20 @@ namespace Savings_App.Controllers
                 var messageBody = EmailTemplateProvider.ResetPassword($"{user.FirstName} {user.LastName}", forgotPasswordLink);
                 var message = new Message(new string[] { user.Email! }, "Reset Password", messageBody);
                 _emailService.SendEmail(message);
-                return StatusCode(StatusCodes.Status500InternalServerError,
+                return StatusCode(StatusCodes.Status200OK,
                     new APIResponse { StatusCode = "Success", IsSuccess = true, Message = $"Password reset link sent to {user.Email} successfully" });
             }
             return StatusCode(StatusCodes.Status400BadRequest,
                         new APIResponse { StatusCode = "Error", IsSuccess = false, Message = "Reset password fail! Please verify your email and try again." });
         }
 
+
+        /// <summary>
+        ///  Reset/Change Password
+        /// </summary>
+        /// <param name="token"></param>
+        /// <param name="email"></param>
+        /// <response code="400">Validation Error</response> 
         [HttpGet("reset-password")]
         public async Task<IActionResult> ResetPassword(string token, string email)
         {
@@ -214,7 +253,12 @@ namespace Savings_App.Controllers
             });
         }
 
-
+        /// <summary>
+        ///  Change to a new password
+        /// </summary>
+        /// <param name="resetpassword"></param>
+        /// <response code="200">Password changed successfully!</response> 
+        /// <response code="400">Reset password failed</response> 
         [HttpPost("reset-password")]
         [AllowAnonymous]
         public async Task<IActionResult> ResetPassword(PasswordReset resetpassword)
@@ -236,6 +280,45 @@ namespace Savings_App.Controllers
             }
             return StatusCode(StatusCodes.Status400BadRequest,
                         new APIResponse { StatusCode = "Error", IsSuccess = false, Message = "Reset password failed!" });
+        }
+
+
+        /// <summary>
+        /// Login Using the two factor auth token
+        /// </summary>
+        /// <param name="otpCode"></param>
+        /// <param name="email"></param>
+        /// <response code="200">Login Successfull</response> 
+        /// <response code="400">Invalid Token/Validation error</response> 
+        [HttpPost("Login-2FA")]
+        public async Task<IActionResult> LoginWithOTP(string otpCode, string email)
+        {
+            var user = await _userManager.FindByEmailAsync(email);
+            var signIn = await _signInManager.TwoFactorSignInAsync("Email", otpCode, false, false);
+            if (signIn.Succeeded)
+            {
+                if (user != null)
+                {
+                    var authClaims = new List<Claim>
+                    {
+                     new Claim(ClaimTypes.Name, user.UserName),
+                     new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                    };
+                    var userRoles = await _userManager.GetRolesAsync(user);
+                    foreach (var role in userRoles)
+                    {
+                        authClaims.Add(new Claim(ClaimTypes.Role, role));
+                    }
+                    var JwtToken = GetToken(authClaims);
+                    return Ok(new
+                    {
+                        token = new JwtSecurityTokenHandler().WriteToken(JwtToken),
+                        expiration = JwtToken.ValidTo
+                    });
+                }
+            }
+            return StatusCode(StatusCodes.Status400BadRequest,
+                        new APIResponse { StatusCode = "Error", IsSuccess = false, Message = "Invalid token" });
         }
     }
 }
